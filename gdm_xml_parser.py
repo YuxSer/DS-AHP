@@ -12,7 +12,7 @@ class GDMXMLParser:
             return None
         
         try:
-            print(f"\n📖 Чтение GDM XML файла: {file_path}")
+            print(f"\n Чтение GDM XML файла: {file_path}")
             tree = ET.parse(file_path)
             root = tree.getroot()
             
@@ -182,7 +182,7 @@ class GDMXMLParser:
         print("СВОДКА ЗАГРУЖЕННЫХ ДАННЫХ")
         print("=" * 60)
         
-        print(f"\n📊 Общая информация:")
+        print(f"\n Общая информация:")
         print(f"  Альтернативы: {len(data['alternatives'])}")
         print(f"    {', '.join(data['alternatives'])}")
         

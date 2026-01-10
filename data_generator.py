@@ -153,7 +153,7 @@ class DataGenerator:
         return dataset
 
     def print_summary(self, dataset: Dict):
-        print("\n📊 СВОДКА:")
+        print("\n СВОДКА:")
         print(f"  Альтернатив: {len(dataset['alternatives'])}")
         print(f"  Критериев: {len(dataset['criteria'])}")
         print(f"  Экспертов: {len(dataset['experts'])}")

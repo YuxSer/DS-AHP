@@ -104,7 +104,7 @@ class BeliefPlausibilityCalculator:
 
     def print_single_alternative_intervals(self):
         """Вывод интервалов для одиночных альтернатив"""
-        print(f"\n📊 ИНТЕРВАЛЫ ДОВЕРИЯ ДЛЯ АЛЬТЕРНАТИВ:")
+        print(f"\n ИНТЕРВАЛЫ ДОВЕРИЯ ДЛЯ АЛЬТЕРНАТИВ:")
         print("-" * 60)
         print(f"{'Альтернатива':15} {'Belief':12} {'Plausibility':12} {'Интервал':20} {'Ширина':10}")
         print("-" * 60)
@@ -176,12 +176,12 @@ class BeliefPlausibilityCalculator:
         if self.ranking:
             self.optimal_alternative = self.ranking[0][0]
 
-        print(f"\n🏆 РАНЖИРОВАНИЕ АЛЬТЕРНАТИВ:")
+        print(f"\n РАНЖИРОВАНИЕ АЛЬТЕРНАТИВ:")
         for i, (alt, score) in enumerate(self.ranking, 1):
             alt_set = frozenset([alt])
             if alt_set in self.intervals:
                 bel, pl = self.intervals[alt_set]
-                optimal_mark = " 🏆" if i == 1 else ""
+                optimal_mark = " " if i == 1 else ""
                 print(f"  {i:2d}. {alt:10} {score:8.4f}  ([{bel:.4f}, {pl:.4f}]){optimal_mark}")
 
     def print_final_results(self, pessimism_coef: float):
@@ -198,7 +198,7 @@ class BeliefPlausibilityCalculator:
                 bel, pl = self.intervals[alt_set]
                 score = self.scores.get(self.optimal_alternative, 0.0)
 
-                print(f"\n📈 Характеристики оптимальной альтернативы:")
+                print(f"\n Характеристики оптимальной альтернативы:")
                 print(f"  • Belief:       {bel:.6f}")
                 print(f"  • Plausibility: {pl:.6f}")
                 print(f"  • Интервал:     [{bel:.4f}, {pl:.4f}]")

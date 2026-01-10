@@ -277,7 +277,7 @@ class XMLDataGenerator:
         m_criteria = max(1, min(10, m_criteria))
         k_experts = max(1, min(10, k_experts))
 
-        print(f"\n📋 Параметры генерации:")
+        print(f"\n Параметры генерации:")
         print(f"  • Альтернатив: {n_alternatives}")
         print(f"  • Критериев: {m_criteria}")
         print(f"  • Экспертов: {k_experts}")
@@ -316,7 +316,7 @@ class XMLDataGenerator:
             # Валидируем предпочтения
             if not self.validate_preferences(preferences, alternatives):
                 print(f"  ⚠️  Проблемы с валидацией предпочтений для эксперта {expert_name}")
-                print(f"  🔧 Исправление...")
+                print(f"   Исправление...")
                 # Исправляем предпочтения
                 preferences = self.fix_preferences(preferences, alternatives, criteria)
 
@@ -487,18 +487,18 @@ class XMLDataGenerator:
         criteria = dataset['criteria']
         experts = dataset['experts']
 
-        print(f"\n📊 Общая информация:")
+        print(f"\n Общая информация:")
         print(f"  • Альтернатив: {len(alternatives)}")
         print(f"  • Критериев: {len(criteria)}")
         print(f"  • Экспертов: {len(experts)}")
 
-        print(f"\n📈 Проверка корректности:")
+        print(f"\n Проверка корректности:")
 
         # Проверяем каждого эксперта
         all_valid = True
 
         for expert_name, expert_data in experts.items():
-            print(f"\n  👨‍💼 Эксперт: {expert_name}")
+            print(f"\n Эксперт: {expert_name}")
             print(f"    • Вес: {expert_data['weight']}")
             print(f"    • Сумма CPV: {sum(expert_data['cpvs'].values()):.3f}")
 
@@ -521,8 +521,7 @@ class XMLDataGenerator:
                 all_valid = False
 
         if all_valid:
-            print(f"\n🎉 ВСЕ ДАННЫЕ КОРРЕКТНЫ!")
-            print(f"   Каждая альтернатива встречается ровно 1 раз у каждого эксперта в каждом критерии")
+            print(f"\n ВСЕ ДАННЫЕ КОРРЕКТНЫ!")
         else:
             print(f"\n⚠️  Обнаружены проблемы в данных")
 

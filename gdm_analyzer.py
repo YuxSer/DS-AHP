@@ -183,7 +183,7 @@ class GDMAnalyzer:
         print("ЗАПУСК ПОЛНОГО АНАЛИЗА DS/AHP-GDM")
         print("=" * 70)
 
-        print(f"\n📊 ПАРАМЕТРЫ АНАЛИЗА:")
+        print(f"\n ПАРАМЕТРЫ АНАЛИЗА:")
         print(
             f"  • Правило комбинирования: {Config.COMBINATION_RULE_NAMES.get(self.combination_rule, self.combination_rule)}")
 
@@ -266,7 +266,7 @@ class GDMAnalyzer:
             self.export_results()
 
             print("\n" + "=" * 70)
-            print("🎉 АНАЛИЗ УСПЕШНО ЗАВЕРШЕН!")
+            print(" АНАЛИЗ УСПЕШНО ЗАВЕРШЕН!")
             print("=" * 70)
 
             return optimal

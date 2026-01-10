@@ -290,7 +290,7 @@ class ExpertManager:
         self.individual_boes[expert_name] = individual_boe
 
         # Выводим результат
-        print(f"\n📈 Итоговый BOE эксперта {expert_name}:")
+        print(f"\n Итоговый BOE эксперта {expert_name}:")
         total = 0.0
         for focal, mass in sorted(individual_boe.items(),
                                   key=lambda x: x[1], reverse=True):
@@ -364,7 +364,7 @@ class ExpertManager:
         self.adjusted_boes[expert_name] = adjusted_boe
 
         # Выводим результат
-        print(f"\n📊 BOE после дисконтирования:")
+        print(f"\n BOE после дисконтирования:")
         total_mass = 0.0
         for focal, mass in sorted(adjusted_boe.items(),
                                   key=lambda x: x[1], reverse=True):
@@ -429,7 +429,7 @@ class ExpertManager:
         self.group_boe = group_boe
 
         # Выводим результат
-        print(f"\n🎯 Групповой BOE ({combination_rule}):")
+        print(f"\n Групповой BOE ({combination_rule}):")
         total = 0.0
         for focal, mass in sorted(group_boe.items(),
                                   key=lambda x: x[1], reverse=True):
@@ -467,7 +467,7 @@ class ExpertManager:
         print("ДЕТАЛЬНЫЙ ОТЧЕТ ПО ЭКСПЕРТАМ")
         print("=" * 70)
 
-        print(f"\n📊 Общая информация:")
+        print(f"\n Общая информация:")
         print(f"  Альтернативы: {', '.join(self.alternatives)}")
         print(f"  Критерии: {', '.join(self.criteria)}")
         print(f"  Количество экспертов: {len(self.experts)}")

@@ -16,13 +16,13 @@ class ExportFormats:
             export_dir = Config.EXPORT_DIR
 
         self.export_dir = export_dir
-        self._create_export_directory()
+        self.create_export_directory()
 
-    def _create_export_directory(self):
+    def create_export_directory(self):
         """Создание директории для экспорта"""
         if not os.path.exists(self.export_dir):
             os.makedirs(self.export_dir)
-            print(f"📁 Создана директория для результатов: {self.export_dir}")
+            print(f" Создана директория для результатов: {self.export_dir}")
 
     def generate_filename(self, prefix: str = "results",
                           extension: str = "") -> str:
@@ -247,8 +247,8 @@ class ExportFormats:
 
         # Вывод информации
         if export_files:
-            print(f"\n📁 Все файлы сохранены в папке: {self.export_dir}/")
-            print(f"📄 Экспортированные файлы:")
+            print(f"\n Все файлы сохранены в папке: {self.export_dir}/")
+            print(f" Экспортированные файлы:")
             for format_name, file_path in export_files.items():
                 filename = os.path.basename(file_path)
                 print(f"  • {format_name.upper()}: {filename}")
