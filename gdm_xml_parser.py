@@ -1,7 +1,6 @@
 import xml.etree.ElementTree as ET
 import os
 from typing import Dict, List, Any, Optional
-from utils import Utils
 
 class GDMXMLParser:
 
@@ -10,17 +9,16 @@ class GDMXMLParser:
         if not os.path.exists(file_path):
             print(f"❌ Файл {file_path} не найден!")
             return None
-        
+
         try:
             print(f"\n Чтение GDM XML файла: {file_path}")
             tree = ET.parse(file_path)
             root = tree.getroot()
-            
-            # Проверяем формат файла
+
             if root.tag != 'ds_ahp_gdm_analysis':
                 print("❌ Неверный формат XML файла. Ожидается 'ds_ahp_gdm_analysis'")
                 return None
-            
+
             # Инициализируем структуру данных
             data = {
                 'alternatives': [],
@@ -28,7 +26,7 @@ class GDMXMLParser:
                 'experts': {},
                 'metadata': {}
             }
-            
+
             # Читаем метаданные
             metadata = root.find('metadata')
             if metadata is not None:
@@ -36,140 +34,95 @@ class GDMXMLParser:
                 alts_elem = metadata.find('alternatives')
                 if alts_elem is not None and alts_elem.text:
                     data['alternatives'] = [
-                        alt.strip() for alt in alts_elem.text.split(',') 
+                        alt.strip() for alt in alts_elem.text.split(',')
                         if alt.strip()
                     ]
-                
+
                 # Критерии
                 criteria_elem = metadata.find('criteria')
                 if criteria_elem is not None and criteria_elem.text:
                     data['criteria'] = [
-                        crit.strip() for crit in criteria_elem.text.split(',') 
+                        crit.strip() for crit in criteria_elem.text.split(',')
                         if crit.strip()
                     ]
-                
-                # Эксперты (из метаданных)
-                experts_elem = metadata.find('experts')
-                if experts_elem is not None and experts_elem.text:
-                    experts_list = [
-                        exp.strip() for exp in experts_elem.text.split(',') 
-                        if exp.strip()
-                    ]
-                    data['metadata']['experts_list'] = experts_list
-                
-                # Дополнительные метаданные
-                for child in metadata:
-                    if child.tag not in ['alternatives', 'criteria', 'experts']:
-                        data['metadata'][child.tag] = child.text
-            
+
+                # Информация о генерации
+                gen_info = metadata.find('generation_info')
+                if gen_info is not None:
+                    data['metadata']['generation_info'] = {
+                        'timestamp': gen_info.get('timestamp', ''),
+                        'n_alternatives': gen_info.get('n_alternatives', ''),
+                        'n_criteria': gen_info.get('n_criteria', ''),
+                        'n_experts': gen_info.get('n_experts', ''),
+                        'weight_distribution': gen_info.get('weight_distribution', ''),
+                        'generator': gen_info.get('generator', '')
+                    }
+
             # Читаем данные экспертов
             experts_root = root.find('experts')
-            if experts_root is None:
-                print("❌ Не найден элемент 'experts'")
-                return None
-            
-            for expert_elem in experts_root.findall('expert'):
-                expert_name = expert_elem.get('name')
-                if not expert_name:
-                    print("⚠️  Пропущен эксперт без имени")
-                    continue
-                
-                # Вес эксперта
-                try:
-                    weight = float(expert_elem.get('weight', 0.5))
-                except ValueError:
-                    print(f"⚠️  Некорректный вес для эксперта {expert_name}, используется 0.5")
-                    weight = 0.5
-                
-                # CPV значения
-                cpvs = {}
-                cpvs_elem = expert_elem.find('cpvs')
-                if cpvs_elem is not None:
-                    for cpv_elem in cpvs_elem.findall('criterion'):
-                        crit_name = cpv_elem.get('name')
-                        try:
-                            cpv_value = float(cpv_elem.text) if cpv_elem.text else 0.0
-                            cpvs[crit_name] = cpv_value
-                        except ValueError:
-                            print(f"⚠️  Некорректный CPV для {expert_name}/{crit_name}")
-                            cpvs[crit_name] = 0.0
-                
-                # Предпочтения
-                preferences = {}
-                prefs_elem = expert_elem.find('preferences')
-                if prefs_elem is not None:
-                    for crit_elem in prefs_elem.findall('criterion'):
-                        crit_name = crit_elem.get('name')
-                        preferences[crit_name] = {}
-                        
-                        for group_elem in crit_elem.findall('group'):
-                            group_str = group_elem.text.strip() if group_elem.text else ""
+            if experts_root is not None:
+                for expert_elem in experts_root.findall('expert'):
+                    expert_name = expert_elem.get('name', 'Unknown')
+
+                    # Вес эксперта
+                    try:
+                        weight_str = expert_elem.get('weight', '0.5').strip()
+                        weight = float(weight_str)
+                    except (ValueError, TypeError):
+                        weight = 0.5
+
+                    # CPV значения
+                    cpvs = {}
+                    cpvs_elem = expert_elem.find('cpvs')
+                    if cpvs_elem is not None:
+                        for cpv_elem in cpvs_elem.findall('criterion'):
+                            crit_name = cpv_elem.get('name', '')
                             try:
-                                pref_value = int(group_elem.get('preference', 1))
-                            except ValueError:
-                                print(f"⚠️  Некорректное значение предпочтения для {expert_name}/{crit_name}")
-                                pref_value = 1
-                            
-                            if group_str:
-                                preferences[crit_name][group_str] = pref_value
-                
-                # Сохраняем данные эксперта
-                data['experts'][expert_name] = {
-                    'weight': weight,
-                    'cpvs': cpvs,
-                    'preferences': preferences
-                }
-            
-            # Проверяем целостность данных
-            if not GDMXMLParser.validate_data(data):
-                return None
-            
+                                cpv_text = cpv_elem.text.strip() if cpv_elem.text else "0.0"
+                                cpv_value = float(cpv_text)
+                                cpvs[crit_name] = cpv_value
+                            except (ValueError, TypeError):
+                                cpvs[crit_name] = 0.0
+
+                    # Предпочтения
+                    preferences = {}
+                    prefs_elem = expert_elem.find('preferences')
+                    if prefs_elem is not None:
+                        for crit_elem in prefs_elem.findall('criterion'):
+                            crit_name = crit_elem.get('name', '')
+                            preferences[crit_name] = {}
+
+                            for group_elem in crit_elem.findall('group'):
+                                group_str = group_elem.text.strip() if group_elem.text else ""
+                                try:
+                                    pref_value_str = group_elem.get('preference', '1').strip()
+                                    pref_value = int(pref_value_str)
+                                except (ValueError, TypeError):
+                                    pref_value = 1
+
+                                if group_str:
+                                    preferences[crit_name][group_str] = pref_value
+
+                    # Сохраняем данные эксперта
+                    data['experts'][expert_name] = {
+                        'weight': weight,
+                        'cpvs': cpvs,
+                        'preferences': preferences
+                    }
+
             print(f"✅ Успешно загружено:")
-            print(f"   Альтернативы: {len(data['alternatives'])} ({', '.join(data['alternatives'])})")
-            print(f"   Критерии: {len(data['criteria'])} ({', '.join(data['criteria'])})")
-            print(f"   Эксперты: {len(data['experts'])} ({', '.join(data['experts'].keys())})")
-            
+            print(f"   Альтернативы: {len(data['alternatives'])}")
+            print(f"   Критерии: {len(data['criteria'])}")
+            print(f"   Экспертов: {len(data['experts'])}")
+
             return data
-            
+
         except ET.ParseError as e:
             print(f"❌ Ошибка парсинга XML: {e}")
             return None
         except Exception as e:
             print(f"❌ Ошибка при чтении файла: {e}")
             return None
-    
-    @staticmethod
-    def validate_data(data: Dict[str, Any]) -> bool:
-        """Проверка целостности загруженных данных"""
-        
-        # Проверяем альтернативы
-        if not data['alternatives']:
-            print("❌ Нет альтернатив в файле")
-            return False
-        
-        # Проверяем критерии
-        if not data['criteria']:
-            print("❌ Нет критериев в файле")
-            return False
-        
-        # Проверяем экспертов
-        if not data['experts']:
-            print("❌ Нет данных об экспертах")
-            return False
-        
-        # Проверяем каждого эксперта
-        for expert_name, expert_data in data['experts'].items():
-            # Проверяем CPV
-            if not Utils.validate_cpvs(expert_data['cpvs'], data['criteria']):
-                print(f"❌ Некорректные CPV для эксперта {expert_name}")
-                return False
-            
-            # Проверяем предпочтения
-            if not Utils.validate_preferences(expert_data['preferences'], data['alternatives']):
-                print(f"❌ Некорректные предпочтения для эксперта {expert_name}")
-                return False
-        
-        return True
 
     @staticmethod
     def print_data_summary(data: Dict[str, Any]):
@@ -177,34 +130,57 @@ class GDMXMLParser:
         if not data:
             print("❌ Нет данных для отображения")
             return
-        
+
         print("\n" + "=" * 60)
         print("СВОДКА ЗАГРУЖЕННЫХ ДАННЫХ")
         print("=" * 60)
-        
+
         print(f"\n Общая информация:")
         print(f"  Альтернативы: {len(data['alternatives'])}")
-        print(f"    {', '.join(data['alternatives'])}")
-        
+        if len(data['alternatives']) <= 10:
+            print(f"    {', '.join(data['alternatives'])}")
+        else:
+            print(f"    {', '.join(data['alternatives'][:5])}...")
+
         print(f"\n  Критерии: {len(data['criteria'])}")
-        print(f"    {', '.join(data['criteria'])}")
-        
+        if len(data['criteria']) <= 10:
+            print(f"    {', '.join(data['criteria'])}")
+        else:
+            print(f"    {', '.join(data['criteria'][:5])}...")
+
         print(f"\n  Эксперты: {len(data['experts'])}")
-        for expert_name in data['experts'].keys():
-            print(f"    • {expert_name}")
-        
-        print(f"\n👥 Детали по экспертам:")
-        for expert_name, expert_data in data['experts'].items():
-            print(f"\n  Эксперт: {expert_name}")
-            print(f"    Вес: {expert_data['weight']}")
-            
-            print(f"    CPV:")
-            for criterion, cpv in expert_data['cpvs'].items():
-                print(f"      {criterion}: {cpv:.3f}")
-            
-            print(f"    Групп предпочтений:")
-            total_groups = 0
-            for criterion, groups in expert_data['preferences'].items():
-                print(f"      {criterion}: {len(groups)} групп")
-                total_groups += len(groups)
-            print(f"    Всего: {total_groups} групп")
+        if len(data['experts']) <= 10:
+            for expert_name in data['experts'].keys():
+                print(f"    • {expert_name}")
+        else:
+            expert_names = list(data['experts'].keys())
+            for expert_name in expert_names[:5]:
+                print(f"    • {expert_name}")
+            print(f"    ...")
+
+        # Информация о генерации
+        if 'generation_info' in data['metadata']:
+            print(f"\n📊 Информация о генерации:")
+            gen_info = data['metadata']['generation_info']
+
+            if 'timestamp' in gen_info and gen_info['timestamp']:
+                try:
+                    dt_str = gen_info['timestamp']
+                    if 'T' in dt_str:
+                        dt_str = dt_str.split('T')[0]
+                    print(f"  Дата создания: {dt_str}")
+                except:
+                    pass
+
+            params_to_show = ['n_alternatives', 'n_criteria', 'n_experts', 'weight_distribution']
+            for key in params_to_show:
+                if key in gen_info and gen_info[key]:
+                    display_name = {
+                        'n_alternatives': 'Альтернатив',
+                        'n_criteria': 'Критериев',
+                        'n_experts': 'Экспертов',
+                        'weight_distribution': 'Распределение весов'
+                    }.get(key, key)
+                    print(f"  {display_name}: {gen_info[key]}")
+
+

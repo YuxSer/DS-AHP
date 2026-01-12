@@ -1,0 +1,643 @@
+<?xml version="1.0" ?>
+<ds_ahp_gdm_analysis>
+  <!-- Сгенерировано оптимизированным XMLDataGenerator для DS/AHP-GDM -->
+  <metadata>
+    <alternatives>A0001,A0002,A0003,A0004,A0005,A0006,A0007,A0008,A0009,A0010,A0011,A0012,A0013,A0014,A0015,A0016,A0017,A0018,A0019,A0020</alternatives>
+    <criteria>Качество,Стоимость,Надежность</criteria>
+    <experts>Иванов,Петров,Сидоров,Кузнецов,Смирнов,Попов,Лебедев,Козлов,Новиков,Морозов,Волков,Соловьев,Васильев,Зайцев,Павлов,Семенов,Голубев,Виноградов,Богданов,Воробьев</experts>
+    <generation_info timestamp="2026-01-12T02:45:08.806219" n_alternatives="20" n_criteria="3" n_experts="20" weight_distribution="random" generator="XMLDataGenerator_optimized"/>
+  </metadata>
+  <experts>
+    <expert name="Иванов" weight="0.947">
+      <cpvs>
+        <criterion name="Качество">0.61477</criterion>
+        <criterion name="Стоимость">0.32153</criterion>
+        <criterion name="Надежность">0.06370</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0004,A0008,A0015,A0016,A0017</group>
+          <group preference="5">A0002,A0009,A0010,A0020</group>
+          <group preference="3">A0005,A0006,A0012</group>
+          <group preference="2">A0003,A0007,A0018</group>
+          <group preference="4">A0001,A0013,A0019</group>
+          <group preference="1">A0011,A0014</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="6">A0001,A0002,A0003,A0004,A0012,A0020</group>
+          <group preference="4">A0007,A0010,A0013,A0016,A0017,A0019</group>
+          <group preference="5">A0006,A0014,A0018</group>
+          <group preference="3">A0005,A0011,A0015</group>
+          <group preference="2">A0008,A0009</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0001,A0004,A0009,A0010,A0015,A0020</group>
+          <group preference="1">A0002,A0003,A0007,A0011,A0014,A0017</group>
+          <group preference="4">A0008,A0013,A0016,A0018</group>
+          <group preference="3">A0005,A0006</group>
+          <group preference="2">A0012,A0019</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Петров" weight="0.820">
+      <cpvs>
+        <criterion name="Качество">0.52259</criterion>
+        <criterion name="Стоимость">0.21295</criterion>
+        <criterion name="Надежность">0.26447</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0002,A0007,A0011,A0016,A0018</group>
+          <group preference="6">A0001,A0005,A0009,A0010,A0015</group>
+          <group preference="1">A0008,A0012,A0014,A0017</group>
+          <group preference="4">A0006,A0013,A0020</group>
+          <group preference="2">A0004,A0019</group>
+          <group preference="3">A0003</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="4">A0002,A0006,A0009,A0011,A0014,A0020</group>
+          <group preference="5">A0001,A0003,A0005,A0012,A0013</group>
+          <group preference="2">A0004,A0008,A0010,A0017,A0018</group>
+          <group preference="1">A0016,A0019</group>
+          <group preference="3">A0007,A0015</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0005,A0009,A0014,A0017,A0020</group>
+          <group preference="6">A0003,A0007,A0010,A0016</group>
+          <group preference="1">A0006,A0008,A0015,A0018</group>
+          <group preference="4">A0002,A0011,A0012,A0019</group>
+          <group preference="2">A0004,A0013</group>
+          <group preference="3">A0001</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Сидоров" weight="1.000">
+      <cpvs>
+        <criterion name="Качество">0.42822</criterion>
+        <criterion name="Стоимость">0.38402</criterion>
+        <criterion name="Надежность">0.18777</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0002,A0004,A0005,A0009,A0015,A0017,A0018,A0020</group>
+          <group preference="4">A0006,A0010,A0019</group>
+          <group preference="5">A0008,A0011,A0016</group>
+          <group preference="1">A0003,A0013,A0014</group>
+          <group preference="2">A0001,A0007,A0012</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="4">A0003,A0014,A0016,A0017,A0020</group>
+          <group preference="5">A0006,A0010,A0012,A0013,A0015</group>
+          <group preference="3">A0002,A0007,A0008,A0018</group>
+          <group preference="1">A0001,A0004,A0009,A0019</group>
+          <group preference="2">A0005,A0011</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="6">A0001,A0009,A0010,A0015,A0017,A0019</group>
+          <group preference="4">A0007,A0013,A0014,A0016,A0018,A0020</group>
+          <group preference="3">A0002,A0005,A0008,A0012</group>
+          <group preference="1">A0006,A0011</group>
+          <group preference="2">A0003,A0004</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Кузнецов" weight="0.858">
+      <cpvs>
+        <criterion name="Качество">0.61089</criterion>
+        <criterion name="Стоимость">0.21117</criterion>
+        <criterion name="Надежность">0.17794</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="4">A0002,A0004,A0009,A0010,A0018,A0020</group>
+          <group preference="3">A0007,A0014,A0016,A0019</group>
+          <group preference="5">A0005,A0006,A0008,A0011</group>
+          <group preference="2">A0001,A0012,A0015,A0017</group>
+          <group preference="1">A0003,A0013</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="5">A0006,A0008,A0010,A0011,A0017</group>
+          <group preference="6">A0007,A0009,A0012,A0019</group>
+          <group preference="3">A0014,A0015,A0020</group>
+          <group preference="4">A0001,A0013,A0016</group>
+          <group preference="1">A0004,A0005,A0018</group>
+          <group preference="2">A0002,A0003</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0002,A0007,A0009,A0014,A0016</group>
+          <group preference="4">A0001,A0005,A0012,A0015</group>
+          <group preference="6">A0003,A0006,A0013,A0019</group>
+          <group preference="3">A0010,A0011,A0017</group>
+          <group preference="1">A0004,A0020</group>
+          <group preference="2">A0008,A0018</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Смирнов" weight="0.785">
+      <cpvs>
+        <criterion name="Качество">0.57126</criterion>
+        <criterion name="Стоимость">0.29986</criterion>
+        <criterion name="Надежность">0.12889</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0001,A0003,A0010,A0013,A0015,A0016,A0019,A0020</group>
+          <group preference="1">A0006,A0007,A0014,A0018</group>
+          <group preference="5">A0002,A0004,A0008,A0012</group>
+          <group preference="2">A0011,A0017</group>
+          <group preference="3">A0005</group>
+          <group preference="4">A0009</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="6">A0001,A0002,A0009,A0015,A0017,A0018</group>
+          <group preference="4">A0008,A0013,A0014,A0016,A0020</group>
+          <group preference="5">A0004,A0005,A0010</group>
+          <group preference="1">A0003,A0011</group>
+          <group preference="2">A0007,A0019</group>
+          <group preference="3">A0006,A0012</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="6">A0002,A0009,A0010,A0014,A0020</group>
+          <group preference="4">A0003,A0004,A0005,A0006,A0016</group>
+          <group preference="2">A0007,A0008,A0012,A0013</group>
+          <group preference="1">A0001,A0011,A0017</group>
+          <group preference="3">A0015,A0018,A0019</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Попов" weight="0.846">
+      <cpvs>
+        <criterion name="Качество">0.55341</criterion>
+        <criterion name="Стоимость">0.27684</criterion>
+        <criterion name="Надежность">0.16976</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="4">A0003,A0005,A0008,A0011,A0016,A0020</group>
+          <group preference="3">A0002,A0004,A0007,A0017,A0019</group>
+          <group preference="5">A0009,A0010,A0013,A0018</group>
+          <group preference="1">A0001,A0014,A0015</group>
+          <group preference="2">A0006,A0012</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="4">A0002,A0005,A0011,A0016,A0017,A0018</group>
+          <group preference="3">A0001,A0006,A0007,A0014,A0020</group>
+          <group preference="5">A0003,A0009,A0013,A0019</group>
+          <group preference="1">A0004,A0008,A0012</group>
+          <group preference="2">A0010,A0015</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="7">A0003,A0006,A0008,A0015,A0018</group>
+          <group preference="6">A0002,A0007,A0011,A0016,A0017</group>
+          <group preference="3">A0013,A0019,A0020</group>
+          <group preference="4">A0001,A0010,A0014</group>
+          <group preference="5">A0005,A0009,A0012</group>
+          <group preference="1">A0004</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Лебедев" weight="0.796">
+      <cpvs>
+        <criterion name="Качество">0.53169</criterion>
+        <criterion name="Стоимость">0.32263</criterion>
+        <criterion name="Надежность">0.14569</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0008,A0013,A0014,A0015,A0017,A0020</group>
+          <group preference="1">A0001,A0007,A0011,A0012,A0019</group>
+          <group preference="2">A0003,A0005,A0016</group>
+          <group preference="3">A0006,A0009,A0018</group>
+          <group preference="4">A0002,A0004,A0010</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="6">A0006,A0010,A0016,A0018,A0019</group>
+          <group preference="3">A0001,A0008,A0011,A0014,A0020</group>
+          <group preference="4">A0002,A0003,A0009,A0017</group>
+          <group preference="2">A0004,A0012,A0013,A0015</group>
+          <group preference="1">A0005,A0007</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0003,A0004,A0007,A0011,A0012,A0013,A0015,A0016</group>
+          <group preference="6">A0001,A0002,A0009,A0017</group>
+          <group preference="1">A0005,A0014,A0019,A0020</group>
+          <group preference="2">A0006,A0010</group>
+          <group preference="3">A0018</group>
+          <group preference="4">A0008</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Козлов" weight="0.563">
+      <cpvs>
+        <criterion name="Качество">0.54396</criterion>
+        <criterion name="Стоимость">0.28646</criterion>
+        <criterion name="Надежность">0.16958</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0005,A0007,A0011,A0013,A0017,A0018</group>
+          <group preference="4">A0001,A0003,A0009,A0010,A0016</group>
+          <group preference="3">A0006,A0008,A0012,A0015</group>
+          <group preference="2">A0004,A0019,A0020</group>
+          <group preference="1">A0002,A0014</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="7">A0001,A0003,A0005,A0011,A0016</group>
+          <group preference="5">A0002,A0004,A0006,A0015,A0018</group>
+          <group preference="4">A0012,A0013,A0014</group>
+          <group preference="6">A0009,A0017,A0019</group>
+          <group preference="3">A0010,A0020</group>
+          <group preference="1">A0007,A0008</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0001,A0003,A0005,A0013,A0015,A0020</group>
+          <group preference="6">A0002,A0007,A0009,A0012,A0019</group>
+          <group preference="1">A0004,A0006,A0008,A0017</group>
+          <group preference="2">A0010,A0014</group>
+          <group preference="3">A0011,A0018</group>
+          <group preference="4">A0016</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Новиков" weight="0.805">
+      <cpvs>
+        <criterion name="Качество">0.70505</criterion>
+        <criterion name="Стоимость">0.21318</criterion>
+        <criterion name="Надежность">0.08177</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0001,A0004,A0006,A0012,A0018,A0020</group>
+          <group preference="3">A0007,A0010,A0011,A0013,A0017</group>
+          <group preference="2">A0003,A0009,A0015,A0019</group>
+          <group preference="1">A0002,A0005,A0008</group>
+          <group preference="4">A0014,A0016</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="5">A0002,A0005,A0009,A0011,A0020</group>
+          <group preference="6">A0003,A0008,A0015,A0016</group>
+          <group preference="1">A0007,A0010,A0014,A0019</group>
+          <group preference="3">A0004,A0006,A0017</group>
+          <group preference="2">A0012,A0013,A0018</group>
+          <group preference="4">A0001</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="7">A0006,A0012,A0013,A0015,A0020</group>
+          <group preference="6">A0005,A0014,A0017,A0019</group>
+          <group preference="4">A0007,A0008,A0009,A0016</group>
+          <group preference="2">A0003,A0010,A0011</group>
+          <group preference="3">A0001,A0004</group>
+          <group preference="1">A0002,A0018</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Морозов" weight="0.516">
+      <cpvs>
+        <criterion name="Качество">0.50704</criterion>
+        <criterion name="Стоимость">0.39006</criterion>
+        <criterion name="Надежность">0.10290</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="7">A0002,A0006,A0008,A0010,A0014,A0015,A0017,A0020</group>
+          <group preference="6">A0003,A0004,A0007,A0009</group>
+          <group preference="5">A0001,A0005,A0016</group>
+          <group preference="4">A0012,A0019</group>
+          <group preference="3">A0011,A0013</group>
+          <group preference="1">A0018</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="4">A0009,A0011,A0014,A0015,A0017,A0020</group>
+          <group preference="5">A0001,A0002,A0005,A0007,A0012</group>
+          <group preference="2">A0003,A0004,A0006,A0013</group>
+          <group preference="3">A0010,A0016,A0018,A0019</group>
+          <group preference="1">A0008</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0001,A0003,A0012,A0018,A0019</group>
+          <group preference="6">A0004,A0014,A0015,A0020</group>
+          <group preference="4">A0009,A0011,A0017</group>
+          <group preference="2">A0005,A0013,A0016</group>
+          <group preference="1">A0002,A0007,A0008</group>
+          <group preference="3">A0006,A0010</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Волков" weight="0.503">
+      <cpvs>
+        <criterion name="Качество">0.50944</criterion>
+        <criterion name="Стоимость">0.33925</criterion>
+        <criterion name="Надежность">0.15131</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0001,A0012,A0013,A0018</group>
+          <group preference="1">A0006,A0015,A0016,A0017</group>
+          <group preference="3">A0007,A0008,A0019,A0020</group>
+          <group preference="2">A0002,A0003,A0009,A0011</group>
+          <group preference="4">A0004,A0005,A0010</group>
+          <group preference="5">A0014</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="4">A0001,A0012,A0014,A0015,A0017,A0018,A0019</group>
+          <group preference="5">A0003,A0004,A0005,A0010,A0016</group>
+          <group preference="1">A0002,A0007,A0011,A0013</group>
+          <group preference="2">A0008,A0009</group>
+          <group preference="3">A0006,A0020</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0002,A0005,A0009,A0019,A0020</group>
+          <group preference="4">A0004,A0007,A0011,A0013,A0017</group>
+          <group preference="6">A0001,A0003,A0014</group>
+          <group preference="1">A0010,A0015,A0018</group>
+          <group preference="3">A0006,A0008,A0016</group>
+          <group preference="2">A0012</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Соловьев" weight="0.627">
+      <cpvs>
+        <criterion name="Качество">0.41202</criterion>
+        <criterion name="Стоимость">0.38828</criterion>
+        <criterion name="Надежность">0.19970</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0004,A0007,A0010,A0012,A0015</group>
+          <group preference="4">A0002,A0006,A0014,A0019</group>
+          <group preference="6">A0001,A0013,A0016,A0018</group>
+          <group preference="1">A0003,A0005,A0011</group>
+          <group preference="2">A0017,A0020</group>
+          <group preference="3">A0008,A0009</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="5">A0002,A0007,A0012,A0013,A0014,A0016</group>
+          <group preference="4">A0001,A0008,A0009,A0010,A0017,A0019</group>
+          <group preference="3">A0003,A0006,A0011,A0015,A0020</group>
+          <group preference="1">A0004,A0005</group>
+          <group preference="2">A0018</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="6">A0006,A0007,A0009,A0011,A0014,A0018</group>
+          <group preference="4">A0001,A0004,A0005,A0010,A0012</group>
+          <group preference="5">A0002,A0008,A0013,A0015,A0019</group>
+          <group preference="3">A0016,A0017</group>
+          <group preference="2">A0020</group>
+          <group preference="1">A0003</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Васильев" weight="0.699">
+      <cpvs>
+        <criterion name="Качество">0.55780</criterion>
+        <criterion name="Стоимость">0.27982</criterion>
+        <criterion name="Надежность">0.16238</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0003,A0008,A0012,A0013,A0016,A0019</group>
+          <group preference="1">A0006,A0009,A0010,A0011,A0020</group>
+          <group preference="4">A0001,A0002,A0005,A0014,A0017</group>
+          <group preference="2">A0007,A0015</group>
+          <group preference="3">A0004,A0018</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="6">A0001,A0002,A0004,A0005,A0007,A0015,A0019</group>
+          <group preference="3">A0003,A0010,A0011,A0013</group>
+          <group preference="2">A0009,A0016,A0017,A0018</group>
+          <group preference="4">A0008,A0012,A0014</group>
+          <group preference="5">A0006,A0020</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="6">A0001,A0002,A0003,A0005,A0008,A0011,A0013,A0017,A0020</group>
+          <group preference="4">A0004,A0007,A0010,A0012</group>
+          <group preference="3">A0009,A0014,A0016,A0019</group>
+          <group preference="2">A0006</group>
+          <group preference="5">A0015</group>
+          <group preference="1">A0018</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Зайцев" weight="0.397">
+      <cpvs>
+        <criterion name="Качество">0.47611</criterion>
+        <criterion name="Стоимость">0.41044</criterion>
+        <criterion name="Надежность">0.11345</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0002,A0007,A0009,A0010,A0012,A0016,A0018</group>
+          <group preference="5">A0004,A0013,A0015,A0017,A0020</group>
+          <group preference="4">A0001,A0003,A0006,A0019</group>
+          <group preference="1">A0008,A0011</group>
+          <group preference="2">A0014</group>
+          <group preference="3">A0005</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="5">A0002,A0008,A0009,A0011,A0013,A0019</group>
+          <group preference="1">A0003,A0007,A0012,A0014,A0017</group>
+          <group preference="2">A0004,A0016,A0018,A0020</group>
+          <group preference="3">A0001,A0006,A0010</group>
+          <group preference="4">A0005,A0015</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0005,A0007,A0010,A0013,A0014,A0017</group>
+          <group preference="3">A0011,A0012,A0016,A0019,A0020</group>
+          <group preference="2">A0001,A0006,A0009,A0018</group>
+          <group preference="1">A0003,A0008,A0015</group>
+          <group preference="4">A0002,A0004</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Павлов" weight="0.226">
+      <cpvs>
+        <criterion name="Качество">0.55492</criterion>
+        <criterion name="Стоимость">0.23514</criterion>
+        <criterion name="Надежность">0.20993</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="4">A0007,A0015,A0016,A0017,A0018,A0020</group>
+          <group preference="3">A0002,A0011,A0013,A0014,A0019</group>
+          <group preference="2">A0004,A0008,A0009,A0012</group>
+          <group preference="5">A0001,A0003,A0006,A0010</group>
+          <group preference="1">A0005</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="6">A0003,A0006,A0008,A0014,A0015</group>
+          <group preference="1">A0007,A0011,A0012,A0016</group>
+          <group preference="3">A0005,A0019,A0020</group>
+          <group preference="4">A0002,A0017,A0018</group>
+          <group preference="2">A0001,A0009,A0013</group>
+          <group preference="5">A0004,A0010</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="7">A0001,A0002,A0003,A0005,A0015,A0016,A0020</group>
+          <group preference="5">A0010,A0013,A0017,A0018,A0019</group>
+          <group preference="4">A0004,A0009,A0012</group>
+          <group preference="6">A0007,A0014</group>
+          <group preference="3">A0008,A0011</group>
+          <group preference="1">A0006</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Семенов" weight="0.367">
+      <cpvs>
+        <criterion name="Качество">0.57880</criterion>
+        <criterion name="Стоимость">0.23984</criterion>
+        <criterion name="Надежность">0.18136</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0005,A0006,A0009,A0010,A0017,A0019,A0020</group>
+          <group preference="4">A0002,A0004,A0007,A0011,A0012,A0014</group>
+          <group preference="2">A0001,A0003,A0018</group>
+          <group preference="3">A0013,A0016</group>
+          <group preference="1">A0008,A0015</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="7">A0001,A0003,A0004,A0008,A0009,A0010,A0016,A0019</group>
+          <group preference="5">A0005,A0012,A0013,A0017</group>
+          <group preference="6">A0006,A0007,A0014</group>
+          <group preference="4">A0011,A0020</group>
+          <group preference="2">A0002,A0015</group>
+          <group preference="1">A0018</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="6">A0002,A0008,A0016,A0017,A0020</group>
+          <group preference="3">A0010,A0012,A0015,A0019</group>
+          <group preference="4">A0005,A0007,A0009,A0011</group>
+          <group preference="5">A0001,A0006,A0014,A0018</group>
+          <group preference="1">A0003,A0004,A0013</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Голубев" weight="0.550">
+      <cpvs>
+        <criterion name="Качество">0.68832</criterion>
+        <criterion name="Стоимость">0.16975</criterion>
+        <criterion name="Надежность">0.14193</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="4">A0005,A0006,A0010,A0015,A0019</group>
+          <group preference="5">A0003,A0009,A0014,A0016,A0018</group>
+          <group preference="3">A0002,A0004,A0012,A0020</group>
+          <group preference="2">A0001,A0011,A0017</group>
+          <group preference="1">A0007,A0008,A0013</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="5">A0001,A0004,A0006,A0009,A0019</group>
+          <group preference="6">A0005,A0010,A0011,A0014,A0018</group>
+          <group preference="3">A0002,A0007,A0015,A0016</group>
+          <group preference="4">A0012,A0013,A0017</group>
+          <group preference="1">A0008,A0020</group>
+          <group preference="2">A0003</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0001,A0008,A0012,A0014,A0015</group>
+          <group preference="6">A0002,A0004,A0009,A0013,A0019</group>
+          <group preference="1">A0006,A0011,A0016,A0020</group>
+          <group preference="2">A0003,A0010,A0017</group>
+          <group preference="3">A0005,A0018</group>
+          <group preference="4">A0007</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Виноградов" weight="0.602">
+      <cpvs>
+        <criterion name="Качество">0.71746</criterion>
+        <criterion name="Стоимость">0.18661</criterion>
+        <criterion name="Надежность">0.09593</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="6">A0001,A0003,A0004,A0007,A0008,A0020</group>
+          <group preference="4">A0005,A0006,A0012,A0015,A0017,A0019</group>
+          <group preference="3">A0002,A0013,A0014,A0018</group>
+          <group preference="5">A0010,A0011,A0016</group>
+          <group preference="2">A0009</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="4">A0005,A0007,A0013,A0014,A0015,A0020</group>
+          <group preference="3">A0006,A0008,A0009,A0017,A0019</group>
+          <group preference="2">A0003,A0010,A0011,A0012</group>
+          <group preference="5">A0002,A0016,A0018</group>
+          <group preference="1">A0001,A0004</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="7">A0001,A0004,A0005,A0010,A0012,A0014,A0016,A0020</group>
+          <group preference="6">A0006,A0009,A0011,A0013,A0019</group>
+          <group preference="5">A0008,A0017,A0018</group>
+          <group preference="2">A0003,A0007</group>
+          <group preference="3">A0002</group>
+          <group preference="1">A0015</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Богданов" weight="0.367">
+      <cpvs>
+        <criterion name="Качество">0.59038</criterion>
+        <criterion name="Стоимость">0.32178</criterion>
+        <criterion name="Надежность">0.08784</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0003,A0012,A0015,A0016,A0018</group>
+          <group preference="4">A0002,A0007,A0008,A0017,A0020</group>
+          <group preference="6">A0004,A0009,A0013</group>
+          <group preference="2">A0001,A0011,A0014</group>
+          <group preference="1">A0010,A0019</group>
+          <group preference="3">A0005,A0006</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="7">A0006,A0007,A0008,A0010,A0016,A0018,A0020</group>
+          <group preference="5">A0003,A0004,A0014,A0015,A0019</group>
+          <group preference="4">A0001,A0009,A0012,A0017</group>
+          <group preference="6">A0011,A0013</group>
+          <group preference="2">A0005</group>
+          <group preference="1">A0002</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0002,A0006,A0009,A0019,A0020</group>
+          <group preference="6">A0001,A0003,A0012,A0018</group>
+          <group preference="4">A0004,A0005,A0007,A0015</group>
+          <group preference="2">A0013,A0016,A0017</group>
+          <group preference="3">A0010,A0011</group>
+          <group preference="1">A0008,A0014</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="Воробьев" weight="0.478">
+      <cpvs>
+        <criterion name="Качество">0.60664</criterion>
+        <criterion name="Стоимость">0.27211</criterion>
+        <criterion name="Надежность">0.12125</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="Качество">
+          <group preference="5">A0001,A0002,A0003,A0007,A0008,A0010,A0013,A0014,A0015,A0017</group>
+          <group preference="1">A0005,A0011,A0019</group>
+          <group preference="2">A0012,A0016,A0020</group>
+          <group preference="3">A0004,A0018</group>
+          <group preference="4">A0006,A0009</group>
+        </criterion>
+        <criterion name="Стоимость">
+          <group preference="7">A0005,A0007,A0011,A0012,A0016,A0017,A0020</group>
+          <group preference="5">A0001,A0009,A0014,A0019</group>
+          <group preference="6">A0003,A0008,A0010,A0015</group>
+          <group preference="4">A0004,A0013</group>
+          <group preference="2">A0002,A0018</group>
+          <group preference="1">A0006</group>
+        </criterion>
+        <criterion name="Надежность">
+          <group preference="5">A0006,A0012,A0014,A0016,A0017,A0020</group>
+          <group preference="1">A0001,A0005,A0009,A0010,A0015,A0019</group>
+          <group preference="2">A0002,A0004,A0008,A0013</group>
+          <group preference="3">A0003,A0007,A0018</group>
+          <group preference="4">A0011</group>
+        </criterion>
+      </preferences>
+    </expert>
+  </experts>
+</ds_ahp_gdm_analysis>

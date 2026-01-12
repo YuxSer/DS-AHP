@@ -16,13 +16,6 @@ class ExpertManager:
     """
 
     def __init__(self, alternatives: List[str], criteria: List[str]):
-        """
-        Инициализация менеджера экспертов
-
-        Args:
-            alternatives: список всех альтернатив
-            criteria: список критериев
-        """
         self.alternatives = alternatives
         self.criteria = criteria
 
@@ -50,21 +43,6 @@ class ExpertManager:
     def add_expert(self, name: str, weight: float,
                    cpvs: Dict[str, float],
                    preferences: Dict[str, Dict[str, int]]) -> bool:
-        """
-        Добавление эксперта в систему
-
-        Args:
-            name: имя эксперта
-            weight: вес важности эксперта (0-1)
-            cpvs: словарь CPV по критериям
-            preferences: предпочтения по критериям
-
-        Returns:
-            True если успешно
-        """
-        # Проверка данных
-        if not self.validate_expert_data(name, weight, cpvs, preferences):
-            return False
 
         # Сохраняем данные эксперта
         self.experts[name] = {
@@ -78,33 +56,6 @@ class ExpertManager:
         print(f"✅ Добавлен эксперт: {name}")
         print(f"   Вес: {weight}")
         print(f"   CPV: {cpvs}")
-
-        return True
-
-    def validate_expert_data(self, name: str, weight: float,
-                              cpvs: Dict[str, float],
-                              preferences: Dict[str, Dict[str, int]]) -> bool:
-        """Проверка корректности данных эксперта"""
-
-        # Проверка имени
-        if not name or name.strip() == "":
-            print(f"❌ Пустое имя эксперта")
-            return False
-
-        # Проверка веса
-        if weight < 0 or weight > 1:
-            print(f"❌ Вес эксперта {name} = {weight} вне диапазона [0, 1]")
-            return False
-
-        # Проверка CPV
-        if not Utils.validate_cpvs(cpvs, self.criteria):
-            print(f"❌ Некорректные CPV для эксперта {name}")
-            return False
-
-        # Проверка предпочтений
-        if not Utils.validate_preferences(preferences, self.alternatives):
-            print(f"❌ Некорректные предпочтения для эксперта {name}")
-            return False
 
         return True
 

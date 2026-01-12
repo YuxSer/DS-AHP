@@ -4,161 +4,194 @@ from xml.dom import minidom
 import os
 from datetime import datetime
 from typing import List, Dict, Tuple, Set
-import itertools
-
 
 class XMLDataGenerator:
-    """Генератор XML файлов для DS/AHP-GDM"""
-
     def __init__(self, seed: int = None):
-
         if seed is not None:
             random.seed(seed)
         self.generated_files = []
 
     def generate_alternatives(self, n: int) -> List[str]:
-        if n < 1:
-            n = 1
-        elif n > 100:
-            n = 100
+        """Генерация n альтернатив"""
+        if n <= 0:
+            return []
 
-        return [f"A{i:03d}" for i in range(1, n + 1)]
+        # Для больших наборов используем компактный формат
+        if n <= 1000:
+            return [f"A{i:04d}" for i in range(1, n + 1)]
+        else:
+            return [f"A{i}" for i in range(1, n + 1)]
 
     def generate_criteria(self, m: int) -> List[str]:
         """
         Генерация m критериев
-
-        Args:
-            m: количество критериев (1-10)
-
-        Returns:
-            Список критериев
         """
+        if m <= 0:
+            return []
+
         base_criteria = [
             "Качество", "Стоимость", "Надежность", "Удобство", "Производительность",
-            "Безопасность", "Экологичность", "Срок службы", "Гарантия", "Поддержка"
+            "Безопасность", "Экологичность", "Срок_службы", "Гарантия", "Поддержка",
+            "Гибкость", "Совместимость", "Масштабируемость", "Простота_использования",
+            "Техподдержка", "Документация", "Сообщество", "Обновления", "Интеграция",
+            "Кастомизация", "Рентабельность", "Доступность", "Инновационность",
+            "Стабильность", "Сервис", "Репутация", "Опыт", "Квалификация", "Ресурсы"
         ]
 
         if m <= len(base_criteria):
             return base_criteria[:m]
         else:
-            return [f"Критерий_{i + 1}" for i in range(m)]
+            # Генерируем дополнительные критерии
+            additional = m - len(base_criteria)
+            return base_criteria + [f"Критерий_{i + 30}" for i in range(additional)]
 
     def generate_expert_names(self, k: int) -> List[str]:
         """
         Генерация имен экспертов
-
-        Args:
-            k: количество экспертов (1-10)
-
-        Returns:
-            Список имен экспертов
         """
+        if k <= 0:
+            return []
+
         base_names = ["Иванов", "Петров", "Сидоров", "Кузнецов", "Смирнов",
-                      "Попов", "Лебедев", "Козлов", "Новиков", "Морозов"]
+                      "Попов", "Лебедев", "Козлов", "Новиков", "Морозов",
+                      "Волков", "Соловьев", "Васильев", "Зайцев", "Павлов",
+                      "Семенов", "Голубев", "Виноградов", "Богданов", "Воробьев",
+                      "Федоров", "Михайлов", "Беляев", "Тарасов", "Белов",
+                      "Комаров", "Орлов", "Киселев", "Макаров", "Андреев",
+                      "Николаев", "Максимов", "Осипов", "Марков", "Гусев",
+                      "Титов", "Кузьмин", "Кудрявцев", "Баранов", "Куликов"]
 
         if k <= len(base_names):
             return base_names[:k]
         else:
-            return [f"Эксперт_{i + 1}" for i in range(k)]
+            # Генерируем дополнительные имена
+            additional = k - len(base_names)
+            result = base_names.copy()
+
+            for i in range(additional):
+                if i < 100:
+                    result.append(f"Эксперт_{i + 41}")
+                else:
+                    result.append(f"Expert_{i + 1}")
+
+            return result
 
     def generate_expert_weights(self, k: int,
-                                distribution: str = "uniform") -> List[float]:
+                                distribution: str = "random") -> List[float]:
         """
-        Генерация весов экспертов
-
-        Args:
-            k: количество экспертов
-            distribution: тип распределения ('uniform', 'decreasing', 'equal')
-
-        Returns:
-            Список весов экспертов
+        Генерация весов экспертов (оптимизированная для больших наборов)
         """
+        if k <= 0:
+            return []
+
         if distribution == "equal":
             return [1.0] * k
         elif distribution == "decreasing":
-            # Веса уменьшаются от 1.0
+            if k == 1:
+                return [1.0]
             weights = [1.0 - i * 0.8 / (k - 1) for i in range(k)]
-            return [max(w, 0.1) for w in weights]  # Минимум 0.1
-        else:  # uniform
-            return [round(random.uniform(0.3, 1.0), 2) for _ in range(k)]
+            return [max(w, 0.1) for w in weights]
+        else:  # random (оптимизированный)
+            if k == 1:
+                return [1.0]
+
+            # Генерируем случайные веса с разными распределениями
+            weights = []
+            for i in range(k):
+                if i < k // 3:
+                    # Первая треть - более высокие веса
+                    weight = random.uniform(0.7, 1.0)
+                elif i < 2 * k // 3:
+                    # Вторая треть - средние веса
+                    weight = random.uniform(0.4, 0.8)
+                else:
+                    # Последняя треть - более низкие веса
+                    weight = random.uniform(0.2, 0.6)
+
+                weights.append(round(weight, 3))
+
+            # Нормализуем чтобы максимальный был 1.0
+            max_weight = max(weights)
+            if max_weight > 0:
+                weights = [round(w / max_weight, 3) for w in weights]
+
+            return weights
 
     def generate_cpvs(self, criteria: List[str]) -> Dict[str, float]:
-        """
-        Абсолютно надежный метод генерации CPV
 
-        Генерирует целые числа, затем нормализует
-        """
         n = len(criteria)
 
+        if n == 0:
+            return {}
         if n == 1:
             return {criteria[0]: 1.0}
 
-        # Генерируем целые числа от 1 до 10
-        int_values = [random.randint(1, 10) for _ in range(n)]
+        # Генерируем случайные значения
+        values = []
+        for i in range(n):
+            # Используем разные распределения для разнообразия
+            if i < n // 3:
+                # Первая треть - более высокие значения
+                value = random.uniform(5, 10)
+            elif i < 2 * n // 3:
+                # Вторая треть - средние значения
+                value = random.uniform(2, 6)
+            else:
+                # Последняя треть - более низкие значения
+                value = random.uniform(1, 3)
+            values.append(value)
 
-        # Нормализуем к сумме 1.0
-        total = sum(int_values)
+        # Нормализуем
+        total = sum(values)
         cpvs = {}
 
         for i, criterion in enumerate(criteria):
-            cpv = int_values[i] / total
-
-            # Округляем до 3 знаков
-            cpvs[criterion] = round(cpv, 3)
-
-        # Корректируем последнее значение для точной суммы
-        current_sum = sum(cpvs.values())
-        if abs(current_sum - 1.0) > 0.0001:
-            last_criterion = criteria[-1]
-            cpvs[last_criterion] = round(cpvs[last_criterion] + (1.0 - current_sum), 3)
-
-        # Финальная проверка
-        final_sum = sum(cpvs.values())
-        if abs(final_sum - 1.0) > 0.001:
-            # Экстренная корректировка
-            equal_value = round(1.0 / n, 3)
-            cpvs = {c: equal_value for c in criteria}
-
-            # Подгоняем сумму
-            adjusted_sum = sum(cpvs.values())
-            if adjusted_sum != 1.0:
-                cpvs[criteria[0]] = round(cpvs[criteria[0]] + (1.0 - adjusted_sum), 3)
+            cpv = values[i] / total
+            # Округляем до 5 знаков для большей точности
+            cpvs[criterion] = round(cpv, 5)
 
         return cpvs
 
     def generate_preferences_for_expert(self, alternatives: List[str],
-                                        criteria: List[str],
-                                        min_groups_per_criterion: int = 2,
-                                        max_groups_per_criterion: int = 5) -> Dict[str, Dict[str, int]]:
+                                        criteria: List[str]) -> Dict[str, Dict[str, int]]:
         """
-        Генерация предпочтений для одного эксперта
-
-        Важно: Каждая альтернатива должна встречаться ровно 1 раз в каждом критерии
+        Оптимизированная генерация предпочтений для больших наборов
         """
         preferences = {}
         n = len(alternatives)
+
+        if n == 0:
+            return {}
 
         for criterion in criteria:
             # Создаем копию альтернатив для перемешивания
             shuffled_alts = alternatives.copy()
             random.shuffle(shuffled_alts)
 
-            # Определяем количество групп для этого критерия
-            num_groups = random.randint(min_groups_per_criterion,
-                                        min(max_groups_per_criterion, n // 2))
+            # Определяем количество групп (от 2 до min(20, n/3))
+            max_groups = min(20, max(2, n // 3))
+            min_groups = min(5, max_groups)
+
+            num_groups = random.randint(min_groups, max_groups)
 
             # Распределяем альтернативы по группам
             groups = []
             remaining_alts = shuffled_alts.copy()
 
-            # Создаем группы
-            for i in range(num_groups - 1):
-                # Определяем размер группы (минимум 1, максимум оставшиеся/2)
-                max_size = max(1, len(remaining_alts) - (num_groups - i - 1))
-                group_size = random.randint(1, min(3, max_size))
+            # Создаем группы с оптимальным размером
+            avg_group_size = max(1, n // num_groups)
 
-                # Берем альтернативы для группы
+            for i in range(num_groups - 1):
+                # Размер группы варьируется вокруг среднего
+                min_size = max(1, avg_group_size - 2)
+                max_size = min(len(remaining_alts) - (num_groups - i - 1),
+                               avg_group_size + 2)
+
+                if max_size < min_size:
+                    group_size = min_size
+                else:
+                    group_size = random.randint(min_size, max_size)
+
                 group = remaining_alts[:group_size]
                 groups.append(group)
                 remaining_alts = remaining_alts[group_size:]
@@ -166,116 +199,62 @@ class XMLDataGenerator:
             # Последняя группа получает все оставшиеся альтернативы
             if remaining_alts:
                 groups.append(remaining_alts)
-            else:
-                # Если альтернатив не осталось, добавляем одну из существующих групп
-                if groups:
-                    group_to_split = random.choice(groups)
-                    if len(group_to_split) > 1:
-                        split_point = random.randint(1, len(group_to_split) - 1)
-                        new_group = group_to_split[split_point:]
-                        group_to_split = group_to_split[:split_point]
-                        groups.append(new_group)
 
-            # Назначаем предпочтения группам (шкала 1-7)
-            # Сортируем группы по количеству альтернатив (большие группы получают более высокие предпочтения)
+            # Назначаем предпочтения группам
             groups_sorted = sorted(groups, key=len, reverse=True)
+
+            # Определяем максимальное предпочтение
+            max_pref = min(15, len(groups_sorted))
+            if len(groups_sorted) > 15:
+                max_pref = len(groups_sorted)
 
             criterion_preferences = {}
             used_preferences = set()
 
             for i, group in enumerate(groups_sorted):
-                # Вычисляем базовое предпочтение (от 7 до 1)
-                base_pref = 7 - i
+                # Вычисляем базовое предпочтение
+                base_pref = max_pref - i
                 if base_pref < 1:
                     base_pref = 1
 
-                # Добавляем небольшую случайную вариацию
-                pref = base_pref + random.randint(-1, 1)
-                pref = max(1, min(7, pref))
+                # Добавляем небольшую вариацию
+                if len(groups_sorted) <= 10:
+                    pref = base_pref + random.randint(-1, 1)
+                else:
+                    pref = base_pref
+
+                pref = max(1, pref)
 
                 # Убеждаемся, что предпочтения уникальны
-                while pref in used_preferences:
-                    pref += random.choice([-1, 1])
-                    pref = max(1, min(7, pref))
+                attempts = 0
+                while pref in used_preferences and attempts < 5:
+                    pref = (pref % max_pref) + 1
+                    attempts += 1
 
                 used_preferences.add(pref)
 
-                # Форматируем группу как строку
+                # Форматируем группу
                 group_str = ",".join(sorted(group))
                 criterion_preferences[group_str] = pref
 
             preferences[criterion] = criterion_preferences
 
-            # ПРОВЕРКА: каждая альтернатива должна встречаться ровно 1 раз
-            all_alts_in_groups = []
-            for group in groups:
-                all_alts_in_groups.extend(group)
-
-            if sorted(all_alts_in_groups) != sorted(alternatives):
-                print(f"⚠️  Ошибка: не все альтернативы учтены в критерии {criterion}")
-                print(f"  Учтено: {len(all_alts_in_groups)} из {len(alternatives)}")
-                # Исправляем: находим пропущенные альтернативы
-                missing = set(alternatives) - set(all_alts_in_groups)
-                duplicates = set([x for x in all_alts_in_groups if all_alts_in_groups.count(x) > 1])
-
-                if missing:
-                    print(f"  Пропущены: {missing}")
-                    # Добавляем пропущенные в случайную группу
-                    for alt in missing:
-                        random.choice(groups).append(alt)
-
-                if duplicates:
-                    print(f"  Дубликаты: {duplicates}")
-
         return preferences
 
-    def validate_preferences(self, preferences: Dict[str, Dict[str, int]],
-                             alternatives: List[str]) -> bool:
-        """
-        Валидация предпочтений
-
-        Проверяет, что каждая альтернатива встречается ровно 1 раз в каждом критерии
-        """
-        for criterion, groups in preferences.items():
-            all_alts_in_criterion = []
-
-            for group_str in groups.keys():
-                group_alts = [alt.strip() for alt in group_str.split(',')]
-                all_alts_in_criterion.extend(group_alts)
-
-            # Проверяем количество
-            if len(all_alts_in_criterion) != len(alternatives):
-                print(f"❌ Критерий {criterion}: {len(all_alts_in_criterion)} альтернатив вместо {len(alternatives)}")
-                return False
-
-            # Проверяем уникальность
-            if len(set(all_alts_in_criterion)) != len(alternatives):
-                duplicates = [x for x in all_alts_in_criterion if all_alts_in_criterion.count(x) > 1]
-                print(f"❌ Критерий {criterion}: дубликаты {duplicates}")
-                return False
-
-            # Проверяем, что все альтернативы присутствуют
-            missing = set(alternatives) - set(all_alts_in_criterion)
-            if missing:
-                print(f"❌ Критерий {criterion}: пропущены {missing}")
-                return False
-
-        return True
-
     def generate_dataset(self,
-                         n_alternatives: int = 10,
-                         m_criteria: int = 3,
-                         k_experts: int = 4,
-                         weight_distribution: str = "uniform",
+                         n_alternatives: int = 50,
+                         m_criteria: int = 8,
+                         k_experts: int = 12,
+                         weight_distribution: str = "random",
                          output_dir: str = "generated_xml") -> Dict:
         print("\n" + "=" * 70)
-        print("ГЕНЕРАЦИЯ ДАННЫХ ДЛЯ DS/AHP-GDM")
+        print("ГЕНЕРАЦИЯ ОПТИМИЗИРОВАННЫХ ДАННЫХ ДЛЯ DS/AHP-GDM")
         print("=" * 70)
 
-        # Ограничиваем значения
-        n_alternatives = max(1, min(100, n_alternatives))
-        m_criteria = max(1, min(10, m_criteria))
-        k_experts = max(1, min(10, k_experts))
+        # Проверяем и корректируем значения
+        n_alternatives = max(1, min(1000, n_alternatives))
+        m_criteria = max(1, min(100, m_criteria))
+        k_experts = max(1, min(200, k_experts))
 
         print(f"\n Параметры генерации:")
         print(f"  • Альтернатив: {n_alternatives}")
@@ -290,46 +269,34 @@ class XMLDataGenerator:
         expert_weights = self.generate_expert_weights(k_experts, weight_distribution)
 
         print(f"\n✅ Сгенерированы базовые структуры:")
-        print(f"  Альтернативы: {alternatives[:5]}{'...' if len(alternatives) > 5 else ''}")
-        print(f"  Критерии: {criteria}")
-        print(f"  Эксперты: {expert_names}")
-        print(f"  Веса экспертов: {expert_weights}")
+        print(f"  Альтернативы: первые 5 - {alternatives[:5]}")
+        print(f"  Критерии: первые 5 - {criteria[:5]}")
+        print(f"  Эксперты: первые 5 - {expert_names[:5]}")
 
         # Генерируем данные для каждого эксперта
         experts_data = {}
 
         print(f"\n🔧 Генерация данных экспертов...")
 
+        # Прогресс-бар
+        progress_step = max(1, k_experts // 10)
+
         for i, expert_name in enumerate(expert_names):
-            print(f"  Эксперт {i + 1}: {expert_name} (вес: {expert_weights[i]})")
+            if i % progress_step == 0:
+                progress = (i + 1) / k_experts * 100
+                print(f"  Прогресс: {progress:.0f}% ({i + 1}/{k_experts})")
 
             # Генерируем CPV
             cpvs = self.generate_cpvs(criteria)
 
             # Генерируем предпочтения
-            preferences = self.generate_preferences_for_expert(
-                alternatives, criteria,
-                min_groups_per_criterion=2,
-                max_groups_per_criterion=min(5, n_alternatives // 2)
-            )
-
-            # Валидируем предпочтения
-            if not self.validate_preferences(preferences, alternatives):
-                print(f"  ⚠️  Проблемы с валидацией предпочтений для эксперта {expert_name}")
-                print(f"   Исправление...")
-                # Исправляем предпочтения
-                preferences = self.fix_preferences(preferences, alternatives, criteria)
+            preferences = self.generate_preferences_for_expert(alternatives, criteria)
 
             experts_data[expert_name] = {
                 'weight': expert_weights[i],
                 'cpvs': cpvs,
                 'preferences': preferences
             }
-
-            # Выводим краткую информацию
-            total_groups = sum(len(groups) for groups in preferences.values())
-            print(f"    • CPV: {cpvs}")
-            print(f"    • Групп предпочтений: {total_groups}")
 
         # Формируем итоговый набор
         dataset = {
@@ -339,7 +306,8 @@ class XMLDataGenerator:
                     'n_alternatives': n_alternatives,
                     'm_criteria': m_criteria,
                     'k_experts': k_experts,
-                    'weight_distribution': weight_distribution
+                    'weight_distribution': weight_distribution,
+                    'generator': 'XMLDataGenerator_optimized'
                 }
             },
             'alternatives': alternatives,
@@ -347,183 +315,10 @@ class XMLDataGenerator:
             'experts': experts_data
         }
 
-        # Выводим сводку
-        self.print_summary(dataset)
-
         # Сохраняем в XML
         xml_file = self.save_to_xml(dataset, output_dir)
 
         return dataset, xml_file
-
-    def fix_preferences(self, preferences: Dict[str, Dict[str, int]],
-                         alternatives: List[str],
-                         criteria: List[str]) -> Dict[str, Dict[str, int]]:
-        """
-        Исправление предпочтений, чтобы каждая альтернатива встречалась ровно 1 раз
-        """
-        fixed_preferences = {}
-
-        for criterion in criteria:
-            if criterion not in preferences:
-                # Создаем новые предпочтения для этого критерия
-                groups = []
-                shuffled_alts = alternatives.copy()
-                random.shuffle(shuffled_alts)
-
-                # Разбиваем на 2-5 групп
-                num_groups = random.randint(2, min(5, len(alternatives) // 2))
-
-                for i in range(num_groups - 1):
-                    group_size = random.randint(1, len(shuffled_alts) - (num_groups - i - 1))
-                    group = shuffled_alts[:group_size]
-                    groups.append(group)
-                    shuffled_alts = shuffled_alts[group_size:]
-
-                if shuffled_alts:
-                    groups.append(shuffled_alts)
-
-                # Назначаем предпочтения
-                criterion_prefs = {}
-                groups_sorted = sorted(groups, key=len, reverse=True)
-                used_prefs = set()
-
-                for i, group in enumerate(groups_sorted):
-                    base_pref = 7 - i
-                    if base_pref < 1:
-                        base_pref = 1
-
-                    pref = base_pref + random.randint(-1, 1)
-                    pref = max(1, min(7, pref))
-
-                    while pref in used_prefs:
-                        pref += random.choice([-1, 1])
-                        pref = max(1, min(7, pref))
-
-                    used_prefs.add(pref)
-                    group_str = ",".join(sorted(group))
-                    criterion_prefs[group_str] = pref
-
-                fixed_preferences[criterion] = criterion_prefs
-            else:
-                # Исправляем существующие предпочтения
-                original_groups = list(preferences[criterion].keys())
-                original_prefs = list(preferences[criterion].values())
-
-                # Собираем все альтернативы из групп
-                all_alts = []
-                for group_str in original_groups:
-                    group_alts = [alt.strip() for alt in group_str.split(',')]
-                    all_alts.extend(group_alts)
-
-                # Находим проблемы
-                alt_counts = {}
-                for alt in all_alts:
-                    alt_counts[alt] = alt_counts.get(alt, 0) + 1
-
-                missing_alts = set(alternatives) - set(all_alts)
-                duplicate_alts = {alt for alt, count in alt_counts.items() if count > 1}
-
-                if not missing_alts and not duplicate_alts:
-                    # Все в порядке
-                    fixed_preferences[criterion] = preferences[criterion]
-                    continue
-
-                # Исправляем: сначала удаляем дубликаты
-                fixed_groups = []
-                used_alts = set()
-
-                for group_str in original_groups:
-                    group_alts = [alt.strip() for alt in group_str.split(',')]
-                    # Убираем дубликаты
-                    unique_alts = []
-                    for alt in group_alts:
-                        if alt not in used_alts:
-                            unique_alts.append(alt)
-                            used_alts.add(alt)
-
-                    if unique_alts:
-                        fixed_groups.append(unique_alts)
-
-                # Добавляем пропущенные альтернативы
-                for alt in missing_alts:
-                    if alt not in used_alts:
-                        # Добавляем в случайную группу
-                        if fixed_groups:
-                            random.choice(fixed_groups).append(alt)
-                            used_alts.add(alt)
-                        else:
-                            fixed_groups.append([alt])
-                            used_alts.add(alt)
-
-                # Создаем фиксированные предпочтения
-                fixed_prefs = {}
-                groups_sorted = sorted(fixed_groups, key=len, reverse=True)
-
-                # Используем оригинальные предпочтения, если возможно
-                for i, group in enumerate(groups_sorted):
-                    group_str = ",".join(sorted(group))
-
-                    if i < len(original_prefs):
-                        pref = original_prefs[i]
-                    else:
-                        base_pref = 7 - i
-                        if base_pref < 1:
-                            base_pref = 1
-                        pref = base_pref
-
-                    fixed_prefs[group_str] = pref
-
-                fixed_preferences[criterion] = fixed_prefs
-
-        return fixed_preferences
-
-    def print_summary(self, dataset: Dict):
-        """Вывод сводки по сгенерированным данным"""
-        print("\n" + "=" * 70)
-        print("СВОДКА ПО СГЕНЕРИРОВАННЫМ ДАННЫМ")
-        print("=" * 70)
-
-        alternatives = dataset['alternatives']
-        criteria = dataset['criteria']
-        experts = dataset['experts']
-
-        print(f"\n Общая информация:")
-        print(f"  • Альтернатив: {len(alternatives)}")
-        print(f"  • Критериев: {len(criteria)}")
-        print(f"  • Экспертов: {len(experts)}")
-
-        print(f"\n Проверка корректности:")
-
-        # Проверяем каждого эксперта
-        all_valid = True
-
-        for expert_name, expert_data in experts.items():
-            print(f"\n Эксперт: {expert_name}")
-            print(f"    • Вес: {expert_data['weight']}")
-            print(f"    • Сумма CPV: {sum(expert_data['cpvs'].values()):.3f}")
-
-            # Проверяем предпочтения
-            preferences = expert_data['preferences']
-            is_valid = self.validate_preferences(preferences, alternatives)
-
-            if is_valid:
-                print(f"    • ✅ Предпочтения корректны")
-
-                # Считаем статистику по группам
-                total_groups = sum(len(groups) for groups in preferences.values())
-                avg_group_size = sum(len(group_str.split(',')) for criterion_groups in preferences.values()
-                                     for group_str in criterion_groups.keys()) / total_groups if total_groups > 0 else 0
-
-                print(f"    • Групп: {total_groups}")
-                print(f"    • Средний размер группы: {avg_group_size:.1f}")
-            else:
-                print(f"    • ❌ Предпочтения содержат ошибки")
-                all_valid = False
-
-        if all_valid:
-            print(f"\n ВСЕ ДАННЫЕ КОРРЕКТНЫ!")
-        else:
-            print(f"\n⚠️  Обнаружены проблемы в данных")
 
     def save_to_xml(self, dataset: Dict, output_dir: str = "generated_xml") -> str:
         # Создаем директорию если нужно
@@ -542,7 +337,7 @@ class XMLDataGenerator:
         root = ET.Element('ds_ahp_gdm_analysis')
 
         # Добавляем комментарий
-        comment = ET.Comment(' Сгенерировано XMLDataGenerator для DS/AHP-GDM ')
+        comment = ET.Comment(' Сгенерировано оптимизированным XMLDataGenerator для DS/AHP-GDM ')
         root.append(comment)
 
         # Метаданные
@@ -566,6 +361,8 @@ class XMLDataGenerator:
         gen_info.set('n_alternatives', str(dataset['metadata']['parameters']['n_alternatives']))
         gen_info.set('n_criteria', str(dataset['metadata']['parameters']['m_criteria']))
         gen_info.set('n_experts', str(dataset['metadata']['parameters']['k_experts']))
+        gen_info.set('weight_distribution', dataset['metadata']['parameters']['weight_distribution'])
+        gen_info.set('generator', dataset['metadata']['parameters']['generator'])
 
         # Эксперты
         experts_root = ET.SubElement(root, 'experts')
@@ -573,14 +370,14 @@ class XMLDataGenerator:
         for expert_name, expert_data in dataset['experts'].items():
             expert_elem = ET.SubElement(experts_root, 'expert')
             expert_elem.set('name', expert_name)
-            expert_elem.set('weight', f"{expert_data['weight']:.2f}")
+            expert_elem.set('weight', f"{expert_data['weight']:.3f}")
 
             # CPV
             cpvs_elem = ET.SubElement(expert_elem, 'cpvs')
             for criterion, cpv in expert_data['cpvs'].items():
                 criterion_elem = ET.SubElement(cpvs_elem, 'criterion')
                 criterion_elem.set('name', criterion)
-                criterion_elem.text = f"{cpv:.3f}"
+                criterion_elem.text = f"{cpv:.5f}"
 
             # Предпочтения
             prefs_elem = ET.SubElement(expert_elem, 'preferences')
@@ -600,7 +397,6 @@ class XMLDataGenerator:
         xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>\n'
         full_xml = xml_declaration + xml_string
 
-        # Делаем красивое форматирование
         dom = minidom.parseString(full_xml)
         pretty_xml = dom.toprettyxml(indent="  ")
 
@@ -612,9 +408,13 @@ class XMLDataGenerator:
         with open(filepath, 'w', encoding='utf-8', newline='\n') as f:
             f.write(formatted_xml)
 
+        file_size = os.path.getsize(filepath)
         print(f"✅ Файл успешно сохранен: {filepath}")
+        print(f"📏 Размер файла: {file_size:,} байт ({file_size / 1024:.1f} KB)")
 
         # Добавляем в список сгенерированных файлов
         self.generated_files.append(filepath)
 
         return filepath
+
+

@@ -332,39 +332,39 @@ class Utils:
             True если корректно
         """
         if not preferences:
-            print("❌ Нет предпочтений")
-            return False
-
-        all_used_alts = set()
+            return True
 
         for criterion, groups in preferences.items():
-            if not groups:
-                print(f"❌ Нет групп предпочтений для критерия '{criterion}'")
+            all_alts_in_criterion = []
+            preference_values = []
+
+            for group_str in groups.keys():
+                group_alts = [alt.strip() for alt in group_str.split(',')]
+                all_alts_in_criterion.extend(group_alts)
+
+                pref_value = groups[group_str]
+                preference_values.append(pref_value)
+
+            # Проверяем количество альтернатив
+            if len(all_alts_in_criterion) != len(alternatives):
                 return False
 
-            # Проверяем каждую группу
-            for group_str, preference in groups.items():
-                # Парсим группу
-                group_alts = Utils.parse_gdm_group_string(group_str)
+            # Проверяем уникальность альтернатив
+            if len(set(all_alts_in_criterion)) != len(alternatives):
+                return False
 
-                if not group_alts:
-                    print(f"❌ Пустая группа '{group_str}' в критерии '{criterion}'")
-                    return False
+            # Проверяем, что все альтернативы присутствуют
+            missing = set(alternatives) - set(all_alts_in_criterion)
+            if missing:
+                return False
 
-                # Проверяем, что все альтернативы в группе существуют
-                for alt in group_alts:
-                    if alt not in alternatives:
-                        print(f"❌ Альтернатива '{alt}' в группе '{group_str}' "
-                              f"не существует в списке альтернатив")
-                        return False
+            # Проверяем значения предпочтений (должны быть положительными)
+            if any(p <= 0 for p in preference_values):
+                return False
 
-                # Добавляем альтернативы в множество использованных
-                all_used_alts.update(group_alts)
-
-                # Проверяем значение предпочтения
-                if preference < 1 or preference > 7:
-                    print(f"❌ Значение предпочтения {preference} вне диапазона 1-7")
-                    return False
+            # Проверяем уникальность предпочтений
+            if len(set(preference_values)) != len(preference_values):
+                return False
 
         # Проверяем, что каждая альтернатива встречается не более одного раза в критерии
         for criterion, groups in preferences.items():
