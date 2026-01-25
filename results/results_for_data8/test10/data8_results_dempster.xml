@@ -1,0 +1,1023 @@
+<?xml version="1.0" ?>
+<ds_ahp_gdm_results>
+  <metadata>
+    <analysis_type>DS/AHP-GDM</analysis_type>
+    <task_info>
+      <alternatives>A0001, A0002, A0003, A0004, A0005, A0006, A0007, A0008, A0009, A0010, A0011, A0012, A0013, A0014, A0015, A0016, A0017, A0018, A0019, A0020, A0021, A0022, A0023, A0024, A0025, A0026, A0027, A0028, A0029, A0030, A0031, A0032, A0033, A0034, A0035, A0036, A0037, A0038, A0039, A0040, A0041, A0042, A0043, A0044, A0045, A0046, A0047, A0048, A0049, A0050, A0051, A0052, A0053, A0054, A0055, A0056, A0057, A0058, A0059, A0060, A0061, A0062, A0063, A0064, A0065, A0066, A0067, A0068, A0069, A0070, A0071, A0072, A0073, A0074, A0075, A0076, A0077, A0078, A0079, A0080, A0081, A0082, A0083, A0084, A0085, A0086, A0087, A0088, A0089, A0090, A0091, A0092, A0093, A0094, A0095, A0096, A0097, A0098, A0099, A0100, A0101, A0102, A0103, A0104, A0105, A0106, A0107, A0108, A0109, A0110, A0111, A0112, A0113, A0114, A0115, A0116, A0117, A0118, A0119, A0120, A0121, A0122, A0123, A0124, A0125, A0126, A0127, A0128, A0129, A0130, A0131, A0132, A0133, A0134, A0135, A0136, A0137, A0138, A0139, A0140, A0141, A0142, A0143, A0144, A0145, A0146, A0147, A0148, A0149, A0150, A0151, A0152, A0153, A0154, A0155, A0156, A0157, A0158, A0159, A0160, A0161, A0162, A0163, A0164, A0165, A0166, A0167, A0168, A0169, A0170, A0171, A0172, A0173, A0174, A0175, A0176, A0177, A0178, A0179, A0180, A0181, A0182, A0183, A0184, A0185, A0186, A0187, A0188, A0189, A0190, A0191, A0192, A0193, A0194, A0195, A0196, A0197, A0198, A0199, A0200, A0201, A0202, A0203, A0204, A0205, A0206, A0207, A0208, A0209, A0210, A0211, A0212, A0213, A0214, A0215, A0216, A0217, A0218, A0219, A0220, A0221, A0222, A0223, A0224, A0225, A0226, A0227, A0228, A0229, A0230, A0231, A0232, A0233, A0234, A0235, A0236, A0237, A0238, A0239, A0240, A0241, A0242, A0243, A0244, A0245, A0246, A0247, A0248, A0249, A0250, A0251, A0252, A0253, A0254, A0255, A0256, A0257, A0258, A0259, A0260, A0261, A0262, A0263, A0264, A0265, A0266, A0267, A0268, A0269, A0270, A0271, A0272, A0273, A0274, A0275, A0276, A0277, A0278, A0279, A0280, A0281, A0282, A0283, A0284, A0285, A0286, A0287, A0288, A0289, A0290, A0291, A0292, A0293, A0294, A0295, A0296, A0297, A0298, A0299, A0300, A0301, A0302, A0303, A0304, A0305, A0306, A0307, A0308, A0309, A0310, A0311, A0312, A0313, A0314, A0315, A0316, A0317, A0318, A0319, A0320, A0321, A0322, A0323, A0324, A0325, A0326, A0327, A0328, A0329, A0330, A0331, A0332, A0333, A0334, A0335, A0336, A0337, A0338, A0339, A0340, A0341, A0342, A0343, A0344, A0345, A0346, A0347, A0348, A0349, A0350, A0351, A0352, A0353, A0354, A0355, A0356, A0357, A0358, A0359, A0360, A0361, A0362, A0363, A0364, A0365, A0366, A0367, A0368, A0369, A0370, A0371, A0372, A0373, A0374, A0375, A0376, A0377, A0378, A0379, A0380, A0381, A0382, A0383, A0384, A0385, A0386, A0387, A0388, A0389, A0390, A0391, A0392, A0393, A0394, A0395, A0396, A0397, A0398, A0399, A0400, A0401, A0402, A0403, A0404, A0405, A0406, A0407, A0408, A0409, A0410, A0411, A0412, A0413, A0414, A0415, A0416, A0417, A0418, A0419, A0420, A0421, A0422, A0423, A0424, A0425, A0426, A0427, A0428, A0429, A0430, A0431, A0432, A0433, A0434, A0435, A0436, A0437, A0438, A0439, A0440, A0441, A0442, A0443, A0444, A0445, A0446, A0447, A0448, A0449, A0450, A0451, A0452, A0453, A0454, A0455, A0456, A0457, A0458, A0459, A0460, A0461, A0462, A0463, A0464, A0465, A0466, A0467, A0468, A0469, A0470, A0471, A0472, A0473, A0474, A0475, A0476, A0477, A0478, A0479, A0480, A0481, A0482, A0483, A0484, A0485, A0486, A0487, A0488, A0489, A0490, A0491, A0492, A0493, A0494, A0495, A0496, A0497, A0498, A0499, A0500</alternatives>
+      <criteria>Качество, Стоимость, Надежность, Удобство</criteria>
+      <experts_count>5</experts_count>
+    </task_info>
+    <optimal_alternative>A0371</optimal_alternative>
+  </metadata>
+  <experts_info>
+    <expert name="Иванов" weight="1.000" discount_rate="1.000"/>
+    <expert name="Петров" weight="0.800" discount_rate="0.800"/>
+    <expert name="Сидоров" weight="0.600" discount_rate="0.600"/>
+    <expert name="Кузнецов" weight="0.400" discount_rate="0.400"/>
+    <expert name="Смирнов" weight="0.200" discount_rate="0.200"/>
+  </experts_info>
+  <ranking>
+    <alternative rank="1" name="A0371" score="0.013093" belief="0.012426" plausibility="0.013760" interval="[0.0124, 0.0138]" optimal="true"/>
+    <alternative rank="2" name="A0082" score="0.012670" belief="0.012100" plausibility="0.013240" interval="[0.0121, 0.0132]"/>
+    <alternative rank="3" name="A0497" score="0.009679" belief="0.009292" plausibility="0.010065" interval="[0.0093, 0.0101]"/>
+    <alternative rank="4" name="A0380" score="0.008665" belief="0.008293" plausibility="0.009038" interval="[0.0083, 0.0090]"/>
+    <alternative rank="5" name="A0044" score="0.008216" belief="0.007889" plausibility="0.008542" interval="[0.0079, 0.0085]"/>
+    <alternative rank="6" name="A0258" score="0.008102" belief="0.007716" plausibility="0.008488" interval="[0.0077, 0.0085]"/>
+    <alternative rank="7" name="A0126" score="0.007770" belief="0.007281" plausibility="0.008260" interval="[0.0073, 0.0083]"/>
+    <alternative rank="8" name="A0444" score="0.007430" belief="0.007060" plausibility="0.007800" interval="[0.0071, 0.0078]"/>
+    <alternative rank="9" name="A0218" score="0.007230" belief="0.006812" plausibility="0.007649" interval="[0.0068, 0.0076]"/>
+    <alternative rank="10" name="A0092" score="0.006494" belief="0.006136" plausibility="0.006853" interval="[0.0061, 0.0069]"/>
+    <alternative rank="11" name="A0366" score="0.006314" belief="0.005937" plausibility="0.006692" interval="[0.0059, 0.0067]"/>
+    <alternative rank="12" name="A0197" score="0.006308" belief="0.005992" plausibility="0.006624" interval="[0.0060, 0.0066]"/>
+    <alternative rank="13" name="A0222" score="0.006215" belief="0.005884" plausibility="0.006546" interval="[0.0059, 0.0065]"/>
+    <alternative rank="14" name="A0315" score="0.006029" belief="0.005685" plausibility="0.006373" interval="[0.0057, 0.0064]"/>
+    <alternative rank="15" name="A0420" score="0.005812" belief="0.005537" plausibility="0.006087" interval="[0.0055, 0.0061]"/>
+    <alternative rank="16" name="A0030" score="0.005806" belief="0.005494" plausibility="0.006118" interval="[0.0055, 0.0061]"/>
+    <alternative rank="17" name="A0430" score="0.005658" belief="0.005342" plausibility="0.005974" interval="[0.0053, 0.0060]"/>
+    <alternative rank="18" name="A0478" score="0.005571" belief="0.005231" plausibility="0.005911" interval="[0.0052, 0.0059]"/>
+    <alternative rank="19" name="A0142" score="0.005288" belief="0.004987" plausibility="0.005589" interval="[0.0050, 0.0056]"/>
+    <alternative rank="20" name="A0384" score="0.005255" belief="0.004984" plausibility="0.005525" interval="[0.0050, 0.0055]"/>
+    <alternative rank="21" name="A0276" score="0.005227" belief="0.004872" plausibility="0.005581" interval="[0.0049, 0.0056]"/>
+    <alternative rank="22" name="A0395" score="0.005005" belief="0.004706" plausibility="0.005304" interval="[0.0047, 0.0053]"/>
+    <alternative rank="23" name="A0347" score="0.005001" belief="0.004688" plausibility="0.005313" interval="[0.0047, 0.0053]"/>
+    <alternative rank="24" name="A0241" score="0.004954" belief="0.004646" plausibility="0.005263" interval="[0.0046, 0.0053]"/>
+    <alternative rank="25" name="A0229" score="0.004836" belief="0.004509" plausibility="0.005164" interval="[0.0045, 0.0052]"/>
+    <alternative rank="26" name="A0207" score="0.004765" belief="0.004430" plausibility="0.005100" interval="[0.0044, 0.0051]"/>
+    <alternative rank="27" name="A0157" score="0.004631" belief="0.004341" plausibility="0.004922" interval="[0.0043, 0.0049]"/>
+    <alternative rank="28" name="A0307" score="0.004625" belief="0.004310" plausibility="0.004941" interval="[0.0043, 0.0049]"/>
+    <alternative rank="29" name="A0058" score="0.004579" belief="0.004261" plausibility="0.004897" interval="[0.0043, 0.0049]"/>
+    <alternative rank="30" name="A0286" score="0.004544" belief="0.004267" plausibility="0.004821" interval="[0.0043, 0.0048]"/>
+    <alternative rank="31" name="A0256" score="0.004539" belief="0.004226" plausibility="0.004852" interval="[0.0042, 0.0049]"/>
+    <alternative rank="32" name="A0042" score="0.004493" belief="0.004177" plausibility="0.004809" interval="[0.0042, 0.0048]"/>
+    <alternative rank="33" name="A0040" score="0.004468" belief="0.004201" plausibility="0.004735" interval="[0.0042, 0.0047]"/>
+    <alternative rank="34" name="A0191" score="0.004376" belief="0.004089" plausibility="0.004664" interval="[0.0041, 0.0047]"/>
+    <alternative rank="35" name="A0020" score="0.004373" belief="0.004105" plausibility="0.004642" interval="[0.0041, 0.0046]"/>
+    <alternative rank="36" name="A0121" score="0.004364" belief="0.004079" plausibility="0.004648" interval="[0.0041, 0.0046]"/>
+    <alternative rank="37" name="A0382" score="0.004338" belief="0.004080" plausibility="0.004597" interval="[0.0041, 0.0046]"/>
+    <alternative rank="38" name="A0484" score="0.004265" belief="0.003954" plausibility="0.004577" interval="[0.0040, 0.0046]"/>
+    <alternative rank="39" name="A0322" score="0.004240" belief="0.003994" plausibility="0.004485" interval="[0.0040, 0.0045]"/>
+    <alternative rank="40" name="A0495" score="0.004186" belief="0.003931" plausibility="0.004440" interval="[0.0039, 0.0044]"/>
+    <alternative rank="41" name="A0176" score="0.004139" belief="0.003864" plausibility="0.004415" interval="[0.0039, 0.0044]"/>
+    <alternative rank="42" name="A0010" score="0.004082" belief="0.003804" plausibility="0.004361" interval="[0.0038, 0.0044]"/>
+    <alternative rank="43" name="A0351" score="0.004029" belief="0.003753" plausibility="0.004304" interval="[0.0038, 0.0043]"/>
+    <alternative rank="44" name="A0046" score="0.003992" belief="0.003726" plausibility="0.004258" interval="[0.0037, 0.0043]"/>
+    <alternative rank="45" name="A0069" score="0.003972" belief="0.003658" plausibility="0.004287" interval="[0.0037, 0.0043]"/>
+    <alternative rank="46" name="A0190" score="0.003945" belief="0.003664" plausibility="0.004227" interval="[0.0037, 0.0042]"/>
+    <alternative rank="47" name="A0016" score="0.003917" belief="0.003659" plausibility="0.004175" interval="[0.0037, 0.0042]"/>
+    <alternative rank="48" name="A0275" score="0.003884" belief="0.003612" plausibility="0.004157" interval="[0.0036, 0.0042]"/>
+    <alternative rank="49" name="A0432" score="0.003866" belief="0.003580" plausibility="0.004152" interval="[0.0036, 0.0042]"/>
+    <alternative rank="50" name="A0067" score="0.003845" belief="0.003569" plausibility="0.004122" interval="[0.0036, 0.0041]"/>
+    <alternative rank="51" name="A0018" score="0.003789" belief="0.003520" plausibility="0.004058" interval="[0.0035, 0.0041]"/>
+    <alternative rank="52" name="A0310" score="0.003778" belief="0.003529" plausibility="0.004027" interval="[0.0035, 0.0040]"/>
+    <alternative rank="53" name="A0156" score="0.003766" belief="0.003542" plausibility="0.003990" interval="[0.0035, 0.0040]"/>
+    <alternative rank="54" name="A0036" score="0.003763" belief="0.003475" plausibility="0.004050" interval="[0.0035, 0.0041]"/>
+    <alternative rank="55" name="A0051" score="0.003735" belief="0.003474" plausibility="0.003996" interval="[0.0035, 0.0040]"/>
+    <alternative rank="56" name="A0131" score="0.003733" belief="0.003434" plausibility="0.004032" interval="[0.0034, 0.0040]"/>
+    <alternative rank="57" name="A0462" score="0.003641" belief="0.003393" plausibility="0.003888" interval="[0.0034, 0.0039]"/>
+    <alternative rank="58" name="A0278" score="0.003634" belief="0.003398" plausibility="0.003870" interval="[0.0034, 0.0039]"/>
+    <alternative rank="59" name="A0083" score="0.003588" belief="0.003326" plausibility="0.003849" interval="[0.0033, 0.0038]"/>
+    <alternative rank="60" name="A0469" score="0.003587" belief="0.003341" plausibility="0.003833" interval="[0.0033, 0.0038]"/>
+    <alternative rank="61" name="A0113" score="0.003562" belief="0.003265" plausibility="0.003858" interval="[0.0033, 0.0039]"/>
+    <alternative rank="62" name="A0185" score="0.003557" belief="0.003282" plausibility="0.003831" interval="[0.0033, 0.0038]"/>
+    <alternative rank="63" name="A0005" score="0.003556" belief="0.003255" plausibility="0.003858" interval="[0.0033, 0.0039]"/>
+    <alternative rank="64" name="A0463" score="0.003552" belief="0.003238" plausibility="0.003866" interval="[0.0032, 0.0039]"/>
+    <alternative rank="65" name="A0259" score="0.003549" belief="0.003298" plausibility="0.003801" interval="[0.0033, 0.0038]"/>
+    <alternative rank="66" name="A0415" score="0.003538" belief="0.003313" plausibility="0.003764" interval="[0.0033, 0.0038]"/>
+    <alternative rank="67" name="A0192" score="0.003530" belief="0.003305" plausibility="0.003755" interval="[0.0033, 0.0038]"/>
+    <alternative rank="68" name="A0407" score="0.003529" belief="0.003294" plausibility="0.003764" interval="[0.0033, 0.0038]"/>
+    <alternative rank="69" name="A0257" score="0.003522" belief="0.003268" plausibility="0.003776" interval="[0.0033, 0.0038]"/>
+    <alternative rank="70" name="A0168" score="0.003508" belief="0.003236" plausibility="0.003780" interval="[0.0032, 0.0038]"/>
+    <alternative rank="71" name="A0488" score="0.003480" belief="0.003173" plausibility="0.003786" interval="[0.0032, 0.0038]"/>
+    <alternative rank="72" name="A0022" score="0.003464" belief="0.003141" plausibility="0.003787" interval="[0.0031, 0.0038]"/>
+    <alternative rank="73" name="A0097" score="0.003459" belief="0.003219" plausibility="0.003699" interval="[0.0032, 0.0037]"/>
+    <alternative rank="74" name="A0456" score="0.003443" belief="0.003204" plausibility="0.003682" interval="[0.0032, 0.0037]"/>
+    <alternative rank="75" name="A0458" score="0.003413" belief="0.003098" plausibility="0.003728" interval="[0.0031, 0.0037]"/>
+    <alternative rank="76" name="A0202" score="0.003360" belief="0.003070" plausibility="0.003650" interval="[0.0031, 0.0036]"/>
+    <alternative rank="77" name="A0247" score="0.003330" belief="0.003109" plausibility="0.003552" interval="[0.0031, 0.0036]"/>
+    <alternative rank="78" name="A0210" score="0.003309" belief="0.003035" plausibility="0.003583" interval="[0.0030, 0.0036]"/>
+    <alternative rank="79" name="A0370" score="0.003307" belief="0.003012" plausibility="0.003601" interval="[0.0030, 0.0036]"/>
+    <alternative rank="80" name="A0195" score="0.003281" belief="0.002990" plausibility="0.003572" interval="[0.0030, 0.0036]"/>
+    <alternative rank="81" name="A0009" score="0.003277" belief="0.003028" plausibility="0.003525" interval="[0.0030, 0.0035]"/>
+    <alternative rank="82" name="A0095" score="0.003274" belief="0.003007" plausibility="0.003542" interval="[0.0030, 0.0035]"/>
+    <alternative rank="83" name="A0402" score="0.003246" belief="0.002994" plausibility="0.003498" interval="[0.0030, 0.0035]"/>
+    <alternative rank="84" name="A0141" score="0.003227" belief="0.002983" plausibility="0.003472" interval="[0.0030, 0.0035]"/>
+    <alternative rank="85" name="A0362" score="0.003214" belief="0.002956" plausibility="0.003471" interval="[0.0030, 0.0035]"/>
+    <alternative rank="86" name="A0342" score="0.003188" belief="0.002916" plausibility="0.003460" interval="[0.0029, 0.0035]"/>
+    <alternative rank="87" name="A0203" score="0.003149" belief="0.002866" plausibility="0.003432" interval="[0.0029, 0.0034]"/>
+    <alternative rank="88" name="A0445" score="0.003130" belief="0.002882" plausibility="0.003378" interval="[0.0029, 0.0034]"/>
+    <alternative rank="89" name="A0476" score="0.003110" belief="0.002878" plausibility="0.003341" interval="[0.0029, 0.0033]"/>
+    <alternative rank="90" name="A0424" score="0.003110" belief="0.002871" plausibility="0.003348" interval="[0.0029, 0.0033]"/>
+    <alternative rank="91" name="A0182" score="0.003091" belief="0.002865" plausibility="0.003317" interval="[0.0029, 0.0033]"/>
+    <alternative rank="92" name="A0237" score="0.003082" belief="0.002764" plausibility="0.003400" interval="[0.0028, 0.0034]"/>
+    <alternative rank="93" name="A0117" score="0.003077" belief="0.002836" plausibility="0.003318" interval="[0.0028, 0.0033]"/>
+    <alternative rank="94" name="A0323" score="0.003054" belief="0.002795" plausibility="0.003314" interval="[0.0028, 0.0033]"/>
+    <alternative rank="95" name="A0496" score="0.003044" belief="0.002739" plausibility="0.003349" interval="[0.0027, 0.0033]"/>
+    <alternative rank="96" name="A0301" score="0.003036" belief="0.002777" plausibility="0.003296" interval="[0.0028, 0.0033]"/>
+    <alternative rank="97" name="A0355" score="0.002992" belief="0.002758" plausibility="0.003225" interval="[0.0028, 0.0032]"/>
+    <alternative rank="98" name="A0421" score="0.002984" belief="0.002750" plausibility="0.003217" interval="[0.0028, 0.0032]"/>
+    <alternative rank="99" name="A0162" score="0.002971" belief="0.002763" plausibility="0.003179" interval="[0.0028, 0.0032]"/>
+    <alternative rank="100" name="A0180" score="0.002962" belief="0.002692" plausibility="0.003232" interval="[0.0027, 0.0032]"/>
+    <alternative rank="101" name="A0368" score="0.002956" belief="0.002758" plausibility="0.003154" interval="[0.0028, 0.0032]"/>
+    <alternative rank="102" name="A0264" score="0.002955" belief="0.002760" plausibility="0.003151" interval="[0.0028, 0.0032]"/>
+    <alternative rank="103" name="A0437" score="0.002934" belief="0.002707" plausibility="0.003161" interval="[0.0027, 0.0032]"/>
+    <alternative rank="104" name="A0038" score="0.002933" belief="0.002710" plausibility="0.003157" interval="[0.0027, 0.0032]"/>
+    <alternative rank="105" name="A0263" score="0.002920" belief="0.002686" plausibility="0.003154" interval="[0.0027, 0.0032]"/>
+    <alternative rank="106" name="A0173" score="0.002918" belief="0.002691" plausibility="0.003145" interval="[0.0027, 0.0031]"/>
+    <alternative rank="107" name="A0147" score="0.002915" belief="0.002669" plausibility="0.003162" interval="[0.0027, 0.0032]"/>
+    <alternative rank="108" name="A0472" score="0.002913" belief="0.002660" plausibility="0.003167" interval="[0.0027, 0.0032]"/>
+    <alternative rank="109" name="A0177" score="0.002882" belief="0.002652" plausibility="0.003112" interval="[0.0027, 0.0031]"/>
+    <alternative rank="110" name="A0219" score="0.002879" belief="0.002640" plausibility="0.003119" interval="[0.0026, 0.0031]"/>
+    <alternative rank="111" name="A0273" score="0.002874" belief="0.002644" plausibility="0.003105" interval="[0.0026, 0.0031]"/>
+    <alternative rank="112" name="A0490" score="0.002872" belief="0.002625" plausibility="0.003118" interval="[0.0026, 0.0031]"/>
+    <alternative rank="113" name="A0474" score="0.002829" belief="0.002614" plausibility="0.003045" interval="[0.0026, 0.0030]"/>
+    <alternative rank="114" name="A0299" score="0.002808" belief="0.002591" plausibility="0.003025" interval="[0.0026, 0.0030]"/>
+    <alternative rank="115" name="A0125" score="0.002796" belief="0.002571" plausibility="0.003022" interval="[0.0026, 0.0030]"/>
+    <alternative rank="116" name="A0006" score="0.002794" belief="0.002540" plausibility="0.003047" interval="[0.0025, 0.0030]"/>
+    <alternative rank="117" name="A0099" score="0.002790" belief="0.002564" plausibility="0.003015" interval="[0.0026, 0.0030]"/>
+    <alternative rank="118" name="A0317" score="0.002783" belief="0.002566" plausibility="0.003000" interval="[0.0026, 0.0030]"/>
+    <alternative rank="119" name="A0154" score="0.002747" belief="0.002537" plausibility="0.002956" interval="[0.0025, 0.0030]"/>
+    <alternative rank="120" name="A0271" score="0.002743" belief="0.002490" plausibility="0.002996" interval="[0.0025, 0.0030]"/>
+    <alternative rank="121" name="A0302" score="0.002717" belief="0.002525" plausibility="0.002908" interval="[0.0025, 0.0029]"/>
+    <alternative rank="122" name="A0187" score="0.002714" belief="0.002487" plausibility="0.002942" interval="[0.0025, 0.0029]"/>
+    <alternative rank="123" name="A0434" score="0.002710" belief="0.002483" plausibility="0.002937" interval="[0.0025, 0.0029]"/>
+    <alternative rank="124" name="A0433" score="0.002694" belief="0.002437" plausibility="0.002951" interval="[0.0024, 0.0030]"/>
+    <alternative rank="125" name="A0230" score="0.002684" belief="0.002445" plausibility="0.002923" interval="[0.0024, 0.0029]"/>
+    <alternative rank="126" name="A0049" score="0.002662" belief="0.002467" plausibility="0.002856" interval="[0.0025, 0.0029]"/>
+    <alternative rank="127" name="A0339" score="0.002638" belief="0.002356" plausibility="0.002920" interval="[0.0024, 0.0029]"/>
+    <alternative rank="128" name="A0468" score="0.002634" belief="0.002399" plausibility="0.002870" interval="[0.0024, 0.0029]"/>
+    <alternative rank="129" name="A0124" score="0.002631" belief="0.002428" plausibility="0.002835" interval="[0.0024, 0.0028]"/>
+    <alternative rank="130" name="A0428" score="0.002622" belief="0.002366" plausibility="0.002879" interval="[0.0024, 0.0029]"/>
+    <alternative rank="131" name="A0466" score="0.002614" belief="0.002384" plausibility="0.002844" interval="[0.0024, 0.0028]"/>
+    <alternative rank="132" name="A0294" score="0.002612" belief="0.002415" plausibility="0.002809" interval="[0.0024, 0.0028]"/>
+    <alternative rank="133" name="A0043" score="0.002601" belief="0.002358" plausibility="0.002845" interval="[0.0024, 0.0028]"/>
+    <alternative rank="134" name="A0365" score="0.002599" belief="0.002392" plausibility="0.002807" interval="[0.0024, 0.0028]"/>
+    <alternative rank="135" name="A0268" score="0.002594" belief="0.002389" plausibility="0.002798" interval="[0.0024, 0.0028]"/>
+    <alternative rank="136" name="A0378" score="0.002586" belief="0.002389" plausibility="0.002784" interval="[0.0024, 0.0028]"/>
+    <alternative rank="137" name="A0174" score="0.002586" belief="0.002366" plausibility="0.002806" interval="[0.0024, 0.0028]"/>
+    <alternative rank="138" name="A0309" score="0.002584" belief="0.002377" plausibility="0.002790" interval="[0.0024, 0.0028]"/>
+    <alternative rank="139" name="A0383" score="0.002572" belief="0.002355" plausibility="0.002789" interval="[0.0024, 0.0028]"/>
+    <alternative rank="140" name="A0035" score="0.002566" belief="0.002310" plausibility="0.002822" interval="[0.0023, 0.0028]"/>
+    <alternative rank="141" name="A0037" score="0.002563" belief="0.002341" plausibility="0.002785" interval="[0.0023, 0.0028]"/>
+    <alternative rank="142" name="A0406" score="0.002545" belief="0.002354" plausibility="0.002736" interval="[0.0024, 0.0027]"/>
+    <alternative rank="143" name="A0193" score="0.002521" belief="0.002288" plausibility="0.002754" interval="[0.0023, 0.0028]"/>
+    <alternative rank="144" name="A0073" score="0.002516" belief="0.002260" plausibility="0.002773" interval="[0.0023, 0.0028]"/>
+    <alternative rank="145" name="A0041" score="0.002515" belief="0.002288" plausibility="0.002742" interval="[0.0023, 0.0027]"/>
+    <alternative rank="146" name="A0227" score="0.002502" belief="0.002317" plausibility="0.002687" interval="[0.0023, 0.0027]"/>
+    <alternative rank="147" name="A0337" score="0.002493" belief="0.002236" plausibility="0.002750" interval="[0.0022, 0.0028]"/>
+    <alternative rank="148" name="A0002" score="0.002487" belief="0.002283" plausibility="0.002691" interval="[0.0023, 0.0027]"/>
+    <alternative rank="149" name="A0128" score="0.002467" belief="0.002257" plausibility="0.002678" interval="[0.0023, 0.0027]"/>
+    <alternative rank="150" name="A0211" score="0.002467" belief="0.002205" plausibility="0.002730" interval="[0.0022, 0.0027]"/>
+    <alternative rank="151" name="A0325" score="0.002462" belief="0.002239" plausibility="0.002684" interval="[0.0022, 0.0027]"/>
+    <alternative rank="152" name="A0153" score="0.002459" belief="0.002174" plausibility="0.002743" interval="[0.0022, 0.0027]"/>
+    <alternative rank="153" name="A0189" score="0.002457" belief="0.002246" plausibility="0.002667" interval="[0.0022, 0.0027]"/>
+    <alternative rank="154" name="A0215" score="0.002456" belief="0.002233" plausibility="0.002679" interval="[0.0022, 0.0027]"/>
+    <alternative rank="155" name="A0007" score="0.002454" belief="0.002228" plausibility="0.002679" interval="[0.0022, 0.0027]"/>
+    <alternative rank="156" name="A0441" score="0.002450" belief="0.002193" plausibility="0.002707" interval="[0.0022, 0.0027]"/>
+    <alternative rank="157" name="A0260" score="0.002446" belief="0.002224" plausibility="0.002669" interval="[0.0022, 0.0027]"/>
+    <alternative rank="158" name="A0283" score="0.002439" belief="0.002236" plausibility="0.002643" interval="[0.0022, 0.0026]"/>
+    <alternative rank="159" name="A0028" score="0.002437" belief="0.002214" plausibility="0.002660" interval="[0.0022, 0.0027]"/>
+    <alternative rank="160" name="A0426" score="0.002434" belief="0.002237" plausibility="0.002630" interval="[0.0022, 0.0026]"/>
+    <alternative rank="161" name="A0467" score="0.002433" belief="0.002158" plausibility="0.002708" interval="[0.0022, 0.0027]"/>
+    <alternative rank="162" name="A0285" score="0.002430" belief="0.002183" plausibility="0.002677" interval="[0.0022, 0.0027]"/>
+    <alternative rank="163" name="A0199" score="0.002428" belief="0.002194" plausibility="0.002662" interval="[0.0022, 0.0027]"/>
+    <alternative rank="164" name="A0115" score="0.002426" belief="0.002211" plausibility="0.002642" interval="[0.0022, 0.0026]"/>
+    <alternative rank="165" name="A0491" score="0.002422" belief="0.002241" plausibility="0.002603" interval="[0.0022, 0.0026]"/>
+    <alternative rank="166" name="A0251" score="0.002404" belief="0.002187" plausibility="0.002620" interval="[0.0022, 0.0026]"/>
+    <alternative rank="167" name="A0053" score="0.002367" belief="0.002148" plausibility="0.002585" interval="[0.0021, 0.0026]"/>
+    <alternative rank="168" name="A0158" score="0.002362" belief="0.002158" plausibility="0.002566" interval="[0.0022, 0.0026]"/>
+    <alternative rank="169" name="A0221" score="0.002361" belief="0.002145" plausibility="0.002578" interval="[0.0021, 0.0026]"/>
+    <alternative rank="170" name="A0461" score="0.002351" belief="0.002116" plausibility="0.002586" interval="[0.0021, 0.0026]"/>
+    <alternative rank="171" name="A0438" score="0.002327" belief="0.002112" plausibility="0.002543" interval="[0.0021, 0.0025]"/>
+    <alternative rank="172" name="A0412" score="0.002316" belief="0.002114" plausibility="0.002519" interval="[0.0021, 0.0025]"/>
+    <alternative rank="173" name="A0078" score="0.002316" belief="0.002109" plausibility="0.002523" interval="[0.0021, 0.0025]"/>
+    <alternative rank="174" name="A0194" score="0.002310" belief="0.002105" plausibility="0.002514" interval="[0.0021, 0.0025]"/>
+    <alternative rank="175" name="A0167" score="0.002289" belief="0.002086" plausibility="0.002491" interval="[0.0021, 0.0025]"/>
+    <alternative rank="176" name="A0473" score="0.002278" belief="0.002083" plausibility="0.002473" interval="[0.0021, 0.0025]"/>
+    <alternative rank="177" name="A0093" score="0.002268" belief="0.002070" plausibility="0.002466" interval="[0.0021, 0.0025]"/>
+    <alternative rank="178" name="A0290" score="0.002262" belief="0.002033" plausibility="0.002490" interval="[0.0020, 0.0025]"/>
+    <alternative rank="179" name="A0143" score="0.002250" belief="0.002017" plausibility="0.002483" interval="[0.0020, 0.0025]"/>
+    <alternative rank="180" name="A0479" score="0.002247" belief="0.002034" plausibility="0.002459" interval="[0.0020, 0.0025]"/>
+    <alternative rank="181" name="A0112" score="0.002238" belief="0.002002" plausibility="0.002474" interval="[0.0020, 0.0025]"/>
+    <alternative rank="182" name="A0401" score="0.002215" belief="0.002032" plausibility="0.002398" interval="[0.0020, 0.0024]"/>
+    <alternative rank="183" name="A0493" score="0.002212" belief="0.001961" plausibility="0.002463" interval="[0.0020, 0.0025]"/>
+    <alternative rank="184" name="A0220" score="0.002201" belief="0.002001" plausibility="0.002400" interval="[0.0020, 0.0024]"/>
+    <alternative rank="185" name="A0335" score="0.002189" belief="0.002006" plausibility="0.002372" interval="[0.0020, 0.0024]"/>
+    <alternative rank="186" name="A0245" score="0.002164" belief="0.001978" plausibility="0.002350" interval="[0.0020, 0.0024]"/>
+    <alternative rank="187" name="A0281" score="0.002161" belief="0.001947" plausibility="0.002374" interval="[0.0019, 0.0024]"/>
+    <alternative rank="188" name="A0098" score="0.002159" belief="0.001903" plausibility="0.002415" interval="[0.0019, 0.0024]"/>
+    <alternative rank="189" name="A0105" score="0.002147" belief="0.001952" plausibility="0.002343" interval="[0.0020, 0.0023]"/>
+    <alternative rank="190" name="A0480" score="0.002137" belief="0.001932" plausibility="0.002343" interval="[0.0019, 0.0023]"/>
+    <alternative rank="191" name="A0079" score="0.002135" belief="0.001932" plausibility="0.002338" interval="[0.0019, 0.0023]"/>
+    <alternative rank="192" name="A0475" score="0.002132" belief="0.001892" plausibility="0.002373" interval="[0.0019, 0.0024]"/>
+    <alternative rank="193" name="A0492" score="0.002129" belief="0.001937" plausibility="0.002321" interval="[0.0019, 0.0023]"/>
+    <alternative rank="194" name="A0025" score="0.002125" belief="0.001909" plausibility="0.002342" interval="[0.0019, 0.0023]"/>
+    <alternative rank="195" name="A0137" score="0.002119" belief="0.001919" plausibility="0.002318" interval="[0.0019, 0.0023]"/>
+    <alternative rank="196" name="A0087" score="0.002118" belief="0.001886" plausibility="0.002349" interval="[0.0019, 0.0023]"/>
+    <alternative rank="197" name="A0065" score="0.002110" belief="0.001941" plausibility="0.002279" interval="[0.0019, 0.0023]"/>
+    <alternative rank="198" name="A0344" score="0.002106" belief="0.001874" plausibility="0.002338" interval="[0.0019, 0.0023]"/>
+    <alternative rank="199" name="A0280" score="0.002104" belief="0.001927" plausibility="0.002281" interval="[0.0019, 0.0023]"/>
+    <alternative rank="200" name="A0482" score="0.002098" belief="0.001891" plausibility="0.002305" interval="[0.0019, 0.0023]"/>
+    <alternative rank="201" name="A0274" score="0.002088" belief="0.001911" plausibility="0.002264" interval="[0.0019, 0.0023]"/>
+    <alternative rank="202" name="A0282" score="0.002061" belief="0.001877" plausibility="0.002245" interval="[0.0019, 0.0022]"/>
+    <alternative rank="203" name="A0242" score="0.002050" belief="0.001863" plausibility="0.002238" interval="[0.0019, 0.0022]"/>
+    <alternative rank="204" name="A0031" score="0.002048" belief="0.001831" plausibility="0.002266" interval="[0.0018, 0.0023]"/>
+    <alternative rank="205" name="A0262" score="0.002040" belief="0.001838" plausibility="0.002241" interval="[0.0018, 0.0022]"/>
+    <alternative rank="206" name="A0184" score="0.002035" belief="0.001830" plausibility="0.002240" interval="[0.0018, 0.0022]"/>
+    <alternative rank="207" name="A0186" score="0.002035" belief="0.001850" plausibility="0.002220" interval="[0.0019, 0.0022]"/>
+    <alternative rank="208" name="A0321" score="0.002034" belief="0.001768" plausibility="0.002300" interval="[0.0018, 0.0023]"/>
+    <alternative rank="209" name="A0397" score="0.002026" belief="0.001840" plausibility="0.002211" interval="[0.0018, 0.0022]"/>
+    <alternative rank="210" name="A0377" score="0.002012" belief="0.001811" plausibility="0.002213" interval="[0.0018, 0.0022]"/>
+    <alternative rank="211" name="A0297" score="0.002008" belief="0.001829" plausibility="0.002188" interval="[0.0018, 0.0022]"/>
+    <alternative rank="212" name="A0091" score="0.001996" belief="0.001773" plausibility="0.002218" interval="[0.0018, 0.0022]"/>
+    <alternative rank="213" name="A0499" score="0.001990" belief="0.001802" plausibility="0.002177" interval="[0.0018, 0.0022]"/>
+    <alternative rank="214" name="A0419" score="0.001989" belief="0.001796" plausibility="0.002181" interval="[0.0018, 0.0022]"/>
+    <alternative rank="215" name="A0223" score="0.001986" belief="0.001759" plausibility="0.002212" interval="[0.0018, 0.0022]"/>
+    <alternative rank="216" name="A0123" score="0.001970" belief="0.001788" plausibility="0.002152" interval="[0.0018, 0.0022]"/>
+    <alternative rank="217" name="A0179" score="0.001967" belief="0.001746" plausibility="0.002189" interval="[0.0017, 0.0022]"/>
+    <alternative rank="218" name="A0004" score="0.001950" belief="0.001758" plausibility="0.002141" interval="[0.0018, 0.0021]"/>
+    <alternative rank="219" name="A0060" score="0.001939" belief="0.001750" plausibility="0.002128" interval="[0.0018, 0.0021]"/>
+    <alternative rank="220" name="A0376" score="0.001932" belief="0.001716" plausibility="0.002147" interval="[0.0017, 0.0021]"/>
+    <alternative rank="221" name="A0135" score="0.001929" belief="0.001757" plausibility="0.002100" interval="[0.0018, 0.0021]"/>
+    <alternative rank="222" name="A0359" score="0.001923" belief="0.001759" plausibility="0.002087" interval="[0.0018, 0.0021]"/>
+    <alternative rank="223" name="A0331" score="0.001921" belief="0.001719" plausibility="0.002122" interval="[0.0017, 0.0021]"/>
+    <alternative rank="224" name="A0364" score="0.001912" belief="0.001743" plausibility="0.002082" interval="[0.0017, 0.0021]"/>
+    <alternative rank="225" name="A0340" score="0.001911" belief="0.001730" plausibility="0.002093" interval="[0.0017, 0.0021]"/>
+    <alternative rank="226" name="A0212" score="0.001905" belief="0.001711" plausibility="0.002100" interval="[0.0017, 0.0021]"/>
+    <alternative rank="227" name="A0267" score="0.001899" belief="0.001705" plausibility="0.002093" interval="[0.0017, 0.0021]"/>
+    <alternative rank="228" name="A0216" score="0.001886" belief="0.001647" plausibility="0.002126" interval="[0.0016, 0.0021]"/>
+    <alternative rank="229" name="A0119" score="0.001870" belief="0.001658" plausibility="0.002081" interval="[0.0017, 0.0021]"/>
+    <alternative rank="230" name="A0279" score="0.001860" belief="0.001649" plausibility="0.002072" interval="[0.0016, 0.0021]"/>
+    <alternative rank="231" name="A0416" score="0.001854" belief="0.001684" plausibility="0.002024" interval="[0.0017, 0.0020]"/>
+    <alternative rank="232" name="A0205" score="0.001851" belief="0.001672" plausibility="0.002029" interval="[0.0017, 0.0020]"/>
+    <alternative rank="233" name="A0293" score="0.001846" belief="0.001628" plausibility="0.002064" interval="[0.0016, 0.0021]"/>
+    <alternative rank="234" name="A0201" score="0.001843" belief="0.001602" plausibility="0.002084" interval="[0.0016, 0.0021]"/>
+    <alternative rank="235" name="A0200" score="0.001837" belief="0.001639" plausibility="0.002036" interval="[0.0016, 0.0020]"/>
+    <alternative rank="236" name="A0001" score="0.001835" belief="0.001619" plausibility="0.002051" interval="[0.0016, 0.0021]"/>
+    <alternative rank="237" name="A0134" score="0.001833" belief="0.001643" plausibility="0.002024" interval="[0.0016, 0.0020]"/>
+    <alternative rank="238" name="A0076" score="0.001823" belief="0.001649" plausibility="0.001997" interval="[0.0016, 0.0020]"/>
+    <alternative rank="239" name="A0074" score="0.001812" belief="0.001587" plausibility="0.002037" interval="[0.0016, 0.0020]"/>
+    <alternative rank="240" name="A0255" score="0.001807" belief="0.001622" plausibility="0.001992" interval="[0.0016, 0.0020]"/>
+    <alternative rank="241" name="A0330" score="0.001805" belief="0.001577" plausibility="0.002032" interval="[0.0016, 0.0020]"/>
+    <alternative rank="242" name="A0405" score="0.001802" belief="0.001622" plausibility="0.001983" interval="[0.0016, 0.0020]"/>
+    <alternative rank="243" name="A0289" score="0.001783" belief="0.001620" plausibility="0.001947" interval="[0.0016, 0.0019]"/>
+    <alternative rank="244" name="A0354" score="0.001778" belief="0.001577" plausibility="0.001979" interval="[0.0016, 0.0020]"/>
+    <alternative rank="245" name="A0298" score="0.001766" belief="0.001567" plausibility="0.001965" interval="[0.0016, 0.0020]"/>
+    <alternative rank="246" name="A0425" score="0.001754" belief="0.001568" plausibility="0.001939" interval="[0.0016, 0.0019]"/>
+    <alternative rank="247" name="A0387" score="0.001746" belief="0.001537" plausibility="0.001956" interval="[0.0015, 0.0020]"/>
+    <alternative rank="248" name="A0118" score="0.001738" belief="0.001540" plausibility="0.001937" interval="[0.0015, 0.0019]"/>
+    <alternative rank="249" name="A0360" score="0.001706" belief="0.001509" plausibility="0.001902" interval="[0.0015, 0.0019]"/>
+    <alternative rank="250" name="A0348" score="0.001700" belief="0.001526" plausibility="0.001874" interval="[0.0015, 0.0019]"/>
+    <alternative rank="251" name="A0329" score="0.001686" belief="0.001484" plausibility="0.001887" interval="[0.0015, 0.0019]"/>
+    <alternative rank="252" name="A0393" score="0.001683" belief="0.001521" plausibility="0.001846" interval="[0.0015, 0.0018]"/>
+    <alternative rank="253" name="A0021" score="0.001683" belief="0.001504" plausibility="0.001861" interval="[0.0015, 0.0019]"/>
+    <alternative rank="254" name="A0175" score="0.001678" belief="0.001517" plausibility="0.001839" interval="[0.0015, 0.0018]"/>
+    <alternative rank="255" name="A0129" score="0.001675" belief="0.001496" plausibility="0.001853" interval="[0.0015, 0.0019]"/>
+    <alternative rank="256" name="A0183" score="0.001656" belief="0.001488" plausibility="0.001824" interval="[0.0015, 0.0018]"/>
+    <alternative rank="257" name="A0269" score="0.001648" belief="0.001480" plausibility="0.001816" interval="[0.0015, 0.0018]"/>
+    <alternative rank="258" name="A0292" score="0.001647" belief="0.001487" plausibility="0.001806" interval="[0.0015, 0.0018]"/>
+    <alternative rank="259" name="A0374" score="0.001647" belief="0.001432" plausibility="0.001861" interval="[0.0014, 0.0019]"/>
+    <alternative rank="260" name="A0486" score="0.001644" belief="0.001426" plausibility="0.001862" interval="[0.0014, 0.0019]"/>
+    <alternative rank="261" name="A0261" score="0.001640" belief="0.001431" plausibility="0.001850" interval="[0.0014, 0.0018]"/>
+    <alternative rank="262" name="A0338" score="0.001634" belief="0.001448" plausibility="0.001820" interval="[0.0014, 0.0018]"/>
+    <alternative rank="263" name="A0159" score="0.001631" belief="0.001449" plausibility="0.001814" interval="[0.0014, 0.0018]"/>
+    <alternative rank="264" name="A0213" score="0.001616" belief="0.001408" plausibility="0.001823" interval="[0.0014, 0.0018]"/>
+    <alternative rank="265" name="A0132" score="0.001609" belief="0.001385" plausibility="0.001834" interval="[0.0014, 0.0018]"/>
+    <alternative rank="266" name="A0146" score="0.001609" belief="0.001407" plausibility="0.001811" interval="[0.0014, 0.0018]"/>
+    <alternative rank="267" name="A0196" score="0.001603" belief="0.001401" plausibility="0.001806" interval="[0.0014, 0.0018]"/>
+    <alternative rank="268" name="A0140" score="0.001587" belief="0.001407" plausibility="0.001767" interval="[0.0014, 0.0018]"/>
+    <alternative rank="269" name="A0088" score="0.001580" belief="0.001404" plausibility="0.001756" interval="[0.0014, 0.0018]"/>
+    <alternative rank="270" name="A0234" score="0.001571" belief="0.001412" plausibility="0.001731" interval="[0.0014, 0.0017]"/>
+    <alternative rank="271" name="A0032" score="0.001569" belief="0.001399" plausibility="0.001739" interval="[0.0014, 0.0017]"/>
+    <alternative rank="272" name="A0439" score="0.001567" belief="0.001409" plausibility="0.001725" interval="[0.0014, 0.0017]"/>
+    <alternative rank="273" name="A0427" score="0.001559" belief="0.001372" plausibility="0.001746" interval="[0.0014, 0.0017]"/>
+    <alternative rank="274" name="A0225" score="0.001557" belief="0.001347" plausibility="0.001767" interval="[0.0013, 0.0018]"/>
+    <alternative rank="275" name="A0358" score="0.001554" belief="0.001370" plausibility="0.001738" interval="[0.0014, 0.0017]"/>
+    <alternative rank="276" name="A0232" score="0.001545" belief="0.001358" plausibility="0.001732" interval="[0.0014, 0.0017]"/>
+    <alternative rank="277" name="A0481" score="0.001545" belief="0.001369" plausibility="0.001720" interval="[0.0014, 0.0017]"/>
+    <alternative rank="278" name="A0272" score="0.001535" belief="0.001364" plausibility="0.001706" interval="[0.0014, 0.0017]"/>
+    <alternative rank="279" name="A0204" score="0.001523" belief="0.001336" plausibility="0.001710" interval="[0.0013, 0.0017]"/>
+    <alternative rank="280" name="A0295" score="0.001518" belief="0.001319" plausibility="0.001717" interval="[0.0013, 0.0017]"/>
+    <alternative rank="281" name="A0369" score="0.001506" belief="0.001346" plausibility="0.001666" interval="[0.0013, 0.0017]"/>
+    <alternative rank="282" name="A0304" score="0.001502" belief="0.001341" plausibility="0.001663" interval="[0.0013, 0.0017]"/>
+    <alternative rank="283" name="A0122" score="0.001499" belief="0.001308" plausibility="0.001690" interval="[0.0013, 0.0017]"/>
+    <alternative rank="284" name="A0287" score="0.001497" belief="0.001318" plausibility="0.001676" interval="[0.0013, 0.0017]"/>
+    <alternative rank="285" name="A0011" score="0.001492" belief="0.001313" plausibility="0.001672" interval="[0.0013, 0.0017]"/>
+    <alternative rank="286" name="A0385" score="0.001491" belief="0.001328" plausibility="0.001653" interval="[0.0013, 0.0017]"/>
+    <alternative rank="287" name="A0372" score="0.001490" belief="0.001296" plausibility="0.001684" interval="[0.0013, 0.0017]"/>
+    <alternative rank="288" name="A0422" score="0.001472" belief="0.001280" plausibility="0.001665" interval="[0.0013, 0.0017]"/>
+    <alternative rank="289" name="A0379" score="0.001467" belief="0.001273" plausibility="0.001660" interval="[0.0013, 0.0017]"/>
+    <alternative rank="290" name="A0013" score="0.001465" belief="0.001262" plausibility="0.001668" interval="[0.0013, 0.0017]"/>
+    <alternative rank="291" name="A0350" score="0.001464" belief="0.001294" plausibility="0.001634" interval="[0.0013, 0.0016]"/>
+    <alternative rank="292" name="A0017" score="0.001443" belief="0.001257" plausibility="0.001629" interval="[0.0013, 0.0016]"/>
+    <alternative rank="293" name="A0120" score="0.001439" belief="0.001260" plausibility="0.001618" interval="[0.0013, 0.0016]"/>
+    <alternative rank="294" name="A0066" score="0.001437" belief="0.001254" plausibility="0.001621" interval="[0.0013, 0.0016]"/>
+    <alternative rank="295" name="A0084" score="0.001433" belief="0.001235" plausibility="0.001630" interval="[0.0012, 0.0016]"/>
+    <alternative rank="296" name="A0164" score="0.001429" belief="0.001233" plausibility="0.001625" interval="[0.0012, 0.0016]"/>
+    <alternative rank="297" name="A0138" score="0.001425" belief="0.001236" plausibility="0.001615" interval="[0.0012, 0.0016]"/>
+    <alternative rank="298" name="A0170" score="0.001411" belief="0.001249" plausibility="0.001572" interval="[0.0012, 0.0016]"/>
+    <alternative rank="299" name="A0363" score="0.001410" belief="0.001226" plausibility="0.001593" interval="[0.0012, 0.0016]"/>
+    <alternative rank="300" name="A0081" score="0.001401" belief="0.001223" plausibility="0.001580" interval="[0.0012, 0.0016]"/>
+    <alternative rank="301" name="A0052" score="0.001396" belief="0.001225" plausibility="0.001567" interval="[0.0012, 0.0016]"/>
+    <alternative rank="302" name="A0059" score="0.001389" belief="0.001153" plausibility="0.001626" interval="[0.0012, 0.0016]"/>
+    <alternative rank="303" name="A0381" score="0.001388" belief="0.001227" plausibility="0.001548" interval="[0.0012, 0.0015]"/>
+    <alternative rank="304" name="A0353" score="0.001381" belief="0.001195" plausibility="0.001568" interval="[0.0012, 0.0016]"/>
+    <alternative rank="305" name="A0090" score="0.001372" belief="0.001228" plausibility="0.001516" interval="[0.0012, 0.0015]"/>
+    <alternative rank="306" name="A0296" score="0.001371" belief="0.001184" plausibility="0.001557" interval="[0.0012, 0.0016]"/>
+    <alternative rank="307" name="A0411" score="0.001363" belief="0.001199" plausibility="0.001527" interval="[0.0012, 0.0015]"/>
+    <alternative rank="308" name="A0336" score="0.001361" belief="0.001218" plausibility="0.001504" interval="[0.0012, 0.0015]"/>
+    <alternative rank="309" name="A0440" score="0.001346" belief="0.001139" plausibility="0.001552" interval="[0.0011, 0.0016]"/>
+    <alternative rank="310" name="A0346" score="0.001344" belief="0.001183" plausibility="0.001505" interval="[0.0012, 0.0015]"/>
+    <alternative rank="311" name="A0061" score="0.001324" belief="0.001146" plausibility="0.001503" interval="[0.0011, 0.0015]"/>
+    <alternative rank="312" name="A0423" score="0.001322" belief="0.001159" plausibility="0.001486" interval="[0.0012, 0.0015]"/>
+    <alternative rank="313" name="A0308" score="0.001294" belief="0.001138" plausibility="0.001451" interval="[0.0011, 0.0015]"/>
+    <alternative rank="314" name="A0136" score="0.001294" belief="0.001137" plausibility="0.001451" interval="[0.0011, 0.0015]"/>
+    <alternative rank="315" name="A0450" score="0.001293" belief="0.001096" plausibility="0.001490" interval="[0.0011, 0.0015]"/>
+    <alternative rank="316" name="A0443" score="0.001287" belief="0.001132" plausibility="0.001442" interval="[0.0011, 0.0014]"/>
+    <alternative rank="317" name="A0071" score="0.001275" belief="0.001102" plausibility="0.001447" interval="[0.0011, 0.0014]"/>
+    <alternative rank="318" name="A0288" score="0.001265" belief="0.001084" plausibility="0.001447" interval="[0.0011, 0.0014]"/>
+    <alternative rank="319" name="A0102" score="0.001252" belief="0.001057" plausibility="0.001447" interval="[0.0011, 0.0014]"/>
+    <alternative rank="320" name="A0414" score="0.001251" belief="0.001109" plausibility="0.001393" interval="[0.0011, 0.0014]"/>
+    <alternative rank="321" name="A0029" score="0.001248" belief="0.001080" plausibility="0.001416" interval="[0.0011, 0.0014]"/>
+    <alternative rank="322" name="A0089" score="0.001245" belief="0.001045" plausibility="0.001445" interval="[0.0010, 0.0014]"/>
+    <alternative rank="323" name="A0311" score="0.001242" belief="0.001065" plausibility="0.001420" interval="[0.0011, 0.0014]"/>
+    <alternative rank="324" name="A0388" score="0.001230" belief="0.001062" plausibility="0.001398" interval="[0.0011, 0.0014]"/>
+    <alternative rank="325" name="A0449" score="0.001229" belief="0.001075" plausibility="0.001383" interval="[0.0011, 0.0014]"/>
+    <alternative rank="326" name="A0306" score="0.001222" belief="0.000999" plausibility="0.001445" interval="[0.0010, 0.0014]"/>
+    <alternative rank="327" name="A0408" score="0.001217" belief="0.001065" plausibility="0.001369" interval="[0.0011, 0.0014]"/>
+    <alternative rank="328" name="A0062" score="0.001206" belief="0.001055" plausibility="0.001356" interval="[0.0011, 0.0014]"/>
+    <alternative rank="329" name="A0014" score="0.001200" belief="0.001050" plausibility="0.001351" interval="[0.0010, 0.0014]"/>
+    <alternative rank="330" name="A0375" score="0.001198" belief="0.001044" plausibility="0.001353" interval="[0.0010, 0.0014]"/>
+    <alternative rank="331" name="A0198" score="0.001196" belief="0.001031" plausibility="0.001360" interval="[0.0010, 0.0014]"/>
+    <alternative rank="332" name="A0248" score="0.001194" belief="0.001048" plausibility="0.001340" interval="[0.0010, 0.0013]"/>
+    <alternative rank="333" name="A0249" score="0.001192" belief="0.001032" plausibility="0.001352" interval="[0.0010, 0.0014]"/>
+    <alternative rank="334" name="A0392" score="0.001186" belief="0.001050" plausibility="0.001322" interval="[0.0011, 0.0013]"/>
+    <alternative rank="335" name="A0160" score="0.001182" belief="0.001023" plausibility="0.001340" interval="[0.0010, 0.0013]"/>
+    <alternative rank="336" name="A0460" score="0.001181" belief="0.001039" plausibility="0.001322" interval="[0.0010, 0.0013]"/>
+    <alternative rank="337" name="A0361" score="0.001175" belief="0.001036" plausibility="0.001314" interval="[0.0010, 0.0013]"/>
+    <alternative rank="338" name="A0080" score="0.001170" belief="0.001023" plausibility="0.001317" interval="[0.0010, 0.0013]"/>
+    <alternative rank="339" name="A0389" score="0.001170" belief="0.001025" plausibility="0.001314" interval="[0.0010, 0.0013]"/>
+    <alternative rank="340" name="A0224" score="0.001158" belief="0.001010" plausibility="0.001307" interval="[0.0010, 0.0013]"/>
+    <alternative rank="341" name="A0019" score="0.001156" belief="0.000989" plausibility="0.001322" interval="[0.0010, 0.0013]"/>
+    <alternative rank="342" name="A0410" score="0.001153" belief="0.000998" plausibility="0.001308" interval="[0.0010, 0.0013]"/>
+    <alternative rank="343" name="A0417" score="0.001152" belief="0.000992" plausibility="0.001313" interval="[0.0010, 0.0013]"/>
+    <alternative rank="344" name="A0487" score="0.001151" belief="0.000996" plausibility="0.001305" interval="[0.0010, 0.0013]"/>
+    <alternative rank="345" name="A0165" score="0.001150" belief="0.000992" plausibility="0.001309" interval="[0.0010, 0.0013]"/>
+    <alternative rank="346" name="A0166" score="0.001142" belief="0.000996" plausibility="0.001288" interval="[0.0010, 0.0013]"/>
+    <alternative rank="347" name="A0250" score="0.001139" belief="0.000964" plausibility="0.001315" interval="[0.0010, 0.0013]"/>
+    <alternative rank="348" name="A0231" score="0.001138" belief="0.000988" plausibility="0.001289" interval="[0.0010, 0.0013]"/>
+    <alternative rank="349" name="A0075" score="0.001137" belief="0.000969" plausibility="0.001306" interval="[0.0010, 0.0013]"/>
+    <alternative rank="350" name="A0054" score="0.001135" belief="0.000978" plausibility="0.001293" interval="[0.0010, 0.0013]"/>
+    <alternative rank="351" name="A0454" score="0.001130" belief="0.000988" plausibility="0.001272" interval="[0.0010, 0.0013]"/>
+    <alternative rank="352" name="A0026" score="0.001124" belief="0.000951" plausibility="0.001298" interval="[0.0010, 0.0013]"/>
+    <alternative rank="353" name="A0130" score="0.001121" belief="0.000966" plausibility="0.001275" interval="[0.0010, 0.0013]"/>
+    <alternative rank="354" name="A0103" score="0.001115" belief="0.000967" plausibility="0.001264" interval="[0.0010, 0.0013]"/>
+    <alternative rank="355" name="A0494" score="0.001115" belief="0.000931" plausibility="0.001299" interval="[0.0009, 0.0013]"/>
+    <alternative rank="356" name="A0149" score="0.001115" belief="0.000971" plausibility="0.001258" interval="[0.0010, 0.0013]"/>
+    <alternative rank="357" name="A0246" score="0.001113" belief="0.000959" plausibility="0.001267" interval="[0.0010, 0.0013]"/>
+    <alternative rank="358" name="A0233" score="0.001109" belief="0.000934" plausibility="0.001284" interval="[0.0009, 0.0013]"/>
+    <alternative rank="359" name="A0391" score="0.001103" belief="0.000959" plausibility="0.001248" interval="[0.0010, 0.0012]"/>
+    <alternative rank="360" name="A0316" score="0.001100" belief="0.000946" plausibility="0.001253" interval="[0.0009, 0.0013]"/>
+    <alternative rank="361" name="A0070" score="0.001099" belief="0.000939" plausibility="0.001259" interval="[0.0009, 0.0013]"/>
+    <alternative rank="362" name="A0303" score="0.001097" belief="0.000902" plausibility="0.001293" interval="[0.0009, 0.0013]"/>
+    <alternative rank="363" name="A0152" score="0.001095" belief="0.000937" plausibility="0.001253" interval="[0.0009, 0.0013]"/>
+    <alternative rank="364" name="A0453" score="0.001094" belief="0.000960" plausibility="0.001228" interval="[0.0010, 0.0012]"/>
+    <alternative rank="365" name="A0284" score="0.001086" belief="0.000934" plausibility="0.001239" interval="[0.0009, 0.0012]"/>
+    <alternative rank="366" name="A0464" score="0.001082" belief="0.000941" plausibility="0.001224" interval="[0.0009, 0.0012]"/>
+    <alternative rank="367" name="A0265" score="0.001078" belief="0.000919" plausibility="0.001238" interval="[0.0009, 0.0012]"/>
+    <alternative rank="368" name="A0236" score="0.001073" belief="0.000919" plausibility="0.001228" interval="[0.0009, 0.0012]"/>
+    <alternative rank="369" name="A0314" score="0.001072" belief="0.000916" plausibility="0.001227" interval="[0.0009, 0.0012]"/>
+    <alternative rank="370" name="A0055" score="0.001063" belief="0.000924" plausibility="0.001203" interval="[0.0009, 0.0012]"/>
+    <alternative rank="371" name="A0086" score="0.001062" belief="0.000909" plausibility="0.001216" interval="[0.0009, 0.0012]"/>
+    <alternative rank="372" name="A0357" score="0.001059" belief="0.000925" plausibility="0.001193" interval="[0.0009, 0.0012]"/>
+    <alternative rank="373" name="A0254" score="0.001049" belief="0.000903" plausibility="0.001194" interval="[0.0009, 0.0012]"/>
+    <alternative rank="374" name="A0390" score="0.001028" belief="0.000876" plausibility="0.001179" interval="[0.0009, 0.0012]"/>
+    <alternative rank="375" name="A0064" score="0.001024" belief="0.000863" plausibility="0.001186" interval="[0.0009, 0.0012]"/>
+    <alternative rank="376" name="A0047" score="0.001020" belief="0.000874" plausibility="0.001165" interval="[0.0009, 0.0012]"/>
+    <alternative rank="377" name="A0015" score="0.001016" belief="0.000880" plausibility="0.001151" interval="[0.0009, 0.0012]"/>
+    <alternative rank="378" name="A0100" score="0.001007" belief="0.000848" plausibility="0.001165" interval="[0.0008, 0.0012]"/>
+    <alternative rank="379" name="A0252" score="0.000998" belief="0.000870" plausibility="0.001126" interval="[0.0009, 0.0011]"/>
+    <alternative rank="380" name="A0171" score="0.000991" belief="0.000862" plausibility="0.001120" interval="[0.0009, 0.0011]"/>
+    <alternative rank="381" name="A0172" score="0.000990" belief="0.000852" plausibility="0.001127" interval="[0.0009, 0.0011]"/>
+    <alternative rank="382" name="A0436" score="0.000984" belief="0.000816" plausibility="0.001152" interval="[0.0008, 0.0012]"/>
+    <alternative rank="383" name="A0238" score="0.000982" belief="0.000823" plausibility="0.001141" interval="[0.0008, 0.0011]"/>
+    <alternative rank="384" name="A0096" score="0.000979" belief="0.000822" plausibility="0.001135" interval="[0.0008, 0.0011]"/>
+    <alternative rank="385" name="A0431" score="0.000974" belief="0.000822" plausibility="0.001125" interval="[0.0008, 0.0011]"/>
+    <alternative rank="386" name="A0483" score="0.000972" belief="0.000841" plausibility="0.001103" interval="[0.0008, 0.0011]"/>
+    <alternative rank="387" name="A0459" score="0.000971" belief="0.000799" plausibility="0.001143" interval="[0.0008, 0.0011]"/>
+    <alternative rank="388" name="A0320" score="0.000970" belief="0.000823" plausibility="0.001116" interval="[0.0008, 0.0011]"/>
+    <alternative rank="389" name="A0133" score="0.000962" belief="0.000822" plausibility="0.001102" interval="[0.0008, 0.0011]"/>
+    <alternative rank="390" name="A0319" score="0.000951" belief="0.000806" plausibility="0.001096" interval="[0.0008, 0.0011]"/>
+    <alternative rank="391" name="A0455" score="0.000949" belief="0.000762" plausibility="0.001136" interval="[0.0008, 0.0011]"/>
+    <alternative rank="392" name="A0477" score="0.000943" belief="0.000796" plausibility="0.001090" interval="[0.0008, 0.0011]"/>
+    <alternative rank="393" name="A0072" score="0.000939" belief="0.000793" plausibility="0.001085" interval="[0.0008, 0.0011]"/>
+    <alternative rank="394" name="A0291" score="0.000938" belief="0.000785" plausibility="0.001091" interval="[0.0008, 0.0011]"/>
+    <alternative rank="395" name="A0447" score="0.000938" belief="0.000805" plausibility="0.001070" interval="[0.0008, 0.0011]"/>
+    <alternative rank="396" name="A0465" score="0.000931" belief="0.000801" plausibility="0.001062" interval="[0.0008, 0.0011]"/>
+    <alternative rank="397" name="A0027" score="0.000930" belief="0.000796" plausibility="0.001063" interval="[0.0008, 0.0011]"/>
+    <alternative rank="398" name="A0470" score="0.000927" belief="0.000767" plausibility="0.001087" interval="[0.0008, 0.0011]"/>
+    <alternative rank="399" name="A0334" score="0.000925" belief="0.000787" plausibility="0.001063" interval="[0.0008, 0.0011]"/>
+    <alternative rank="400" name="A0399" score="0.000925" belief="0.000798" plausibility="0.001052" interval="[0.0008, 0.0011]"/>
+    <alternative rank="401" name="A0313" score="0.000915" belief="0.000789" plausibility="0.001041" interval="[0.0008, 0.0010]"/>
+    <alternative rank="402" name="A0188" score="0.000914" belief="0.000746" plausibility="0.001082" interval="[0.0007, 0.0011]"/>
+    <alternative rank="403" name="A0446" score="0.000910" belief="0.000776" plausibility="0.001044" interval="[0.0008, 0.0010]"/>
+    <alternative rank="404" name="A0214" score="0.000907" belief="0.000789" plausibility="0.001025" interval="[0.0008, 0.0010]"/>
+    <alternative rank="405" name="A0471" score="0.000901" belief="0.000751" plausibility="0.001052" interval="[0.0008, 0.0011]"/>
+    <alternative rank="406" name="A0343" score="0.000887" belief="0.000729" plausibility="0.001046" interval="[0.0007, 0.0010]"/>
+    <alternative rank="407" name="A0305" score="0.000882" belief="0.000755" plausibility="0.001008" interval="[0.0008, 0.0010]"/>
+    <alternative rank="408" name="A0209" score="0.000880" belief="0.000751" plausibility="0.001010" interval="[0.0008, 0.0010]"/>
+    <alternative rank="409" name="A0226" score="0.000879" belief="0.000748" plausibility="0.001010" interval="[0.0007, 0.0010]"/>
+    <alternative rank="410" name="A0400" score="0.000878" belief="0.000734" plausibility="0.001021" interval="[0.0007, 0.0010]"/>
+    <alternative rank="411" name="A0451" score="0.000866" belief="0.000676" plausibility="0.001055" interval="[0.0007, 0.0011]"/>
+    <alternative rank="412" name="A0127" score="0.000864" belief="0.000742" plausibility="0.000986" interval="[0.0007, 0.0010]"/>
+    <alternative rank="413" name="A0270" score="0.000862" belief="0.000721" plausibility="0.001002" interval="[0.0007, 0.0010]"/>
+    <alternative rank="414" name="A0345" score="0.000853" belief="0.000716" plausibility="0.000990" interval="[0.0007, 0.0010]"/>
+    <alternative rank="415" name="A0341" score="0.000849" belief="0.000724" plausibility="0.000974" interval="[0.0007, 0.0010]"/>
+    <alternative rank="416" name="A0169" score="0.000838" belief="0.000698" plausibility="0.000977" interval="[0.0007, 0.0010]"/>
+    <alternative rank="417" name="A0116" score="0.000827" belief="0.000713" plausibility="0.000942" interval="[0.0007, 0.0009]"/>
+    <alternative rank="418" name="A0110" score="0.000827" belief="0.000693" plausibility="0.000961" interval="[0.0007, 0.0010]"/>
+    <alternative rank="419" name="A0367" score="0.000826" belief="0.000699" plausibility="0.000952" interval="[0.0007, 0.0010]"/>
+    <alternative rank="420" name="A0057" score="0.000821" belief="0.000707" plausibility="0.000935" interval="[0.0007, 0.0009]"/>
+    <alternative rank="421" name="A0333" score="0.000820" belief="0.000679" plausibility="0.000960" interval="[0.0007, 0.0010]"/>
+    <alternative rank="422" name="A0244" score="0.000813" belief="0.000693" plausibility="0.000932" interval="[0.0007, 0.0009]"/>
+    <alternative rank="423" name="A0148" score="0.000802" belief="0.000661" plausibility="0.000944" interval="[0.0007, 0.0009]"/>
+    <alternative rank="424" name="A0094" score="0.000798" belief="0.000652" plausibility="0.000944" interval="[0.0007, 0.0009]"/>
+    <alternative rank="425" name="A0485" score="0.000798" belief="0.000670" plausibility="0.000925" interval="[0.0007, 0.0009]"/>
+    <alternative rank="426" name="A0107" score="0.000796" belief="0.000684" plausibility="0.000908" interval="[0.0007, 0.0009]"/>
+    <alternative rank="427" name="A0109" score="0.000795" belief="0.000669" plausibility="0.000920" interval="[0.0007, 0.0009]"/>
+    <alternative rank="428" name="A0111" score="0.000794" belief="0.000659" plausibility="0.000928" interval="[0.0007, 0.0009]"/>
+    <alternative rank="429" name="A0457" score="0.000789" belief="0.000662" plausibility="0.000916" interval="[0.0007, 0.0009]"/>
+    <alternative rank="430" name="A0085" score="0.000789" belief="0.000643" plausibility="0.000934" interval="[0.0006, 0.0009]"/>
+    <alternative rank="431" name="A0024" score="0.000788" belief="0.000645" plausibility="0.000930" interval="[0.0006, 0.0009]"/>
+    <alternative rank="432" name="A0003" score="0.000784" belief="0.000659" plausibility="0.000910" interval="[0.0007, 0.0009]"/>
+    <alternative rank="433" name="A0077" score="0.000781" belief="0.000637" plausibility="0.000926" interval="[0.0006, 0.0009]"/>
+    <alternative rank="434" name="A0217" score="0.000769" belief="0.000619" plausibility="0.000919" interval="[0.0006, 0.0009]"/>
+    <alternative rank="435" name="A0435" score="0.000767" belief="0.000645" plausibility="0.000889" interval="[0.0006, 0.0009]"/>
+    <alternative rank="436" name="A0108" score="0.000766" belief="0.000629" plausibility="0.000903" interval="[0.0006, 0.0009]"/>
+    <alternative rank="437" name="A0386" score="0.000760" belief="0.000634" plausibility="0.000886" interval="[0.0006, 0.0009]"/>
+    <alternative rank="438" name="A0394" score="0.000759" belief="0.000639" plausibility="0.000878" interval="[0.0006, 0.0009]"/>
+    <alternative rank="439" name="A0403" score="0.000747" belief="0.000636" plausibility="0.000859" interval="[0.0006, 0.0009]"/>
+    <alternative rank="440" name="A0266" score="0.000746" belief="0.000626" plausibility="0.000865" interval="[0.0006, 0.0009]"/>
+    <alternative rank="441" name="A0068" score="0.000740" belief="0.000606" plausibility="0.000875" interval="[0.0006, 0.0009]"/>
+    <alternative rank="442" name="A0114" score="0.000734" belief="0.000617" plausibility="0.000852" interval="[0.0006, 0.0009]"/>
+    <alternative rank="443" name="A0243" score="0.000732" belief="0.000614" plausibility="0.000850" interval="[0.0006, 0.0008]"/>
+    <alternative rank="444" name="A0452" score="0.000717" belief="0.000587" plausibility="0.000848" interval="[0.0006, 0.0008]"/>
+    <alternative rank="445" name="A0181" score="0.000684" belief="0.000582" plausibility="0.000786" interval="[0.0006, 0.0008]"/>
+    <alternative rank="446" name="A0139" score="0.000664" belief="0.000551" plausibility="0.000777" interval="[0.0006, 0.0008]"/>
+    <alternative rank="447" name="A0161" score="0.000663" belief="0.000532" plausibility="0.000793" interval="[0.0005, 0.0008]"/>
+    <alternative rank="448" name="A0300" score="0.000661" belief="0.000541" plausibility="0.000781" interval="[0.0005, 0.0008]"/>
+    <alternative rank="449" name="A0045" score="0.000660" belief="0.000542" plausibility="0.000779" interval="[0.0005, 0.0008]"/>
+    <alternative rank="450" name="A0208" score="0.000643" belief="0.000510" plausibility="0.000775" interval="[0.0005, 0.0008]"/>
+    <alternative rank="451" name="A0106" score="0.000636" belief="0.000524" plausibility="0.000749" interval="[0.0005, 0.0007]"/>
+    <alternative rank="452" name="A0500" score="0.000624" belief="0.000512" plausibility="0.000735" interval="[0.0005, 0.0007]"/>
+    <alternative rank="453" name="A0239" score="0.000622" belief="0.000520" plausibility="0.000723" interval="[0.0005, 0.0007]"/>
+    <alternative rank="454" name="A0235" score="0.000613" belief="0.000494" plausibility="0.000733" interval="[0.0005, 0.0007]"/>
+    <alternative rank="455" name="A0155" score="0.000590" belief="0.000491" plausibility="0.000690" interval="[0.0005, 0.0007]"/>
+    <alternative rank="456" name="A0144" score="0.000587" belief="0.000484" plausibility="0.000690" interval="[0.0005, 0.0007]"/>
+    <alternative rank="457" name="A0312" score="0.000576" belief="0.000477" plausibility="0.000675" interval="[0.0005, 0.0007]"/>
+    <alternative rank="458" name="A0023" score="0.000574" belief="0.000461" plausibility="0.000686" interval="[0.0005, 0.0007]"/>
+    <alternative rank="459" name="A0398" score="0.000569" belief="0.000460" plausibility="0.000678" interval="[0.0005, 0.0007]"/>
+    <alternative rank="460" name="A0352" score="0.000560" belief="0.000465" plausibility="0.000655" interval="[0.0005, 0.0007]"/>
+    <alternative rank="461" name="A0327" score="0.000560" belief="0.000454" plausibility="0.000665" interval="[0.0005, 0.0007]"/>
+    <alternative rank="462" name="A0039" score="0.000557" belief="0.000436" plausibility="0.000678" interval="[0.0004, 0.0007]"/>
+    <alternative rank="463" name="A0063" score="0.000551" belief="0.000436" plausibility="0.000665" interval="[0.0004, 0.0007]"/>
+    <alternative rank="464" name="A0008" score="0.000550" belief="0.000441" plausibility="0.000659" interval="[0.0004, 0.0007]"/>
+    <alternative rank="465" name="A0034" score="0.000544" belief="0.000412" plausibility="0.000677" interval="[0.0004, 0.0007]"/>
+    <alternative rank="466" name="A0228" score="0.000541" belief="0.000430" plausibility="0.000651" interval="[0.0004, 0.0007]"/>
+    <alternative rank="467" name="A0373" score="0.000535" belief="0.000409" plausibility="0.000662" interval="[0.0004, 0.0007]"/>
+    <alternative rank="468" name="A0328" score="0.000531" belief="0.000424" plausibility="0.000637" interval="[0.0004, 0.0006]"/>
+    <alternative rank="469" name="A0163" score="0.000528" belief="0.000406" plausibility="0.000650" interval="[0.0004, 0.0006]"/>
+    <alternative rank="470" name="A0050" score="0.000517" belief="0.000416" plausibility="0.000618" interval="[0.0004, 0.0006]"/>
+    <alternative rank="471" name="A0277" score="0.000513" belief="0.000394" plausibility="0.000632" interval="[0.0004, 0.0006]"/>
+    <alternative rank="472" name="A0442" score="0.000503" belief="0.000405" plausibility="0.000600" interval="[0.0004, 0.0006]"/>
+    <alternative rank="473" name="A0012" score="0.000499" belief="0.000401" plausibility="0.000597" interval="[0.0004, 0.0006]"/>
+    <alternative rank="474" name="A0429" score="0.000499" belief="0.000394" plausibility="0.000604" interval="[0.0004, 0.0006]"/>
+    <alternative rank="475" name="A0318" score="0.000474" belief="0.000359" plausibility="0.000589" interval="[0.0004, 0.0006]"/>
+    <alternative rank="476" name="A0324" score="0.000470" belief="0.000368" plausibility="0.000573" interval="[0.0004, 0.0006]"/>
+    <alternative rank="477" name="A0448" score="0.000463" belief="0.000371" plausibility="0.000555" interval="[0.0004, 0.0006]"/>
+    <alternative rank="478" name="A0151" score="0.000459" belief="0.000368" plausibility="0.000551" interval="[0.0004, 0.0006]"/>
+    <alternative rank="479" name="A0396" score="0.000455" belief="0.000341" plausibility="0.000568" interval="[0.0003, 0.0006]"/>
+    <alternative rank="480" name="A0253" score="0.000454" belief="0.000363" plausibility="0.000545" interval="[0.0004, 0.0005]"/>
+    <alternative rank="481" name="A0356" score="0.000443" belief="0.000356" plausibility="0.000530" interval="[0.0004, 0.0005]"/>
+    <alternative rank="482" name="A0326" score="0.000434" belief="0.000339" plausibility="0.000530" interval="[0.0003, 0.0005]"/>
+    <alternative rank="483" name="A0048" score="0.000432" belief="0.000332" plausibility="0.000533" interval="[0.0003, 0.0005]"/>
+    <alternative rank="484" name="A0489" score="0.000418" belief="0.000314" plausibility="0.000521" interval="[0.0003, 0.0005]"/>
+    <alternative rank="485" name="A0056" score="0.000382" belief="0.000282" plausibility="0.000482" interval="[0.0003, 0.0005]"/>
+    <alternative rank="486" name="A0332" score="0.000381" belief="0.000299" plausibility="0.000464" interval="[0.0003, 0.0005]"/>
+    <alternative rank="487" name="A0349" score="0.000376" belief="0.000285" plausibility="0.000467" interval="[0.0003, 0.0005]"/>
+    <alternative rank="488" name="A0104" score="0.000370" belief="0.000285" plausibility="0.000456" interval="[0.0003, 0.0005]"/>
+    <alternative rank="489" name="A0498" score="0.000352" belief="0.000268" plausibility="0.000437" interval="[0.0003, 0.0004]"/>
+    <alternative rank="490" name="A0145" score="0.000337" belief="0.000239" plausibility="0.000434" interval="[0.0002, 0.0004]"/>
+    <alternative rank="491" name="A0418" score="0.000328" belief="0.000235" plausibility="0.000421" interval="[0.0002, 0.0004]"/>
+    <alternative rank="492" name="A0240" score="0.000322" belief="0.000232" plausibility="0.000412" interval="[0.0002, 0.0004]"/>
+    <alternative rank="493" name="A0413" score="0.000318" belief="0.000228" plausibility="0.000407" interval="[0.0002, 0.0004]"/>
+    <alternative rank="494" name="A0404" score="0.000289" belief="0.000220" plausibility="0.000357" interval="[0.0002, 0.0004]"/>
+    <alternative rank="495" name="A0150" score="0.000288" belief="0.000200" plausibility="0.000376" interval="[0.0002, 0.0004]"/>
+    <alternative rank="496" name="A0033" score="0.000267" belief="0.000198" plausibility="0.000336" interval="[0.0002, 0.0003]"/>
+    <alternative rank="497" name="A0101" score="0.000263" belief="0.000184" plausibility="0.000343" interval="[0.0002, 0.0003]"/>
+    <alternative rank="498" name="A0178" score="0.000221" belief="0.000150" plausibility="0.000293" interval="[0.0002, 0.0003]"/>
+    <alternative rank="499" name="A0409" score="0.000216" belief="0.000136" plausibility="0.000296" interval="[0.0001, 0.0003]"/>
+    <alternative rank="500" name="A0206" score="0.000166" belief="0.000106" plausibility="0.000225" interval="[0.0001, 0.0002]"/>
+  </ranking>
+  <belief_plausibility_functions>
+    <alternative name="A0001" belief="0.001619" plausibility="0.002051"/>
+    <alternative name="A0002" belief="0.002283" plausibility="0.002691"/>
+    <alternative name="A0003" belief="0.000659" plausibility="0.000910"/>
+    <alternative name="A0004" belief="0.001758" plausibility="0.002141"/>
+    <alternative name="A0005" belief="0.003255" plausibility="0.003858"/>
+    <alternative name="A0006" belief="0.002540" plausibility="0.003047"/>
+    <alternative name="A0007" belief="0.002228" plausibility="0.002679"/>
+    <alternative name="A0008" belief="0.000441" plausibility="0.000659"/>
+    <alternative name="A0009" belief="0.003028" plausibility="0.003525"/>
+    <alternative name="A0010" belief="0.003804" plausibility="0.004361"/>
+    <alternative name="A0011" belief="0.001313" plausibility="0.001672"/>
+    <alternative name="A0012" belief="0.000401" plausibility="0.000597"/>
+    <alternative name="A0013" belief="0.001262" plausibility="0.001668"/>
+    <alternative name="A0014" belief="0.001050" plausibility="0.001351"/>
+    <alternative name="A0015" belief="0.000880" plausibility="0.001151"/>
+    <alternative name="A0016" belief="0.003659" plausibility="0.004175"/>
+    <alternative name="A0017" belief="0.001257" plausibility="0.001629"/>
+    <alternative name="A0018" belief="0.003520" plausibility="0.004058"/>
+    <alternative name="A0019" belief="0.000989" plausibility="0.001322"/>
+    <alternative name="A0020" belief="0.004105" plausibility="0.004642"/>
+    <alternative name="A0021" belief="0.001504" plausibility="0.001861"/>
+    <alternative name="A0022" belief="0.003141" plausibility="0.003787"/>
+    <alternative name="A0023" belief="0.000461" plausibility="0.000686"/>
+    <alternative name="A0024" belief="0.000645" plausibility="0.000930"/>
+    <alternative name="A0025" belief="0.001909" plausibility="0.002342"/>
+    <alternative name="A0026" belief="0.000951" plausibility="0.001298"/>
+    <alternative name="A0027" belief="0.000796" plausibility="0.001063"/>
+    <alternative name="A0028" belief="0.002214" plausibility="0.002660"/>
+    <alternative name="A0029" belief="0.001080" plausibility="0.001416"/>
+    <alternative name="A0030" belief="0.005494" plausibility="0.006118"/>
+    <alternative name="A0031" belief="0.001831" plausibility="0.002266"/>
+    <alternative name="A0032" belief="0.001399" plausibility="0.001739"/>
+    <alternative name="A0033" belief="0.000198" plausibility="0.000336"/>
+    <alternative name="A0034" belief="0.000412" plausibility="0.000677"/>
+    <alternative name="A0035" belief="0.002310" plausibility="0.002822"/>
+    <alternative name="A0036" belief="0.003475" plausibility="0.004050"/>
+    <alternative name="A0037" belief="0.002341" plausibility="0.002785"/>
+    <alternative name="A0038" belief="0.002710" plausibility="0.003157"/>
+    <alternative name="A0039" belief="0.000436" plausibility="0.000678"/>
+    <alternative name="A0040" belief="0.004201" plausibility="0.004735"/>
+    <alternative name="A0041" belief="0.002288" plausibility="0.002742"/>
+    <alternative name="A0042" belief="0.004177" plausibility="0.004809"/>
+    <alternative name="A0043" belief="0.002358" plausibility="0.002845"/>
+    <alternative name="A0044" belief="0.007889" plausibility="0.008542"/>
+    <alternative name="A0045" belief="0.000542" plausibility="0.000779"/>
+    <alternative name="A0046" belief="0.003726" plausibility="0.004258"/>
+    <alternative name="A0047" belief="0.000874" plausibility="0.001165"/>
+    <alternative name="A0048" belief="0.000332" plausibility="0.000533"/>
+    <alternative name="A0049" belief="0.002467" plausibility="0.002856"/>
+    <alternative name="A0050" belief="0.000416" plausibility="0.000618"/>
+    <alternative name="A0051" belief="0.003474" plausibility="0.003996"/>
+    <alternative name="A0052" belief="0.001225" plausibility="0.001567"/>
+    <alternative name="A0053" belief="0.002148" plausibility="0.002585"/>
+    <alternative name="A0054" belief="0.000978" plausibility="0.001293"/>
+    <alternative name="A0055" belief="0.000924" plausibility="0.001203"/>
+    <alternative name="A0056" belief="0.000282" plausibility="0.000482"/>
+    <alternative name="A0057" belief="0.000707" plausibility="0.000935"/>
+    <alternative name="A0058" belief="0.004261" plausibility="0.004897"/>
+    <alternative name="A0059" belief="0.001153" plausibility="0.001626"/>
+    <alternative name="A0060" belief="0.001750" plausibility="0.002128"/>
+    <alternative name="A0061" belief="0.001146" plausibility="0.001503"/>
+    <alternative name="A0062" belief="0.001055" plausibility="0.001356"/>
+    <alternative name="A0063" belief="0.000436" plausibility="0.000665"/>
+    <alternative name="A0064" belief="0.000863" plausibility="0.001186"/>
+    <alternative name="A0065" belief="0.001941" plausibility="0.002279"/>
+    <alternative name="A0066" belief="0.001254" plausibility="0.001621"/>
+    <alternative name="A0067" belief="0.003569" plausibility="0.004122"/>
+    <alternative name="A0068" belief="0.000606" plausibility="0.000875"/>
+    <alternative name="A0069" belief="0.003658" plausibility="0.004287"/>
+    <alternative name="A0070" belief="0.000939" plausibility="0.001259"/>
+    <alternative name="A0071" belief="0.001102" plausibility="0.001447"/>
+    <alternative name="A0072" belief="0.000793" plausibility="0.001085"/>
+    <alternative name="A0073" belief="0.002260" plausibility="0.002773"/>
+    <alternative name="A0074" belief="0.001587" plausibility="0.002037"/>
+    <alternative name="A0075" belief="0.000969" plausibility="0.001306"/>
+    <alternative name="A0076" belief="0.001649" plausibility="0.001997"/>
+    <alternative name="A0077" belief="0.000637" plausibility="0.000926"/>
+    <alternative name="A0078" belief="0.002109" plausibility="0.002523"/>
+    <alternative name="A0079" belief="0.001932" plausibility="0.002338"/>
+    <alternative name="A0080" belief="0.001023" plausibility="0.001317"/>
+    <alternative name="A0081" belief="0.001223" plausibility="0.001580"/>
+    <alternative name="A0082" belief="0.012100" plausibility="0.013240"/>
+    <alternative name="A0083" belief="0.003326" plausibility="0.003849"/>
+    <alternative name="A0084" belief="0.001235" plausibility="0.001630"/>
+    <alternative name="A0085" belief="0.000643" plausibility="0.000934"/>
+    <alternative name="A0086" belief="0.000909" plausibility="0.001216"/>
+    <alternative name="A0087" belief="0.001886" plausibility="0.002349"/>
+    <alternative name="A0088" belief="0.001404" plausibility="0.001756"/>
+    <alternative name="A0089" belief="0.001045" plausibility="0.001445"/>
+    <alternative name="A0090" belief="0.001228" plausibility="0.001516"/>
+    <alternative name="A0091" belief="0.001773" plausibility="0.002218"/>
+    <alternative name="A0092" belief="0.006136" plausibility="0.006853"/>
+    <alternative name="A0093" belief="0.002070" plausibility="0.002466"/>
+    <alternative name="A0094" belief="0.000652" plausibility="0.000944"/>
+    <alternative name="A0095" belief="0.003007" plausibility="0.003542"/>
+    <alternative name="A0096" belief="0.000822" plausibility="0.001135"/>
+    <alternative name="A0097" belief="0.003219" plausibility="0.003699"/>
+    <alternative name="A0098" belief="0.001903" plausibility="0.002415"/>
+    <alternative name="A0099" belief="0.002564" plausibility="0.003015"/>
+    <alternative name="A0100" belief="0.000848" plausibility="0.001165"/>
+    <alternative name="A0101" belief="0.000184" plausibility="0.000343"/>
+    <alternative name="A0102" belief="0.001057" plausibility="0.001447"/>
+    <alternative name="A0103" belief="0.000967" plausibility="0.001264"/>
+    <alternative name="A0104" belief="0.000285" plausibility="0.000456"/>
+    <alternative name="A0105" belief="0.001952" plausibility="0.002343"/>
+    <alternative name="A0106" belief="0.000524" plausibility="0.000749"/>
+    <alternative name="A0107" belief="0.000684" plausibility="0.000908"/>
+    <alternative name="A0108" belief="0.000629" plausibility="0.000903"/>
+    <alternative name="A0109" belief="0.000669" plausibility="0.000920"/>
+    <alternative name="A0110" belief="0.000693" plausibility="0.000961"/>
+    <alternative name="A0111" belief="0.000659" plausibility="0.000928"/>
+    <alternative name="A0112" belief="0.002002" plausibility="0.002474"/>
+    <alternative name="A0113" belief="0.003265" plausibility="0.003858"/>
+    <alternative name="A0114" belief="0.000617" plausibility="0.000852"/>
+    <alternative name="A0115" belief="0.002211" plausibility="0.002642"/>
+    <alternative name="A0116" belief="0.000713" plausibility="0.000942"/>
+    <alternative name="A0117" belief="0.002836" plausibility="0.003318"/>
+    <alternative name="A0118" belief="0.001540" plausibility="0.001937"/>
+    <alternative name="A0119" belief="0.001658" plausibility="0.002081"/>
+    <alternative name="A0120" belief="0.001260" plausibility="0.001618"/>
+    <alternative name="A0121" belief="0.004079" plausibility="0.004648"/>
+    <alternative name="A0122" belief="0.001308" plausibility="0.001690"/>
+    <alternative name="A0123" belief="0.001788" plausibility="0.002152"/>
+    <alternative name="A0124" belief="0.002428" plausibility="0.002835"/>
+    <alternative name="A0125" belief="0.002571" plausibility="0.003022"/>
+    <alternative name="A0126" belief="0.007281" plausibility="0.008260"/>
+    <alternative name="A0127" belief="0.000742" plausibility="0.000986"/>
+    <alternative name="A0128" belief="0.002257" plausibility="0.002678"/>
+    <alternative name="A0129" belief="0.001496" plausibility="0.001853"/>
+    <alternative name="A0130" belief="0.000966" plausibility="0.001275"/>
+    <alternative name="A0131" belief="0.003434" plausibility="0.004032"/>
+    <alternative name="A0132" belief="0.001385" plausibility="0.001834"/>
+    <alternative name="A0133" belief="0.000822" plausibility="0.001102"/>
+    <alternative name="A0134" belief="0.001643" plausibility="0.002024"/>
+    <alternative name="A0135" belief="0.001757" plausibility="0.002100"/>
+    <alternative name="A0136" belief="0.001137" plausibility="0.001451"/>
+    <alternative name="A0137" belief="0.001919" plausibility="0.002318"/>
+    <alternative name="A0138" belief="0.001236" plausibility="0.001615"/>
+    <alternative name="A0139" belief="0.000551" plausibility="0.000777"/>
+    <alternative name="A0140" belief="0.001407" plausibility="0.001767"/>
+    <alternative name="A0141" belief="0.002983" plausibility="0.003472"/>
+    <alternative name="A0142" belief="0.004987" plausibility="0.005589"/>
+    <alternative name="A0143" belief="0.002017" plausibility="0.002483"/>
+    <alternative name="A0144" belief="0.000484" plausibility="0.000690"/>
+    <alternative name="A0145" belief="0.000239" plausibility="0.000434"/>
+    <alternative name="A0146" belief="0.001407" plausibility="0.001811"/>
+    <alternative name="A0147" belief="0.002669" plausibility="0.003162"/>
+    <alternative name="A0148" belief="0.000661" plausibility="0.000944"/>
+    <alternative name="A0149" belief="0.000971" plausibility="0.001258"/>
+    <alternative name="A0150" belief="0.000200" plausibility="0.000376"/>
+    <alternative name="A0151" belief="0.000368" plausibility="0.000551"/>
+    <alternative name="A0152" belief="0.000937" plausibility="0.001253"/>
+    <alternative name="A0153" belief="0.002174" plausibility="0.002743"/>
+    <alternative name="A0154" belief="0.002537" plausibility="0.002956"/>
+    <alternative name="A0155" belief="0.000491" plausibility="0.000690"/>
+    <alternative name="A0156" belief="0.003542" plausibility="0.003990"/>
+    <alternative name="A0157" belief="0.004341" plausibility="0.004922"/>
+    <alternative name="A0158" belief="0.002158" plausibility="0.002566"/>
+    <alternative name="A0159" belief="0.001449" plausibility="0.001814"/>
+    <alternative name="A0160" belief="0.001023" plausibility="0.001340"/>
+    <alternative name="A0161" belief="0.000532" plausibility="0.000793"/>
+    <alternative name="A0162" belief="0.002763" plausibility="0.003179"/>
+    <alternative name="A0163" belief="0.000406" plausibility="0.000650"/>
+    <alternative name="A0164" belief="0.001233" plausibility="0.001625"/>
+    <alternative name="A0165" belief="0.000992" plausibility="0.001309"/>
+    <alternative name="A0166" belief="0.000996" plausibility="0.001288"/>
+    <alternative name="A0167" belief="0.002086" plausibility="0.002491"/>
+    <alternative name="A0168" belief="0.003236" plausibility="0.003780"/>
+    <alternative name="A0169" belief="0.000698" plausibility="0.000977"/>
+    <alternative name="A0170" belief="0.001249" plausibility="0.001572"/>
+    <alternative name="A0171" belief="0.000862" plausibility="0.001120"/>
+    <alternative name="A0172" belief="0.000852" plausibility="0.001127"/>
+    <alternative name="A0173" belief="0.002691" plausibility="0.003145"/>
+    <alternative name="A0174" belief="0.002366" plausibility="0.002806"/>
+    <alternative name="A0175" belief="0.001517" plausibility="0.001839"/>
+    <alternative name="A0176" belief="0.003864" plausibility="0.004415"/>
+    <alternative name="A0177" belief="0.002652" plausibility="0.003112"/>
+    <alternative name="A0178" belief="0.000150" plausibility="0.000293"/>
+    <alternative name="A0179" belief="0.001746" plausibility="0.002189"/>
+    <alternative name="A0180" belief="0.002692" plausibility="0.003232"/>
+    <alternative name="A0181" belief="0.000582" plausibility="0.000786"/>
+    <alternative name="A0182" belief="0.002865" plausibility="0.003317"/>
+    <alternative name="A0183" belief="0.001488" plausibility="0.001824"/>
+    <alternative name="A0184" belief="0.001830" plausibility="0.002240"/>
+    <alternative name="A0185" belief="0.003282" plausibility="0.003831"/>
+    <alternative name="A0186" belief="0.001850" plausibility="0.002220"/>
+    <alternative name="A0187" belief="0.002487" plausibility="0.002942"/>
+    <alternative name="A0188" belief="0.000746" plausibility="0.001082"/>
+    <alternative name="A0189" belief="0.002246" plausibility="0.002667"/>
+    <alternative name="A0190" belief="0.003664" plausibility="0.004227"/>
+    <alternative name="A0191" belief="0.004089" plausibility="0.004664"/>
+    <alternative name="A0192" belief="0.003305" plausibility="0.003755"/>
+    <alternative name="A0193" belief="0.002288" plausibility="0.002754"/>
+    <alternative name="A0194" belief="0.002105" plausibility="0.002514"/>
+    <alternative name="A0195" belief="0.002990" plausibility="0.003572"/>
+    <alternative name="A0196" belief="0.001401" plausibility="0.001806"/>
+    <alternative name="A0197" belief="0.005992" plausibility="0.006624"/>
+    <alternative name="A0198" belief="0.001031" plausibility="0.001360"/>
+    <alternative name="A0199" belief="0.002194" plausibility="0.002662"/>
+    <alternative name="A0200" belief="0.001639" plausibility="0.002036"/>
+    <alternative name="A0201" belief="0.001602" plausibility="0.002084"/>
+    <alternative name="A0202" belief="0.003070" plausibility="0.003650"/>
+    <alternative name="A0203" belief="0.002866" plausibility="0.003432"/>
+    <alternative name="A0204" belief="0.001336" plausibility="0.001710"/>
+    <alternative name="A0205" belief="0.001672" plausibility="0.002029"/>
+    <alternative name="A0206" belief="0.000106" plausibility="0.000225"/>
+    <alternative name="A0207" belief="0.004430" plausibility="0.005100"/>
+    <alternative name="A0208" belief="0.000510" plausibility="0.000775"/>
+    <alternative name="A0209" belief="0.000751" plausibility="0.001010"/>
+    <alternative name="A0210" belief="0.003035" plausibility="0.003583"/>
+    <alternative name="A0211" belief="0.002205" plausibility="0.002730"/>
+    <alternative name="A0212" belief="0.001711" plausibility="0.002100"/>
+    <alternative name="A0213" belief="0.001408" plausibility="0.001823"/>
+    <alternative name="A0214" belief="0.000789" plausibility="0.001025"/>
+    <alternative name="A0215" belief="0.002233" plausibility="0.002679"/>
+    <alternative name="A0216" belief="0.001647" plausibility="0.002126"/>
+    <alternative name="A0217" belief="0.000619" plausibility="0.000919"/>
+    <alternative name="A0218" belief="0.006812" plausibility="0.007649"/>
+    <alternative name="A0219" belief="0.002640" plausibility="0.003119"/>
+    <alternative name="A0220" belief="0.002001" plausibility="0.002400"/>
+    <alternative name="A0221" belief="0.002145" plausibility="0.002578"/>
+    <alternative name="A0222" belief="0.005884" plausibility="0.006546"/>
+    <alternative name="A0223" belief="0.001759" plausibility="0.002212"/>
+    <alternative name="A0224" belief="0.001010" plausibility="0.001307"/>
+    <alternative name="A0225" belief="0.001347" plausibility="0.001767"/>
+    <alternative name="A0226" belief="0.000748" plausibility="0.001010"/>
+    <alternative name="A0227" belief="0.002317" plausibility="0.002687"/>
+    <alternative name="A0228" belief="0.000430" plausibility="0.000651"/>
+    <alternative name="A0229" belief="0.004509" plausibility="0.005164"/>
+    <alternative name="A0230" belief="0.002445" plausibility="0.002923"/>
+    <alternative name="A0231" belief="0.000988" plausibility="0.001289"/>
+    <alternative name="A0232" belief="0.001358" plausibility="0.001732"/>
+    <alternative name="A0233" belief="0.000934" plausibility="0.001284"/>
+    <alternative name="A0234" belief="0.001412" plausibility="0.001731"/>
+    <alternative name="A0235" belief="0.000494" plausibility="0.000733"/>
+    <alternative name="A0236" belief="0.000919" plausibility="0.001228"/>
+    <alternative name="A0237" belief="0.002764" plausibility="0.003400"/>
+    <alternative name="A0238" belief="0.000823" plausibility="0.001141"/>
+    <alternative name="A0239" belief="0.000520" plausibility="0.000723"/>
+    <alternative name="A0240" belief="0.000232" plausibility="0.000412"/>
+    <alternative name="A0241" belief="0.004646" plausibility="0.005263"/>
+    <alternative name="A0242" belief="0.001863" plausibility="0.002238"/>
+    <alternative name="A0243" belief="0.000614" plausibility="0.000850"/>
+    <alternative name="A0244" belief="0.000693" plausibility="0.000932"/>
+    <alternative name="A0245" belief="0.001978" plausibility="0.002350"/>
+    <alternative name="A0246" belief="0.000959" plausibility="0.001267"/>
+    <alternative name="A0247" belief="0.003109" plausibility="0.003552"/>
+    <alternative name="A0248" belief="0.001048" plausibility="0.001340"/>
+    <alternative name="A0249" belief="0.001032" plausibility="0.001352"/>
+    <alternative name="A0250" belief="0.000964" plausibility="0.001315"/>
+    <alternative name="A0251" belief="0.002187" plausibility="0.002620"/>
+    <alternative name="A0252" belief="0.000870" plausibility="0.001126"/>
+    <alternative name="A0253" belief="0.000363" plausibility="0.000545"/>
+    <alternative name="A0254" belief="0.000903" plausibility="0.001194"/>
+    <alternative name="A0255" belief="0.001622" plausibility="0.001992"/>
+    <alternative name="A0256" belief="0.004226" plausibility="0.004852"/>
+    <alternative name="A0257" belief="0.003268" plausibility="0.003776"/>
+    <alternative name="A0258" belief="0.007716" plausibility="0.008488"/>
+    <alternative name="A0259" belief="0.003298" plausibility="0.003801"/>
+    <alternative name="A0260" belief="0.002224" plausibility="0.002669"/>
+    <alternative name="A0261" belief="0.001431" plausibility="0.001850"/>
+    <alternative name="A0262" belief="0.001838" plausibility="0.002241"/>
+    <alternative name="A0263" belief="0.002686" plausibility="0.003154"/>
+    <alternative name="A0264" belief="0.002760" plausibility="0.003151"/>
+    <alternative name="A0265" belief="0.000919" plausibility="0.001238"/>
+    <alternative name="A0266" belief="0.000626" plausibility="0.000865"/>
+    <alternative name="A0267" belief="0.001705" plausibility="0.002093"/>
+    <alternative name="A0268" belief="0.002389" plausibility="0.002798"/>
+    <alternative name="A0269" belief="0.001480" plausibility="0.001816"/>
+    <alternative name="A0270" belief="0.000721" plausibility="0.001002"/>
+    <alternative name="A0271" belief="0.002490" plausibility="0.002996"/>
+    <alternative name="A0272" belief="0.001364" plausibility="0.001706"/>
+    <alternative name="A0273" belief="0.002644" plausibility="0.003105"/>
+    <alternative name="A0274" belief="0.001911" plausibility="0.002264"/>
+    <alternative name="A0275" belief="0.003612" plausibility="0.004157"/>
+    <alternative name="A0276" belief="0.004872" plausibility="0.005581"/>
+    <alternative name="A0277" belief="0.000394" plausibility="0.000632"/>
+    <alternative name="A0278" belief="0.003398" plausibility="0.003870"/>
+    <alternative name="A0279" belief="0.001649" plausibility="0.002072"/>
+    <alternative name="A0280" belief="0.001927" plausibility="0.002281"/>
+    <alternative name="A0281" belief="0.001947" plausibility="0.002374"/>
+    <alternative name="A0282" belief="0.001877" plausibility="0.002245"/>
+    <alternative name="A0283" belief="0.002236" plausibility="0.002643"/>
+    <alternative name="A0284" belief="0.000934" plausibility="0.001239"/>
+    <alternative name="A0285" belief="0.002183" plausibility="0.002677"/>
+    <alternative name="A0286" belief="0.004267" plausibility="0.004821"/>
+    <alternative name="A0287" belief="0.001318" plausibility="0.001676"/>
+    <alternative name="A0288" belief="0.001084" plausibility="0.001447"/>
+    <alternative name="A0289" belief="0.001620" plausibility="0.001947"/>
+    <alternative name="A0290" belief="0.002033" plausibility="0.002490"/>
+    <alternative name="A0291" belief="0.000785" plausibility="0.001091"/>
+    <alternative name="A0292" belief="0.001487" plausibility="0.001806"/>
+    <alternative name="A0293" belief="0.001628" plausibility="0.002064"/>
+    <alternative name="A0294" belief="0.002415" plausibility="0.002809"/>
+    <alternative name="A0295" belief="0.001319" plausibility="0.001717"/>
+    <alternative name="A0296" belief="0.001184" plausibility="0.001557"/>
+    <alternative name="A0297" belief="0.001829" plausibility="0.002188"/>
+    <alternative name="A0298" belief="0.001567" plausibility="0.001965"/>
+    <alternative name="A0299" belief="0.002591" plausibility="0.003025"/>
+    <alternative name="A0300" belief="0.000541" plausibility="0.000781"/>
+    <alternative name="A0301" belief="0.002777" plausibility="0.003296"/>
+    <alternative name="A0302" belief="0.002525" plausibility="0.002908"/>
+    <alternative name="A0303" belief="0.000902" plausibility="0.001293"/>
+    <alternative name="A0304" belief="0.001341" plausibility="0.001663"/>
+    <alternative name="A0305" belief="0.000755" plausibility="0.001008"/>
+    <alternative name="A0306" belief="0.000999" plausibility="0.001445"/>
+    <alternative name="A0307" belief="0.004310" plausibility="0.004941"/>
+    <alternative name="A0308" belief="0.001138" plausibility="0.001451"/>
+    <alternative name="A0309" belief="0.002377" plausibility="0.002790"/>
+    <alternative name="A0310" belief="0.003529" plausibility="0.004027"/>
+    <alternative name="A0311" belief="0.001065" plausibility="0.001420"/>
+    <alternative name="A0312" belief="0.000477" plausibility="0.000675"/>
+    <alternative name="A0313" belief="0.000789" plausibility="0.001041"/>
+    <alternative name="A0314" belief="0.000916" plausibility="0.001227"/>
+    <alternative name="A0315" belief="0.005685" plausibility="0.006373"/>
+    <alternative name="A0316" belief="0.000946" plausibility="0.001253"/>
+    <alternative name="A0317" belief="0.002566" plausibility="0.003000"/>
+    <alternative name="A0318" belief="0.000359" plausibility="0.000589"/>
+    <alternative name="A0319" belief="0.000806" plausibility="0.001096"/>
+    <alternative name="A0320" belief="0.000823" plausibility="0.001116"/>
+    <alternative name="A0321" belief="0.001768" plausibility="0.002300"/>
+    <alternative name="A0322" belief="0.003994" plausibility="0.004485"/>
+    <alternative name="A0323" belief="0.002795" plausibility="0.003314"/>
+    <alternative name="A0324" belief="0.000368" plausibility="0.000573"/>
+    <alternative name="A0325" belief="0.002239" plausibility="0.002684"/>
+    <alternative name="A0326" belief="0.000339" plausibility="0.000530"/>
+    <alternative name="A0327" belief="0.000454" plausibility="0.000665"/>
+    <alternative name="A0328" belief="0.000424" plausibility="0.000637"/>
+    <alternative name="A0329" belief="0.001484" plausibility="0.001887"/>
+    <alternative name="A0330" belief="0.001577" plausibility="0.002032"/>
+    <alternative name="A0331" belief="0.001719" plausibility="0.002122"/>
+    <alternative name="A0332" belief="0.000299" plausibility="0.000464"/>
+    <alternative name="A0333" belief="0.000679" plausibility="0.000960"/>
+    <alternative name="A0334" belief="0.000787" plausibility="0.001063"/>
+    <alternative name="A0335" belief="0.002006" plausibility="0.002372"/>
+    <alternative name="A0336" belief="0.001218" plausibility="0.001504"/>
+    <alternative name="A0337" belief="0.002236" plausibility="0.002750"/>
+    <alternative name="A0338" belief="0.001448" plausibility="0.001820"/>
+    <alternative name="A0339" belief="0.002356" plausibility="0.002920"/>
+    <alternative name="A0340" belief="0.001730" plausibility="0.002093"/>
+    <alternative name="A0341" belief="0.000724" plausibility="0.000974"/>
+    <alternative name="A0342" belief="0.002916" plausibility="0.003460"/>
+    <alternative name="A0343" belief="0.000729" plausibility="0.001046"/>
+    <alternative name="A0344" belief="0.001874" plausibility="0.002338"/>
+    <alternative name="A0345" belief="0.000716" plausibility="0.000990"/>
+    <alternative name="A0346" belief="0.001183" plausibility="0.001505"/>
+    <alternative name="A0347" belief="0.004688" plausibility="0.005313"/>
+    <alternative name="A0348" belief="0.001526" plausibility="0.001874"/>
+    <alternative name="A0349" belief="0.000285" plausibility="0.000467"/>
+    <alternative name="A0350" belief="0.001294" plausibility="0.001634"/>
+    <alternative name="A0351" belief="0.003753" plausibility="0.004304"/>
+    <alternative name="A0352" belief="0.000465" plausibility="0.000655"/>
+    <alternative name="A0353" belief="0.001195" plausibility="0.001568"/>
+    <alternative name="A0354" belief="0.001577" plausibility="0.001979"/>
+    <alternative name="A0355" belief="0.002758" plausibility="0.003225"/>
+    <alternative name="A0356" belief="0.000356" plausibility="0.000530"/>
+    <alternative name="A0357" belief="0.000925" plausibility="0.001193"/>
+    <alternative name="A0358" belief="0.001370" plausibility="0.001738"/>
+    <alternative name="A0359" belief="0.001759" plausibility="0.002087"/>
+    <alternative name="A0360" belief="0.001509" plausibility="0.001902"/>
+    <alternative name="A0361" belief="0.001036" plausibility="0.001314"/>
+    <alternative name="A0362" belief="0.002956" plausibility="0.003471"/>
+    <alternative name="A0363" belief="0.001226" plausibility="0.001593"/>
+    <alternative name="A0364" belief="0.001743" plausibility="0.002082"/>
+    <alternative name="A0365" belief="0.002392" plausibility="0.002807"/>
+    <alternative name="A0366" belief="0.005937" plausibility="0.006692"/>
+    <alternative name="A0367" belief="0.000699" plausibility="0.000952"/>
+    <alternative name="A0368" belief="0.002758" plausibility="0.003154"/>
+    <alternative name="A0369" belief="0.001346" plausibility="0.001666"/>
+    <alternative name="A0370" belief="0.003012" plausibility="0.003601"/>
+    <alternative name="A0371" belief="0.012426" plausibility="0.013760"/>
+    <alternative name="A0372" belief="0.001296" plausibility="0.001684"/>
+    <alternative name="A0373" belief="0.000409" plausibility="0.000662"/>
+    <alternative name="A0374" belief="0.001432" plausibility="0.001861"/>
+    <alternative name="A0375" belief="0.001044" plausibility="0.001353"/>
+    <alternative name="A0376" belief="0.001716" plausibility="0.002147"/>
+    <alternative name="A0377" belief="0.001811" plausibility="0.002213"/>
+    <alternative name="A0378" belief="0.002389" plausibility="0.002784"/>
+    <alternative name="A0379" belief="0.001273" plausibility="0.001660"/>
+    <alternative name="A0380" belief="0.008293" plausibility="0.009038"/>
+    <alternative name="A0381" belief="0.001227" plausibility="0.001548"/>
+    <alternative name="A0382" belief="0.004080" plausibility="0.004597"/>
+    <alternative name="A0383" belief="0.002355" plausibility="0.002789"/>
+    <alternative name="A0384" belief="0.004984" plausibility="0.005525"/>
+    <alternative name="A0385" belief="0.001328" plausibility="0.001653"/>
+    <alternative name="A0386" belief="0.000634" plausibility="0.000886"/>
+    <alternative name="A0387" belief="0.001537" plausibility="0.001956"/>
+    <alternative name="A0388" belief="0.001062" plausibility="0.001398"/>
+    <alternative name="A0389" belief="0.001025" plausibility="0.001314"/>
+    <alternative name="A0390" belief="0.000876" plausibility="0.001179"/>
+    <alternative name="A0391" belief="0.000959" plausibility="0.001248"/>
+    <alternative name="A0392" belief="0.001050" plausibility="0.001322"/>
+    <alternative name="A0393" belief="0.001521" plausibility="0.001846"/>
+    <alternative name="A0394" belief="0.000639" plausibility="0.000878"/>
+    <alternative name="A0395" belief="0.004706" plausibility="0.005304"/>
+    <alternative name="A0396" belief="0.000341" plausibility="0.000568"/>
+    <alternative name="A0397" belief="0.001840" plausibility="0.002211"/>
+    <alternative name="A0398" belief="0.000460" plausibility="0.000678"/>
+    <alternative name="A0399" belief="0.000798" plausibility="0.001052"/>
+    <alternative name="A0400" belief="0.000734" plausibility="0.001021"/>
+    <alternative name="A0401" belief="0.002032" plausibility="0.002398"/>
+    <alternative name="A0402" belief="0.002994" plausibility="0.003498"/>
+    <alternative name="A0403" belief="0.000636" plausibility="0.000859"/>
+    <alternative name="A0404" belief="0.000220" plausibility="0.000357"/>
+    <alternative name="A0405" belief="0.001622" plausibility="0.001983"/>
+    <alternative name="A0406" belief="0.002354" plausibility="0.002736"/>
+    <alternative name="A0407" belief="0.003294" plausibility="0.003764"/>
+    <alternative name="A0408" belief="0.001065" plausibility="0.001369"/>
+    <alternative name="A0409" belief="0.000136" plausibility="0.000296"/>
+    <alternative name="A0410" belief="0.000998" plausibility="0.001308"/>
+    <alternative name="A0411" belief="0.001199" plausibility="0.001527"/>
+    <alternative name="A0412" belief="0.002114" plausibility="0.002519"/>
+    <alternative name="A0413" belief="0.000228" plausibility="0.000407"/>
+    <alternative name="A0414" belief="0.001109" plausibility="0.001393"/>
+    <alternative name="A0415" belief="0.003313" plausibility="0.003764"/>
+    <alternative name="A0416" belief="0.001684" plausibility="0.002024"/>
+    <alternative name="A0417" belief="0.000992" plausibility="0.001313"/>
+    <alternative name="A0418" belief="0.000235" plausibility="0.000421"/>
+    <alternative name="A0419" belief="0.001796" plausibility="0.002181"/>
+    <alternative name="A0420" belief="0.005537" plausibility="0.006087"/>
+    <alternative name="A0421" belief="0.002750" plausibility="0.003217"/>
+    <alternative name="A0422" belief="0.001280" plausibility="0.001665"/>
+    <alternative name="A0423" belief="0.001159" plausibility="0.001486"/>
+    <alternative name="A0424" belief="0.002871" plausibility="0.003348"/>
+    <alternative name="A0425" belief="0.001568" plausibility="0.001939"/>
+    <alternative name="A0426" belief="0.002237" plausibility="0.002630"/>
+    <alternative name="A0427" belief="0.001372" plausibility="0.001746"/>
+    <alternative name="A0428" belief="0.002366" plausibility="0.002879"/>
+    <alternative name="A0429" belief="0.000394" plausibility="0.000604"/>
+    <alternative name="A0430" belief="0.005342" plausibility="0.005974"/>
+    <alternative name="A0431" belief="0.000822" plausibility="0.001125"/>
+    <alternative name="A0432" belief="0.003580" plausibility="0.004152"/>
+    <alternative name="A0433" belief="0.002437" plausibility="0.002951"/>
+    <alternative name="A0434" belief="0.002483" plausibility="0.002937"/>
+    <alternative name="A0435" belief="0.000645" plausibility="0.000889"/>
+    <alternative name="A0436" belief="0.000816" plausibility="0.001152"/>
+    <alternative name="A0437" belief="0.002707" plausibility="0.003161"/>
+    <alternative name="A0438" belief="0.002112" plausibility="0.002543"/>
+    <alternative name="A0439" belief="0.001409" plausibility="0.001725"/>
+    <alternative name="A0440" belief="0.001139" plausibility="0.001552"/>
+    <alternative name="A0441" belief="0.002193" plausibility="0.002707"/>
+    <alternative name="A0442" belief="0.000405" plausibility="0.000600"/>
+    <alternative name="A0443" belief="0.001132" plausibility="0.001442"/>
+    <alternative name="A0444" belief="0.007060" plausibility="0.007800"/>
+    <alternative name="A0445" belief="0.002882" plausibility="0.003378"/>
+    <alternative name="A0446" belief="0.000776" plausibility="0.001044"/>
+    <alternative name="A0447" belief="0.000805" plausibility="0.001070"/>
+    <alternative name="A0448" belief="0.000371" plausibility="0.000555"/>
+    <alternative name="A0449" belief="0.001075" plausibility="0.001383"/>
+    <alternative name="A0450" belief="0.001096" plausibility="0.001490"/>
+    <alternative name="A0451" belief="0.000676" plausibility="0.001055"/>
+    <alternative name="A0452" belief="0.000587" plausibility="0.000848"/>
+    <alternative name="A0453" belief="0.000960" plausibility="0.001228"/>
+    <alternative name="A0454" belief="0.000988" plausibility="0.001272"/>
+    <alternative name="A0455" belief="0.000762" plausibility="0.001136"/>
+    <alternative name="A0456" belief="0.003204" plausibility="0.003682"/>
+    <alternative name="A0457" belief="0.000662" plausibility="0.000916"/>
+    <alternative name="A0458" belief="0.003098" plausibility="0.003728"/>
+    <alternative name="A0459" belief="0.000799" plausibility="0.001143"/>
+    <alternative name="A0460" belief="0.001039" plausibility="0.001322"/>
+    <alternative name="A0461" belief="0.002116" plausibility="0.002586"/>
+    <alternative name="A0462" belief="0.003393" plausibility="0.003888"/>
+    <alternative name="A0463" belief="0.003238" plausibility="0.003866"/>
+    <alternative name="A0464" belief="0.000941" plausibility="0.001224"/>
+    <alternative name="A0465" belief="0.000801" plausibility="0.001062"/>
+    <alternative name="A0466" belief="0.002384" plausibility="0.002844"/>
+    <alternative name="A0467" belief="0.002158" plausibility="0.002708"/>
+    <alternative name="A0468" belief="0.002399" plausibility="0.002870"/>
+    <alternative name="A0469" belief="0.003341" plausibility="0.003833"/>
+    <alternative name="A0470" belief="0.000767" plausibility="0.001087"/>
+    <alternative name="A0471" belief="0.000751" plausibility="0.001052"/>
+    <alternative name="A0472" belief="0.002660" plausibility="0.003167"/>
+    <alternative name="A0473" belief="0.002083" plausibility="0.002473"/>
+    <alternative name="A0474" belief="0.002614" plausibility="0.003045"/>
+    <alternative name="A0475" belief="0.001892" plausibility="0.002373"/>
+    <alternative name="A0476" belief="0.002878" plausibility="0.003341"/>
+    <alternative name="A0477" belief="0.000796" plausibility="0.001090"/>
+    <alternative name="A0478" belief="0.005231" plausibility="0.005911"/>
+    <alternative name="A0479" belief="0.002034" plausibility="0.002459"/>
+    <alternative name="A0480" belief="0.001932" plausibility="0.002343"/>
+    <alternative name="A0481" belief="0.001369" plausibility="0.001720"/>
+    <alternative name="A0482" belief="0.001891" plausibility="0.002305"/>
+    <alternative name="A0483" belief="0.000841" plausibility="0.001103"/>
+    <alternative name="A0484" belief="0.003954" plausibility="0.004577"/>
+    <alternative name="A0485" belief="0.000670" plausibility="0.000925"/>
+    <alternative name="A0486" belief="0.001426" plausibility="0.001862"/>
+    <alternative name="A0487" belief="0.000996" plausibility="0.001305"/>
+    <alternative name="A0488" belief="0.003173" plausibility="0.003786"/>
+    <alternative name="A0489" belief="0.000314" plausibility="0.000521"/>
+    <alternative name="A0490" belief="0.002625" plausibility="0.003118"/>
+    <alternative name="A0491" belief="0.002241" plausibility="0.002603"/>
+    <alternative name="A0492" belief="0.001937" plausibility="0.002321"/>
+    <alternative name="A0493" belief="0.001961" plausibility="0.002463"/>
+    <alternative name="A0494" belief="0.000931" plausibility="0.001299"/>
+    <alternative name="A0495" belief="0.003931" plausibility="0.004440"/>
+    <alternative name="A0496" belief="0.002739" plausibility="0.003349"/>
+    <alternative name="A0497" belief="0.009292" plausibility="0.010065"/>
+    <alternative name="A0498" belief="0.000268" plausibility="0.000437"/>
+    <alternative name="A0499" belief="0.001802" plausibility="0.002177"/>
+    <alternative name="A0500" belief="0.000512" plausibility="0.000735"/>
+  </belief_plausibility_functions>
+</ds_ahp_gdm_results>

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<ds_ahp_gdm_results>
+  <metadata>
+    <analysis_type>DS/AHP-GDM</analysis_type>
+    <task_info>
+      <alternatives>A, B, C, D, E, F, G, H, I, J</alternatives>
+      <criteria>c1, c2, c3</criteria>
+      <experts_count>4</experts_count>
+    </task_info>
+    <optimal_alternative>G</optimal_alternative>
+  </metadata>
+  <experts_info>
+    <expert name="g1" weight="0.500" discount_rate="1.000"/>
+    <expert name="g2" weight="0.300" discount_rate="0.600"/>
+    <expert name="g3" weight="0.150" discount_rate="0.300"/>
+    <expert name="g4" weight="0.050" discount_rate="0.100"/>
+  </experts_info>
+  <ranking>
+    <alternative rank="1" name="G" score="0.186693" belief="0.088879" plausibility="0.577947" interval="[0.0889, 0.5779]" optimal="true"/>
+    <alternative rank="2" name="F" score="0.181000" belief="0.083728" plausibility="0.570088" interval="[0.0837, 0.5701]"/>
+    <alternative rank="3" name="E" score="0.148761" belief="0.054097" plausibility="0.527418" interval="[0.0541, 0.5274]"/>
+    <alternative rank="4" name="A" score="0.144755" belief="0.038936" plausibility="0.568032" interval="[0.0389, 0.5680]"/>
+    <alternative rank="5" name="J" score="0.114822" belief="0.026833" plausibility="0.466781" interval="[0.0268, 0.4668]"/>
+    <alternative rank="6" name="H" score="0.108005" belief="0.005390" plausibility="0.518466" interval="[0.0054, 0.5185]"/>
+    <alternative rank="7" name="B" score="0.100339" belief="0.006279" plausibility="0.476578" interval="[0.0063, 0.4766]"/>
+    <alternative rank="8" name="D" score="0.093594" belief="0.005541" plausibility="0.445805" interval="[0.0055, 0.4458]"/>
+    <alternative rank="9" name="I" score="0.088279" belief="0.003376" plausibility="0.427891" interval="[0.0034, 0.4279]"/>
+    <alternative rank="10" name="C" score="0.085853" belief="0.001583" plausibility="0.422933" interval="[0.0016, 0.4229]"/>
+  </ranking>
+  <belief_plausibility_functions>
+    <alternative name="A" belief="0.038936" plausibility="0.568032"/>
+    <alternative name="B" belief="0.006279" plausibility="0.476578"/>
+    <alternative name="C" belief="0.001583" plausibility="0.422933"/>
+    <alternative name="D" belief="0.005541" plausibility="0.445805"/>
+    <alternative name="E" belief="0.054097" plausibility="0.527418"/>
+    <alternative name="F" belief="0.083728" plausibility="0.570088"/>
+    <alternative name="G" belief="0.088879" plausibility="0.577947"/>
+    <alternative name="H" belief="0.005390" plausibility="0.518466"/>
+    <alternative name="I" belief="0.003376" plausibility="0.427891"/>
+    <alternative name="J" belief="0.026833" plausibility="0.466781"/>
+  </belief_plausibility_functions>
+</ds_ahp_gdm_results>

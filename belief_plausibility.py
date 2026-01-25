@@ -131,7 +131,7 @@ class BeliefPlausibilityCalculator:
             if alt_set in self.intervals:
                 bel, pl = self.intervals[alt_set]
                 interval = f"[{bel:.4f}, {pl:.4f}]"
-                optimal_mark = " 🏆" if i == 1 else ""
+                optimal_mark = "" if i == 1 else ""
 
                 print(f"{i:3d}{optimal_mark:2} {alt:15} {score:10.6f} {bel:10.6f} {pl:12.6f} {interval:25}")
 

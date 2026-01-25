@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds_ahp_gdm_analysis>
+  <metadata>
+    <alternatives>A,B,C,D,E,F,G,H,I,J</alternatives>
+    <criteria>c1,c2,c3</criteria>
+    <experts>g1,g2,g3,g4</experts>
+    <generation_info timestamp="2024-01-01T12:00:00" n_alternatives="10" n_criteria="3" n_experts="4" weight_distribution="manual" generator="Manual_input"/>
+  </metadata>
+  <experts>
+    <expert name="g1" weight="0.50">
+      <cpvs>
+        <criterion name="c1">0.2000</criterion>
+        <criterion name="c2">0.5000</criterion>
+        <criterion name="c3">0.3000</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="c1">
+          <group preference="6">A,F</group>
+          <group preference="4">C,H,I</group>
+          <group preference="3">E</group>
+          <group preference="1">D,G</group>
+        </criterion>
+        <criterion name="c2">
+          <group preference="6">D,E</group>
+          <group preference="5">G,J</group>
+          <group preference="2">A,B,I</group>
+        </criterion>
+        <criterion name="c3">
+          <group preference="5">F,G</group>
+          <group preference="3">A,B,E,H</group>
+          <group preference="1">J</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="g2" weight="0.30">
+      <cpvs>
+        <criterion name="c1">0.3000</criterion>
+        <criterion name="c2">0.4000</criterion>
+        <criterion name="c3">0.3000</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="c1">
+          <group preference="5">A</group>
+          <group preference="4">F</group>
+          <group preference="3">G</group>
+          <group preference="2">C,E,I</group>
+          <group preference="1">D,H</group>
+        </criterion>
+        <criterion name="c2">
+          <group preference="7">E</group>
+          <group preference="4">J</group>
+          <group preference="2">B,F,G</group>
+          <group preference="1">D</group>
+        </criterion>
+        <criterion name="c3">
+          <group preference="6">G</group>
+          <group preference="5">F</group>
+          <group preference="3">B,E</group>
+          <group preference="2">A,H</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="g3" weight="0.15">
+      <cpvs>
+        <criterion name="c1">0.5000</criterion>
+        <criterion name="c2">0.2000</criterion>
+        <criterion name="c3">0.3000</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="c1">
+          <group preference="5">A,F,H</group>
+          <group preference="3">C,D,I,J</group>
+        </criterion>
+        <criterion name="c2">
+          <group preference="2">A,D,G,J</group>
+          <group preference="2">A,H,J</group>
+        </criterion>
+        <criterion name="c3">
+          <group preference="5">B,G</group>
+          <group preference="2">A,H</group>
+        </criterion>
+      </preferences>
+    </expert>
+    <expert name="g4" weight="0.05">
+      <cpvs>
+        <criterion name="c1">0.4000</criterion>
+        <criterion name="c2">0.0000</criterion>
+        <criterion name="c3">0.6000</criterion>
+      </cpvs>
+      <preferences>
+        <criterion name="c1">
+          <group preference="6">F</group>
+          <group preference="4">A,H</group>
+          <group preference="2">C,D,I</group>
+          <group preference="1">J</group>
+        </criterion>
+        <criterion name="c3">
+          <group preference="5">E,F</group>
+          <group preference="3">A,G,H</group>
+          <group preference="2">B,C,J</group>
+        </criterion>
+      </preferences>
+    </expert>
+  </experts>
+</ds_ahp_gdm_analysis>
