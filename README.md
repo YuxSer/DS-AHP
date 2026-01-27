@@ -159,14 +159,14 @@ The conducted experiments showed that Dempster's rule gives the most "confident"
 
 ## Contributors
 
-The main developers are S.E. Iushkov and C. Cai, students of SPbPU ICSC.
+The main contributers of the project are Sergey E. Iushkov and C. Cai, students of SPbPU ICSC.
 
-Project supervisor and co-author - V.A. Parkhomenko, senior lecturer at SPbPU ICSC.
+The advisor and minor contributor is Vladimir A. Parkhomenko a senior lecturer at SPbPU ICSC.
 
 ## Warranty
 
-The developers provide no warranty regarding the use of this software.
+The contributers give no warranty for the using of the software.
 
 ## License
 
-This program is open for use and distributed under the MIT license.
+This program is open to use anywhere and is licensed under the MIT license.
