@@ -74,6 +74,7 @@ DS-AHP-GDM/
 ## Участники
 
 Основными разработчиками являются С.Е.Юшков и Ц.Цай, студенты ИКНК СПбПУ.
+
 Руководитель и соавтор проекта - В.А.Пархоменко, старший преподаватель ИКНК СПбПУ.
 
 ## Гарантии
@@ -159,6 +160,7 @@ The conducted experiments showed that Dempster's rule gives the most "confident"
 ## Contributors
 
 The main developers are S.E. Iushkov and C. Cai, students of SPbPU ICSC.
+
 Project supervisor and co-author - V.A. Parkhomenko, senior lecturer at SPbPU ICSC.
 
 ## Warranty
